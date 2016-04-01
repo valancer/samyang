@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+@import url(nanumgothic.css);
+@import url(slick.css);
+@import url(magnific-popup.css);
+
+/**
+ * variable
+ */
+$font-base-stack: 'Nanum Gothic', sans-serif;
+$contents-width: 1000px;
+
+body { background-color: #fff; }
+
+@import "base";
+@import "sprites";
+
+
+
+/**
+ * z-index
+**/
+$z-layers: (
+	'modal':            1000,
+	'modaless':          900,
+	'dropdown':          500,
+	'hover':             200,
+	'tooltip':           100,
+	'default':             1,
+	'bottomless-pit': -10000
+);
+
+@function z($layer) {
+	@if not map-has-key($z-layers, $layer) {
+		@warn "No layer found for `#{$layer}` in $z-layers map. Property omitted.";
+	}
+
+	@return map-get($z-layers, $layer);
+}
+
+
+
+
+/**
+ * common
+ */
+
+
+/**
+ * import
+ */
+@import "layout";

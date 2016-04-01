@@ -1,0 +1,195 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$sd-logo01-name: 'sd-logo01';
+$sd-logo01-x: 0px;
+$sd-logo01-y: 0px;
+$sd-logo01-offset-x: 0px;
+$sd-logo01-offset-y: 0px;
+$sd-logo01-width: 165px;
+$sd-logo01-height: 43px;
+$sd-logo01-total-width: 546px;
+$sd-logo01-total-height: 122px;
+$sd-logo01-image: '/assets/images/sprites.png';
+$sd-logo01: (0px, 0px, 0px, 0px, 165px, 43px, 546px, 122px, '/assets/images/sprites.png', 'sd-logo01', );
+$sd-logo02-name: 'sd-logo02';
+$sd-logo02-x: 0px;
+$sd-logo02-y: 49px;
+$sd-logo02-offset-x: 0px;
+$sd-logo02-offset-y: -49px;
+$sd-logo02-width: 131px;
+$sd-logo02-height: 34px;
+$sd-logo02-total-width: 546px;
+$sd-logo02-total-height: 122px;
+$sd-logo02-image: '/assets/images/sprites.png';
+$sd-logo02: (0px, 49px, 0px, -49px, 131px, 34px, 546px, 122px, '/assets/images/sprites.png', 'sd-logo02', );
+$sd-nav01-name: 'sd-nav01';
+$sd-nav01-x: 0px;
+$sd-nav01-y: 108px;
+$sd-nav01-offset-x: 0px;
+$sd-nav01-offset-y: -108px;
+$sd-nav01-width: 104px;
+$sd-nav01-height: 14px;
+$sd-nav01-total-width: 546px;
+$sd-nav01-total-height: 122px;
+$sd-nav01-image: '/assets/images/sprites.png';
+$sd-nav01: (0px, 108px, 0px, -108px, 104px, 14px, 546px, 122px, '/assets/images/sprites.png', 'sd-nav01', );
+$sd-nav01-selected-name: 'sd-nav01_selected';
+$sd-nav01-selected-x: 375px;
+$sd-nav01-selected-y: 49px;
+$sd-nav01-selected-offset-x: -375px;
+$sd-nav01-selected-offset-y: -49px;
+$sd-nav01-selected-width: 104px;
+$sd-nav01-selected-height: 15px;
+$sd-nav01-selected-total-width: 546px;
+$sd-nav01-selected-total-height: 122px;
+$sd-nav01-selected-image: '/assets/images/sprites.png';
+$sd-nav01-selected: (375px, 49px, -375px, -49px, 104px, 15px, 546px, 122px, '/assets/images/sprites.png', 'sd-nav01_selected', );
+$sd-nav02-name: 'sd-nav02';
+$sd-nav02-x: 0px;
+$sd-nav02-y: 89px;
+$sd-nav02-offset-x: 0px;
+$sd-nav02-offset-y: -89px;
+$sd-nav02-width: 112px;
+$sd-nav02-height: 13px;
+$sd-nav02-total-width: 546px;
+$sd-nav02-total-height: 122px;
+$sd-nav02-image: '/assets/images/sprites.png';
+$sd-nav02: (0px, 89px, 0px, -89px, 112px, 13px, 546px, 122px, '/assets/images/sprites.png', 'sd-nav02', );
+$sd-nav02-selected-name: 'sd-nav02_selected';
+$sd-nav02-selected-x: 118px;
+$sd-nav02-selected-y: 89px;
+$sd-nav02-selected-offset-x: -118px;
+$sd-nav02-selected-offset-y: -89px;
+$sd-nav02-selected-width: 112px;
+$sd-nav02-selected-height: 13px;
+$sd-nav02-selected-total-width: 546px;
+$sd-nav02-selected-total-height: 122px;
+$sd-nav02-selected-image: '/assets/images/sprites.png';
+$sd-nav02-selected: (118px, 89px, -118px, -89px, 112px, 13px, 546px, 122px, '/assets/images/sprites.png', 'sd-nav02_selected', );
+$sd-nav03-name: 'sd-nav03';
+$sd-nav03-x: 137px;
+$sd-nav03-y: 49px;
+$sd-nav03-offset-x: -137px;
+$sd-nav03-offset-y: -49px;
+$sd-nav03-width: 113px;
+$sd-nav03-height: 27px;
+$sd-nav03-total-width: 546px;
+$sd-nav03-total-height: 122px;
+$sd-nav03-image: '/assets/images/sprites.png';
+$sd-nav03: (137px, 49px, -137px, -49px, 113px, 27px, 546px, 122px, '/assets/images/sprites.png', 'sd-nav03', );
+$sd-nav03-selected-name: 'sd-nav03_selected';
+$sd-nav03-selected-x: 256px;
+$sd-nav03-selected-y: 49px;
+$sd-nav03-selected-offset-x: -256px;
+$sd-nav03-selected-offset-y: -49px;
+$sd-nav03-selected-width: 113px;
+$sd-nav03-selected-height: 27px;
+$sd-nav03-selected-total-width: 546px;
+$sd-nav03-selected-total-height: 122px;
+$sd-nav03-selected-image: '/assets/images/sprites.png';
+$sd-nav03-selected: (256px, 49px, -256px, -49px, 113px, 27px, 546px, 122px, '/assets/images/sprites.png', 'sd-nav03_selected', );
+$sd-txt-address-name: 'sd-txt_address';
+$sd-txt-address-x: 171px;
+$sd-txt-address-y: 18px;
+$sd-txt-address-offset-x: -171px;
+$sd-txt-address-offset-y: -18px;
+$sd-txt-address-width: 336px;
+$sd-txt-address-height: 11px;
+$sd-txt-address-total-width: 546px;
+$sd-txt-address-total-height: 122px;
+$sd-txt-address-image: '/assets/images/sprites.png';
+$sd-txt-address: (171px, 18px, -171px, -18px, 336px, 11px, 546px, 122px, '/assets/images/sprites.png', 'sd-txt_address', );
+$sd-txt-copyright-name: 'sd-txt_copyright';
+$sd-txt-copyright-x: 171px;
+$sd-txt-copyright-y: 0px;
+$sd-txt-copyright-offset-x: -171px;
+$sd-txt-copyright-offset-y: 0px;
+$sd-txt-copyright-width: 375px;
+$sd-txt-copyright-height: 12px;
+$sd-txt-copyright-total-width: 546px;
+$sd-txt-copyright-total-height: 122px;
+$sd-txt-copyright-image: '/assets/images/sprites.png';
+$sd-txt-copyright: (171px, 0px, -171px, 0px, 375px, 12px, 546px, 122px, '/assets/images/sprites.png', 'sd-txt_copyright', );
+$spritesheet-width: 546px;
+$spritesheet-height: 122px;
+$spritesheet-image: '/assets/images/sprites.png';
+$spritesheet-sprites: ($sd-logo01, $sd-logo02, $sd-nav01, $sd-nav01-selected, $sd-nav02, $sd-nav02-selected, $sd-nav03, $sd-nav03-selected, $sd-txt-address, $sd-txt-copyright, );
+$spritesheet: (546px, 122px, '/assets/images/sprites.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

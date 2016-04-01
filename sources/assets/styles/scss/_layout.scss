@@ -1,0 +1,22 @@
+/* GNB HEADER */
+.header { border-bottom: 1px solid #c7c7c7; background-color: #fff;
+	> .inner { margin: 0 auto; width: $contents-width; }
+	.logo { display: block; text-indent: -9999px; @include sprite($sd-logo01); }
+}
+
+
+
+/* FOOTER */
+.footer { height: 92px; background-color: #fff;
+	> .inner { position: relative; margin: 0 auto; padding-top: 30px; width: $contents-width; }
+	.logo { display: block; position: absolute; top: 28px; right: 0; text-indent: -9999px; @include sprite($sd-logo02); }
+	.txt-copyright { display: block; text-indent: -9999px; @include sprite($sd-txt-copyright); }
+	.txt-address { display: block; margin-top: 8px; text-indent: -9999px;  @include sprite($sd-txt-address); }
+}
+
+
+
+
+/* CONTENTS */
+article.contents {
+}
