@@ -1,0 +1,10 @@
+
+
+/* 당신으로 부터, SAY 삼양 */
+.say-samyang { background: url('/assets/images/bg_section01.jpg') center bottom no-repeat;
+	> .inner {
+		> .title { display: block; margin: 0 auto; text-indent: -9999px; @include sprite($sd-title-section01); }
+	}
+	
+
+}

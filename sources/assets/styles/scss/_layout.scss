@@ -1,8 +1,37 @@
 /* GNB HEADER */
-.header { border-bottom: 1px solid #c7c7c7; background-color: #fff;
-	> .inner { margin: 0 auto; width: $contents-width; }
+.header { position: fixed; top: 0; right: 0; left: 0; height: 78px; border-bottom: 1px solid #c7c7c7; background-color: #fff;
+	> .inner { position: relative; margin: 0 auto; padding-top: 14px; height: 64px; width: $contents-width; }
 	.logo { display: block; text-indent: -9999px; @include sprite($sd-logo01); }
+
+	.menus { display: block; position: absolute; top: 0; right: 0; padding-top: 32px;
+		ul { 
+			> li { position: relative; display: inline-block; vertical-align: top;
+				a { display: inline-block; text-indent: -9999px;
+					&.menu01 { @include sprite($sd-nav01);
+						&:hover { @include sprite($sd-nav01-selected); }
+						&.is-selected { @include sprite($sd-nav01-selected); }
+					}
+					&.menu02 { @include sprite($sd-nav02);
+						&:hover { @include sprite($sd-nav02-selected); }
+						&.is-selected { @include sprite($sd-nav02-selected); }
+					}
+					&.menu03 { position: relative; top: -14px; @include sprite($sd-nav03);
+						&:hover { @include sprite($sd-nav03-selected); }
+						&.is-selected { @include sprite($sd-nav03-selected); }
+					}
+				}
+
+				+ li { margin-left: 25px; padding-left: 35px;
+					&:before { content: ''; display: block; position: absolute; top: 5px; left: 0; @include sprite($sd-icon-circle01); }
+				}
+			}
+		}
+	}	
 }
+
+
+/* contents */
+main { padding-top: 79px; background-color: #0f0; }
 
 
 

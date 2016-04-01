@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(nanumgothic.css);
 @import url(slick.css);
 @import url(magnific-popup.css);
@@ -191,25 +192,111 @@ The `sprites` mixin generates identical output to the CSS template
  * z-index
 **/
 /**
- * common
+ * states
  */
 /**
  * import
  */
 /* GNB HEADER */
 .header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 78px;
   border-bottom: 1px solid #c7c7c7;
   background-color: #fff; }
   .header > .inner {
+    position: relative;
     margin: 0 auto;
+    padding-top: 14px;
+    height: 64px;
     width: 1000px; }
   .header .logo {
     display: block;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: 0px 0px;
+    background-position: 0px -129px;
     width: 165px;
     height: 43px; }
+  .header .menus {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 32px; }
+    .header .menus ul > li {
+      position: relative;
+      display: inline-block;
+      vertical-align: top; }
+      .header .menus ul > li a {
+        display: inline-block;
+        text-indent: -9999px; }
+        .header .menus ul > li a.menu01 {
+          background-image: url(/assets/images/sprites.png);
+          background-position: 0px -237px;
+          width: 104px;
+          height: 14px; }
+          .header .menus ul > li a.menu01:hover {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -375px -178px;
+            width: 104px;
+            height: 15px; }
+          .header .menus ul > li a.menu01.is-selected {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -375px -178px;
+            width: 104px;
+            height: 15px; }
+        .header .menus ul > li a.menu02 {
+          background-image: url(/assets/images/sprites.png);
+          background-position: 0px -218px;
+          width: 112px;
+          height: 13px; }
+          .header .menus ul > li a.menu02:hover {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -485px -178px;
+            width: 112px;
+            height: 13px; }
+          .header .menus ul > li a.menu02.is-selected {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -485px -178px;
+            width: 112px;
+            height: 13px; }
+        .header .menus ul > li a.menu03 {
+          position: relative;
+          top: -14px;
+          background-image: url(/assets/images/sprites.png);
+          background-position: -137px -178px;
+          width: 113px;
+          height: 27px; }
+          .header .menus ul > li a.menu03:hover {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -256px -178px;
+            width: 113px;
+            height: 27px; }
+          .header .menus ul > li a.menu03.is-selected {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -256px -178px;
+            width: 113px;
+            height: 27px; }
+      .header .menus ul > li + li {
+        margin-left: 25px;
+        padding-left: 35px; }
+        .header .menus ul > li + li:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 5px;
+          left: 0;
+          background-image: url(/assets/images/sprites.png);
+          background-position: -552px -129px;
+          width: 5px;
+          height: 5px; }
+
+/* contents */
+main {
+  padding-top: 79px;
+  background-color: #0f0; }
 
 /* FOOTER */
 .footer {
@@ -227,14 +314,14 @@ The `sprites` mixin generates identical output to the CSS template
     right: 0;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: 0px -49px;
+    background-position: 0px -178px;
     width: 131px;
     height: 34px; }
   .footer .txt-copyright {
     display: block;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -171px 0px;
+    background-position: -171px -129px;
     width: 375px;
     height: 12px; }
   .footer .txt-address {
@@ -242,8 +329,19 @@ The `sprites` mixin generates identical output to the CSS template
     margin-top: 8px;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -171px -18px;
+    background-position: -171px -147px;
     width: 336px;
     height: 11px; }
 
 /* CONTENTS */
+/* 당신으로 부터, SAY 삼양 */
+.say-samyang {
+  background: url("/assets/images/bg_section01.jpg") center bottom no-repeat; }
+  .say-samyang > .inner > .title {
+    display: block;
+    margin: 0 auto;
+    text-indent: -9999px;
+    background-image: url(/assets/images/sprites.png);
+    background-position: 0px 0px;
+    width: 710px;
+    height: 123px; }
