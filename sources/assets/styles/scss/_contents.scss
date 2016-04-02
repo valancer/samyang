@@ -2,9 +2,18 @@
 
 /* 당신으로 부터, SAY 삼양 */
 .say-samyang { background: url('/assets/images/bg_section01.jpg') center bottom no-repeat;
-	> .inner {
-		> .title { display: block; margin: 0 auto; text-indent: -9999px; @include sprite($sd-title-section01); }
+	> .inner { margin: 0 auto; width: 1160px;
+		> .title { display: block; margin: 20px auto 0 auto; text-indent: -9999px; @include sprite($sd-title-section01); }
 	}
 	
-
+	.video-container { position: relative; margin-top: 30px; padding-top: 20px; height: 670px; background: url('/assets/images/bg_video_container.png') center top no-repeat;
+		.video { margin: 0 auto; height: 395px; width: 700px; }
+		.description { position: absolute; top: 456px; left: 50%; margin-left: -200px; height: 81px; width: 400px; text-indent: -9999px; background-color: #0f0; }
+		.btn { display: block; text-indent: -9999px;
+			&.btn-story-founded { @include sprite($sd-btn_story01); }
+			&.btn-story-health { @include sprite($sd-btn_story02); }
+			&.btn-story-car { @include sprite($sd-btn_story03); }
+		}
+		
+	}
 }

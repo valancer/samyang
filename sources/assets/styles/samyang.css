@@ -216,7 +216,7 @@ The `sprites` mixin generates identical output to the CSS template
     display: block;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: 0px -129px;
+    background-position: -540px -129px;
     width: 165px;
     height: 43px; }
   .header .menus {
@@ -234,49 +234,49 @@ The `sprites` mixin generates identical output to the CSS template
         text-indent: -9999px; }
         .header .menus ul > li a.menu01 {
           background-image: url(/assets/images/sprites.png);
-          background-position: 0px -237px;
+          background-position: -339px -458px;
           width: 104px;
           height: 14px; }
           .header .menus ul > li a.menu01:hover {
             background-image: url(/assets/images/sprites.png);
-            background-position: -375px -178px;
+            background-position: -540px -284px;
             width: 104px;
             height: 15px; }
           .header .menus ul > li a.menu01.is-selected {
             background-image: url(/assets/images/sprites.png);
-            background-position: -375px -178px;
+            background-position: -540px -284px;
             width: 104px;
             height: 15px; }
         .header .menus ul > li a.menu02 {
           background-image: url(/assets/images/sprites.png);
-          background-position: 0px -218px;
+          background-position: -540px -305px;
           width: 112px;
           height: 13px; }
           .header .menus ul > li a.menu02:hover {
             background-image: url(/assets/images/sprites.png);
-            background-position: -485px -178px;
+            background-position: -339px -439px;
             width: 112px;
             height: 13px; }
           .header .menus ul > li a.menu02.is-selected {
             background-image: url(/assets/images/sprites.png);
-            background-position: -485px -178px;
+            background-position: -339px -439px;
             width: 112px;
             height: 13px; }
         .header .menus ul > li a.menu03 {
           position: relative;
           top: -14px;
           background-image: url(/assets/images/sprites.png);
-          background-position: -137px -178px;
+          background-position: -540px -218px;
           width: 113px;
           height: 27px; }
           .header .menus ul > li a.menu03:hover {
             background-image: url(/assets/images/sprites.png);
-            background-position: -256px -178px;
+            background-position: -540px -251px;
             width: 113px;
             height: 27px; }
           .header .menus ul > li a.menu03.is-selected {
             background-image: url(/assets/images/sprites.png);
-            background-position: -256px -178px;
+            background-position: -540px -251px;
             width: 113px;
             height: 27px; }
       .header .menus ul > li + li {
@@ -289,14 +289,13 @@ The `sprites` mixin generates identical output to the CSS template
           top: 5px;
           left: 0;
           background-image: url(/assets/images/sprites.png);
-          background-position: -552px -129px;
+          background-position: -677px -178px;
           width: 5px;
           height: 5px; }
 
 /* contents */
 main {
-  padding-top: 79px;
-  background-color: #0f0; }
+  padding-top: 79px; }
 
 /* FOOTER */
 .footer {
@@ -314,14 +313,14 @@ main {
     right: 0;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: 0px -178px;
+    background-position: -540px -178px;
     width: 131px;
     height: 34px; }
   .footer .txt-copyright {
     display: block;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -171px -129px;
+    background-position: 0px -507px;
     width: 375px;
     height: 12px; }
   .footer .txt-address {
@@ -329,7 +328,7 @@ main {
     margin-top: 8px;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -171px -147px;
+    background-position: -339px -422px;
     width: 336px;
     height: 11px; }
 
@@ -337,11 +336,51 @@ main {
 /* 당신으로 부터, SAY 삼양 */
 .say-samyang {
   background: url("/assets/images/bg_section01.jpg") center bottom no-repeat; }
-  .say-samyang > .inner > .title {
-    display: block;
+  .say-samyang > .inner {
     margin: 0 auto;
-    text-indent: -9999px;
-    background-image: url(/assets/images/sprites.png);
-    background-position: 0px 0px;
-    width: 710px;
-    height: 123px; }
+    width: 1160px; }
+    .say-samyang > .inner > .title {
+      display: block;
+      margin: 20px auto 0 auto;
+      text-indent: -9999px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: 0px 0px;
+      width: 710px;
+      height: 123px; }
+  .say-samyang .video-container {
+    position: relative;
+    margin-top: 30px;
+    padding-top: 20px;
+    height: 670px;
+    background: url("/assets/images/bg_video_container.png") center top no-repeat; }
+    .say-samyang .video-container .video {
+      margin: 0 auto;
+      height: 395px;
+      width: 700px; }
+    .say-samyang .video-container .description {
+      position: absolute;
+      top: 456px;
+      left: 50%;
+      margin-left: -200px;
+      height: 81px;
+      width: 400px;
+      text-indent: -9999px;
+      background-color: #0f0; }
+    .say-samyang .video-container .btn {
+      display: block;
+      text-indent: -9999px; }
+      .say-samyang .video-container .btn.btn-story-founded {
+        background-image: url(/assets/images/sprites.png);
+        background-position: 0px -129px;
+        width: 174px;
+        height: 200px; }
+      .say-samyang .video-container .btn.btn-story-health {
+        background-image: url(/assets/images/sprites.png);
+        background-position: -360px -129px;
+        width: 174px;
+        height: 200px; }
+      .say-samyang .video-container .btn.btn-story-car {
+        background-image: url(/assets/images/sprites.png);
+        background-position: -180px -129px;
+        width: 174px;
+        height: 200px; }
