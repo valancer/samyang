@@ -1,5 +1,5 @@
 /* GNB HEADER */
-.header { position: fixed; top: 0; right: 0; left: 0; height: 78px; border-bottom: 1px solid #c7c7c7; background-color: #fff;
+.header { position: fixed; top: 0; right: 0; left: 0; z-index: z("gnb"); height: 78px; border-bottom: 1px solid #c7c7c7; background-color: #fff;
 	> .inner { position: relative; margin: 0 auto; padding-top: 14px; height: 64px; width: $contents-width; }
 	.logo { display: block; text-indent: -9999px; @include sprite($sd-logo01); }
 

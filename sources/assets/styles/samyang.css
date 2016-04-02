@@ -203,6 +203,7 @@ The `sprites` mixin generates identical output to the CSS template
   top: 0;
   right: 0;
   left: 0;
+  z-index: 800;
   height: 78px;
   border-bottom: 1px solid #c7c7c7;
   background-color: #fff; }
@@ -216,7 +217,7 @@ The `sprites` mixin generates identical output to the CSS template
     display: block;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -540px -129px;
+    background-position: -472px -252px;
     width: 165px;
     height: 43px; }
   .header .menus {
@@ -234,49 +235,49 @@ The `sprites` mixin generates identical output to the CSS template
         text-indent: -9999px; }
         .header .menus ul > li a.menu01 {
           background-image: url(/assets/images/sprites.png);
-          background-position: -339px -458px;
+          background-position: -646px -403px;
           width: 104px;
           height: 14px; }
           .header .menus ul > li a.menu01:hover {
             background-image: url(/assets/images/sprites.png);
-            background-position: -540px -284px;
+            background-position: -605px -301px;
             width: 104px;
             height: 15px; }
           .header .menus ul > li a.menu01.is-selected {
             background-image: url(/assets/images/sprites.png);
-            background-position: -540px -284px;
+            background-position: -605px -301px;
             width: 104px;
             height: 15px; }
         .header .menus ul > li a.menu02 {
           background-image: url(/assets/images/sprites.png);
-          background-position: -540px -305px;
+          background-position: -960px -373px;
           width: 112px;
           height: 13px; }
           .header .menus ul > li a.menu02:hover {
             background-image: url(/assets/images/sprites.png);
-            background-position: -339px -439px;
+            background-position: -592px -330px;
             width: 112px;
             height: 13px; }
           .header .menus ul > li a.menu02.is-selected {
             background-image: url(/assets/images/sprites.png);
-            background-position: -339px -439px;
+            background-position: -592px -330px;
             width: 112px;
             height: 13px; }
         .header .menus ul > li a.menu03 {
           position: relative;
           top: -14px;
           background-image: url(/assets/images/sprites.png);
-          background-position: -540px -218px;
+          background-position: -576px -202px;
           width: 113px;
           height: 27px; }
           .header .menus ul > li a.menu03:hover {
             background-image: url(/assets/images/sprites.png);
-            background-position: -540px -251px;
+            background-position: -576px -169px;
             width: 113px;
             height: 27px; }
           .header .menus ul > li a.menu03.is-selected {
             background-image: url(/assets/images/sprites.png);
-            background-position: -540px -251px;
+            background-position: -576px -169px;
             width: 113px;
             height: 27px; }
       .header .menus ul > li + li {
@@ -289,7 +290,7 @@ The `sprites` mixin generates identical output to the CSS template
           top: 5px;
           left: 0;
           background-image: url(/assets/images/sprites.png);
-          background-position: -677px -178px;
+          background-position: -1595px -62px;
           width: 5px;
           height: 5px; }
 
@@ -313,14 +314,14 @@ main {
     right: 0;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -540px -178px;
+    background-position: -576px -129px;
     width: 131px;
     height: 34px; }
   .footer .txt-copyright {
     display: block;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: 0px -507px;
+    background-position: -1088px -328px;
     width: 375px;
     height: 12px; }
   .footer .txt-address {
@@ -328,11 +329,138 @@ main {
     margin-top: 8px;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -339px -422px;
+    background-position: -1256px -233px;
     width: 336px;
     height: 11px; }
 
 /* CONTENTS */
+/* 댓글 목록 */
+.comment-item {
+  position: relative;
+  padding: 14px 0 23px 143px;
+  /* 카드 스타일 */ }
+  .comment-item .user {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 128px; }
+    .comment-item .user .thumb {
+      position: relative;
+      margin: 14px auto 0 auto;
+      height: 68px;
+      width: 68px; }
+      .comment-item .user .thumb .via {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-indent: -9999px; }
+        .comment-item .user .thumb .via.facebook {
+          background-image: url(/assets/images/sprites.png);
+          background-position: -672px -252px;
+          width: 23px;
+          height: 24px; }
+        .comment-item .user .thumb .via.twitter {
+          background-image: url(/assets/images/sprites.png);
+          background-position: -643px -252px;
+          width: 23px;
+          height: 24px; }
+        .comment-item .user .thumb .via.kakaostory {
+          background-image: url(/assets/images/sprites.png);
+          background-position: -549px -435px;
+          width: 23px;
+          height: 24px; }
+      .comment-item .user .thumb img {
+        display: block;
+        box-sizing: border-box;
+        max-height: 100%;
+        max-width: 100%;
+        border: 4px solid #0895d7;
+        border-radius: 68px; }
+    .comment-item .user figcaption {
+      display: block;
+      text-align: center; }
+    .comment-item .user .icons {
+      display: block;
+      position: absolute;
+      top: 22px;
+      left: 143px;
+      text-indent: -9999px; }
+    .comment-item .user .name {
+      display: block;
+      margin: 9px auto 0 auto;
+      font-size: 12px;
+      font-weight: bold;
+      color: #333; }
+      .comment-item .user .name:before {
+        content: attr(data-before);
+        margin-right: 3px;
+        font-weight: normal;
+        letter-spacing: -0.1em; }
+    .comment-item .user.founded img {
+      border: 4px solid #0895d7; }
+    .comment-item .user.founded .icons {
+      top: 28px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: -1516px -298px;
+      width: 91px;
+      height: 18px; }
+    .comment-item .user.health img {
+      border: 4px solid #f15234; }
+    .comment-item .user.health .icons {
+      background-image: url(/assets/images/sprites.png);
+      background-position: -549px -403px;
+      width: 91px;
+      height: 26px; }
+    .comment-item .user.car img {
+      border: 4px solid #9bb226; }
+    .comment-item .user.car .icons {
+      top: 26px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: -472px -330px;
+      width: 114px;
+      height: 20px; }
+  .comment-item .comment {
+    margin-top: 42px;
+    font-size: 14px;
+    color: #4c4c4c;
+    line-height: 20px; }
+  .type-card .comment-item {
+    padding: 0 22px 0 21px;
+    height: 308px;
+    width: 260px;
+    background: url("/assets/images/bg_card.png") left top no-repeat; }
+    .type-card .comment-item .user {
+      position: static;
+      width: 100%; }
+      .type-card .comment-item .user .thumb {
+        margin: 0;
+        height: 80px;
+        width: 80px; }
+        .type-card .comment-item .user .thumb .via {
+          display: none; }
+    .type-card .comment-item .comment {
+      display: block;
+      margin: 0;
+      font-size: 12px;
+      color: #333;
+      line-height: 22px; }
+
+.list-comments {
+  border-bottom: 2px solid #c7c7c7;
+  /* 카드 스타일 */ }
+  .list-comments > li {
+    position: relative;
+    border-top: 1px solid #e2e2e2; }
+    .list-comments > li:first-child {
+      border-top: 2px solid #c7c7c7; }
+  .list-comments.type-card {
+    overflow: hidden; }
+    .list-comments.type-card > li {
+      display: block;
+      float: left;
+      border: 0px; }
+
 /* 당신으로 부터, SAY 삼양 */
 .say-samyang {
   background: url("/assets/images/bg_section01.jpg") center bottom no-repeat; }
@@ -364,23 +492,152 @@ main {
       margin-left: -200px;
       height: 81px;
       width: 400px;
-      text-indent: -9999px;
       background-color: #0f0; }
+      .say-samyang .video-container .description .story-founded {
+        margin: 0 auto;
+        text-indent: -9999px;
+        background-image: url(/assets/images/sprites.png);
+        background-position: -1256px -62px;
+        width: 333px;
+        height: 80px; }
+      .say-samyang .video-container .description .story-health {
+        margin: 0 auto;
+        text-indent: -9999px;
+        background-image: url(/assets/images/sprites.png);
+        background-position: -716px -268px;
+        width: 366px;
+        height: 81px; }
+      .say-samyang .video-container .description .story-car {
+        margin: 0 auto;
+        text-indent: -9999px;
+        background-image: url(/assets/images/sprites.png);
+        background-position: -1256px -148px;
+        width: 333px;
+        height: 79px; }
     .say-samyang .video-container .btn {
       display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
       text-indent: -9999px; }
       .say-samyang .video-container .btn.btn-story-founded {
         background-image: url(/assets/images/sprites.png);
-        background-position: 0px -129px;
+        background-position: -716px -62px;
         width: 174px;
         height: 200px; }
       .say-samyang .video-container .btn.btn-story-health {
         background-image: url(/assets/images/sprites.png);
-        background-position: -360px -129px;
+        background-position: -1076px -62px;
         width: 174px;
         height: 200px; }
       .say-samyang .video-container .btn.btn-story-car {
+        right: 0;
+        left: auto;
         background-image: url(/assets/images/sprites.png);
-        background-position: -180px -129px;
+        background-position: -896px -62px;
         width: 174px;
         height: 200px; }
+
+/* 당신의 소중한 이야기에 귀기울입니다. */
+.summary-story {
+  background-color: #50b3e1; }
+  .summary-story > .inner {
+    margin: 0 auto;
+    padding: 33px 0 0 0;
+    width: 1160px; }
+    .summary-story > .inner > .title {
+      margin: 0 auto;
+      text-indent: -9999px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: 0px -252px;
+      width: 466px;
+      height: 115px; }
+
+/* 삼양그룹에게 당신의 이야기를 들려주세요! */
+.your-story {
+  background-color: #fff; }
+  .your-story > header {
+    margin: 0 auto;
+    padding: 68px 0px 85px 0px;
+    width: 1000px; }
+    .your-story > header > .title {
+      margin: 0 auto;
+      text-indent: -9999px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: 0px -129px;
+      width: 570px;
+      height: 117px; }
+    .your-story > header .txt-desc {
+      margin: 27px auto 0 auto;
+      text-indent: -9999px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: -1088px -268px;
+      width: 422px;
+      height: 54px; }
+      .your-story > header .txt-desc br {
+        display: none; }
+    .your-story > header dl {
+      display: block;
+      position: relative;
+      margin: 25px auto 0 auto;
+      background-image: url(/assets/images/sprites.png);
+      background-position: -549px -373px;
+      width: 405px;
+      height: 24px; }
+      .your-story > header dl dt, .your-story > header dl dd {
+        position: absolute;
+        top: -9999px;
+        left: -9999px; }
+    .your-story > header .list-gifts {
+      margin-top: 60px;
+      text-align: center; }
+      .your-story > header .list-gifts > li {
+        display: inline-block;
+        padding: 0 14px 0 13px; }
+        .your-story > header .list-gifts > li span {
+          display: block;
+          text-indent: -9999px; }
+          .your-story > header .list-gifts > li span.gift-founded {
+            background-image: url(/assets/images/sprites.png);
+            background-position: 0px -373px;
+            width: 177px;
+            height: 143px; }
+          .your-story > header .list-gifts > li span.gift-health {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -366px -373px;
+            width: 177px;
+            height: 143px; }
+          .your-story > header .list-gifts > li span.gift-car {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -183px -373px;
+            width: 177px;
+            height: 143px; }
+  .your-story > .inner {
+    margin: 0 auto;
+    width: 1000px; }
+
+/* 이벤트 유의사항 */
+.guide {
+  background-color: #e6e6e6; }
+  .guide > .inner {
+    margin: 0 auto;
+    padding: 27px 0 28px 14px;
+    width: 986px; }
+    .guide > .inner > .title {
+      text-indent: -9999px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: -472px -301px;
+      width: 127px;
+      height: 23px; }
+  .guide .list-guide {
+    position: relative;
+    overflow: hidden;
+    margin-top: 16px;
+    background-image: url(/assets/images/sprites.png);
+    background-position: -716px 0px;
+    width: 899px;
+    height: 56px; }
+    .guide .list-guide > li {
+      position: absolute;
+      top: -9999px;
+      left: -9999px; }
