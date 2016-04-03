@@ -7,7 +7,6 @@
 	<!-- 상단 영역 -->
 	@@include('./header.html')
 
-
 	<!-- 본문 영역 -->
 	<main>
 		<article class="contents">
@@ -18,22 +17,12 @@
 					<h2 class="title">당신으로 부터, SAY 삼양</h2>
 					
 					<div class="video-container">
-						<div class="video">
-							
-						</div>
+						<div class="video"></div>
+						<div class="description"></div>
 
-						<div class="description">
-							<div class="story-car">
-								<h3>자동차 이야기</h3>
-								<p>
-									당신의 편리한 생활을 만들기 위해 삼양은 엔지니어링 플라스틱 소재를 개발하고 있습니다.
-								</p>
-							</div>
-						</div>
-
-						<a href="#" class="btn btn-story-founded">외식업에 관심이 있는 당신을 위해 창업 이야기</a>
-						<a href="#" class="btn btn-story-health">당신이 언제나 건강할 수 있도록 건강 이야기</a>
-						<a href="#" class="btn btn-story-car">편리한 생활을 만들어가는 자동차 이야기</a>
+						<a href="#0" class="btn btn-story-founded">외식업에 관심이 있는 당신을 위해 창업 이야기</a>
+						<a href="#1" class="btn btn-story-health">당신이 언제나 건강할 수 있도록 건강 이야기</a>
+						<a href="#2" class="btn btn-story-car">편리한 생활을 만들어가는 자동차 이야기</a>
 					</div>
 				</div>
 			</section>
@@ -45,6 +34,7 @@
 				<div class="inner">
 					<h2 class="title">당신의 소중한 이야기에 귀기울입니다.</h2>
 
+					
 					<ul class="list-comments type-card">
 						<li>
 							<div class="comment-item">
@@ -88,6 +78,25 @@
 								<figure class="user car">
 									<div class="thumb">
 										<span class="via twitter">via twitter</span>
+										<img src="/assets/images/@temp/profile01.jpg" alt="우선빈">
+									</div>
+									<figcaption>
+										<span class="icons">창업이야기</span>
+										<span class="name" data-before="FROM.">우선빈</span>
+									</figcaption>
+								</figure>
+								<p class="comment">
+									용산에 사는 29 우선빈입니다.<br>
+									남들 다 취업 준비를 하는 동안 열심히 요리공부를 해서 드디어 가게를 오픈 합니다!<br>
+									많이 많이 응원해주세요!<br>
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="comment-item">
+								<figure class="user health">
+									<div class="thumb">
+										<span class="via kakaostory">via kakaostory</span>
 										<img src="/assets/images/@temp/profile01.jpg" alt="우선빈">
 									</div>
 									<figcaption>
@@ -147,8 +156,51 @@
 					</ol>
 				</header>
 
+
+
 				<div class="inner">
 
+					<p class="txt-sns-login">SNS 로그인을 해주세요.</p>
+					<div class="login-btns">
+						<a href="#" class="facebook is-selected">페이스북 로그인</a>
+						<a href="#" class="twitter">트위터 로그인</a>
+						<a href="#" class="kakaostory">카카오스토리 로그인</a>
+					</div>
+
+
+
+					<fieldset class="select-video">
+						<legend>관심있는 영상을 선택 해주세요.</legend>
+						
+						
+						<input type="radio" id="video01" name="videos">
+						<label for="video01" class="radio-video01">
+							외식업에 관심이 있는 당신을 위해 삼양은 최고의 식자재와 전문적인 컨설팅을 지원합니다.
+						</label>
+						
+						<input type="radio" id="video02" name="videos">
+						<label for="video02" class="radio-video02">
+							당신이 언제나 건강할 수 있도록 삼양은 생명공학, 의약분야에 첨단 치료기술을 개발하고 있습니다
+						</label>
+						
+						<input type="radio" id="video03" name="videos">
+						<label for="video03" class="radio-video03">
+							당신의 편리한 생활을 만들기 위해 삼양은 엔지니어링 플라스틱 소재를 개발하고 있습니다.
+						</label>
+					</fieldset>
+
+
+					<fieldset class="write-comment">
+						<legend>당신의 생각 또는 이야기를 남겨주세요.</legend>
+
+						<p class="writer">
+							<textarea name="" id="" cols="100" rows="10">사랑하는 우리 가족이 아프지않고 건강하게 행복하게 살 수 있도록 도와주세요!그 무엇보다 건강이 최고니까요!</textarea>
+							<span class="remain-txt">0/200</span>
+							<button type="submit" class="btn-write"><span>이야기 남기기</span></button>
+						</p>
+					</fieldset>
+
+					
 
 					<ul class="list-comments">
 						<li>
@@ -208,6 +260,9 @@
 							</div>
 						</li>
 					</ul>
+					<p class="more-comments">
+						<a href="#">댓글 더보기</a>
+					</p>
 
 				</div>
 			</section>
@@ -235,6 +290,7 @@
 
 	<!-- 하단 영역 -->
 	@@include('./footer.html')
+
 
 </body>
 </html>

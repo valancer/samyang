@@ -32,46 +32,88 @@
 
 
 	/* 카드 스타일 */
-	.type-card & { padding: 0 22px 0 21px; height: 308px; width: 260px; background: url('/assets/images/bg_card.png') left top no-repeat;
-		.user { position: static; width: 100%;
-			.thumb { margin: 0; height: 80px; width: 80px;
+	.type-card & { padding: 35px 22px 0 21px; height: 273px; width: 260px; background: url('/assets/images/bg_card.png') left top no-repeat;
+		.user { overflow: hidden; position: static; width: 100%;
+			.thumb { float: left; margin: 0 0 0 14px; height: 80px; width: 80px;
 				.via { display: none; }
 			}
+			figcaption { float: left; padding-left: 18px; }
+			.icons { position: static; }
+			.name { margin: 5px 0 0 0; font-size: 14px; color: #333; text-align: left;
+				&:before { content: ''; display: inline-block; margin-right: 5px; vertical-align: middle; @include sprite($sd-txt-from01); }
+			}
+
+			&.founded {
+				.icons { margin-top: 19px; @include sprite($sd-icon-story01-b); }	
+			}
+			&.health {
+				.icons { margin-top: 14px; @include sprite($sd-icon-story02-b); }
+			}
+			&.car {
+				.icons { margin-top: 22px; @include sprite($sd-icon-story03-b); }
+			}
 		}
-		.comment { display: block; margin: 0; font-size: 12px; color: #333; line-height: 22px; }
+		.comment { display: block; margin: 20px 0 0 0; padding: 20px 9px 0 9px; height: 140px; font-size: 12px; color: #333; line-height: 22px; border-top: 1px dashed #b8b8b8; }
 	}
 }
 
-.list-comments { border-bottom: 2px solid #c7c7c7;
-	> li { position: relative; border-top: 1px solid #e2e2e2;
+
+.list-comments { margin-top: 20px; border-bottom: 2px solid #c7c7c7;
+	li { position: relative; border-top: 1px solid #e2e2e2;
 		&:first-child { border-top: 2px solid #c7c7c7; }
 	}
 
 	/* 카드 스타일 */
-	&.type-card { overflow: hidden;
-		> li { display: block; float: left; border: 0px; }
+	&.type-card { box-sizing: border-box; margin: 50px auto 0 auto; padding-left: 19px; width: 1000px; border: 0px;
+		li { display: block; float: left; border: 0px; }
 	}
+
+
+	// slick
+	.btn-slider { display: block; position: absolute; top: 50%; margin-top: -20px; text-indent: -9999px;
+		&.prev { left: -35px; @include sprite($sd-btn-prev01);
+			&:hover { @include sprite($sd-btn-prev01-selected); }
+		}
+		&.next { right: -35px; @include sprite($sd-btn-next01);
+			&:hover { @include sprite($sd-btn-next01-selected); }
+		}
+
+	}
+
+	.slick-dots { position: absolute; bottom: -41px; right: 0; left: 0; text-align: center;
+		> li { display: inline-block; float: none;
+			button { display: inline-block; margin: 0 3px; text-indent: -9999px; @include sprite($sd-icon-dots01); }
+
+			&.slick-active {
+				button { @include sprite($sd-icon-dots01-selected); }
+			}
+		}
+	}
+}
+
+.more-comments { padding: 15px 0 0 0;
+	a { display: block; margin: 0 auto; text-indent: -9999px; @include sprite($sd-btn-more01); }
 }
 
 
 
 /* 당신으로 부터, SAY 삼양 */
-.say-samyang { background: url('/assets/images/bg_section01.jpg') center bottom no-repeat;
+.say-samyang { position: relative; z-index: z("default")+2; padding-top: 79px; background: url('/assets/images/bg_section01.jpg') center bottom no-repeat;
 	> .inner { margin: 0 auto; width: 1160px;
 		> .title { display: block; margin: 20px auto 0 auto; text-indent: -9999px; @include sprite($sd-title-section01); }
 	}
 	
 	.video-container { position: relative; margin-top: 30px; padding-top: 20px; height: 670px; background: url('/assets/images/bg_video_container.png') center top no-repeat;
-		.video { margin: 0 auto; height: 395px; width: 700px; }
-		.description { position: absolute; top: 456px; left: 50%; margin-left: -200px; height: 81px; width: 400px; background-color: #0f0;
+		.video { position: relative; z-index: z("tooltip"); margin: 0 auto; height: 395px; width: 700px; background-color: #000; }
+		.description { position: absolute; top: 456px; left: 50%; margin-left: -200px; height: 81px; width: 400px;
 			.story-founded { margin: 0 auto; text-indent: -9999px; @include sprite($sd-desc-story01); }
 			.story-health { margin: 0 auto; text-indent: -9999px; @include sprite($sd-desc-story02); }
 			.story-car { margin: 0 auto; text-indent: -9999px; @include sprite($sd-desc-story03); }
 		}
-		.btn { display: block; position: absolute; top: 0; left: 0; text-indent: -9999px;
+		.btn { display: block; position: absolute; top: 143px; left: 449px; text-indent: -9999px;
 			&.btn-story-founded { @include sprite($sd-btn-story01); }
 			&.btn-story-health { @include sprite($sd-btn-story02); }
-			&.btn-story-car { right: 0; left: auto; @include sprite($sd-btn-story03); }
+			&.btn-story-car { @include sprite($sd-btn-story03); }
 		}
 	}
 }
@@ -79,8 +121,11 @@
 
 
 /* 당신의 소중한 이야기에 귀기울입니다. */
-.summary-story { background-color: #50b3e1;
-	> .inner { margin: 0 auto; padding: 33px 0 0 0; width: 1160px;
+.summary-story { position: relative; z-index: z("default")+1; background-color: #50b3e1;
+	.ie8 & { margin-top: -79px; padding-top: 79px; }
+	.ie9 & { margin-top: -79px; padding-top: 79px; }
+
+	> .inner { margin: 0 auto; padding: 33px 0 88px 0; width: 1160px;
 		> .title { margin: 0 auto; text-indent: -9999px; @include sprite($sd-title-section02); }
 	}
 
@@ -91,7 +136,16 @@
 
 
 /* 삼양그룹에게 당신의 이야기를 들려주세요! */
-.your-story { background-color: #fff;
+.your-story { position: relative; z-index: z("default"); background-color: #fff;
+	&:before { content: ''; display: block; position: absolute; top: 603px; height: 155px; width: 100%; background: url('/assets/images/bg_section02.png') center top repeat-x; }
+
+	.ie8 & { margin-top: -79px; padding-top: 79px;
+		&:before { top: 682px; }
+	}
+	.ie9 & { margin-top: -79px; padding-top: 79px;
+		&:before { top: 682px; }
+	}
+
 	> header { margin: 0 auto; padding: 68px 0px 85px 0px;; width: 1000px;
 		> .title { margin: 0 auto; text-indent: -9999px; @include sprite($sd-title-section-your-story); }
 		.txt-desc { margin: 27px auto 0 auto; text-indent: -9999px; @include sprite($sd-txt-your-story);
@@ -110,7 +164,58 @@
 			}
 		}
 	}
-	> .inner { margin: 0 auto; width: 1000px; }
+	> .inner { position: relative; margin: 0 auto; padding: 0 0 70px 0; width: 1000px; }
+
+	/* SNS 로그인 */
+	.txt-sns-login { display: block; margin: 50px auto 0 auto; text-indent: -9999px; @include sprite($sd-txt-sns-login); }
+	.login-btns { padding: 18px 0 40px 0; text-align: center;
+		&:after { content: ''; display: block; margin: 28px auto 0 auto; height: 50px; width: 1px; background-color: #b3b3b3; }
+
+		a { display: inline-block; margin: 0 1px; text-indent: -9999px;
+			&.facebook { @include sprite($sd-btn-facebook);
+				&.is-selected { @include sprite($sd-btn-facebook-selected); }
+			}
+			&.twitter { @include sprite($sd-btn-twitter);
+				&.is-selected { @include sprite($sd-btn-twitter-selected); }
+			}
+			&.kakaostory { @include sprite($sd-btn-kakaostory);
+				&.is-selected { @include sprite($sd-btn-kakaostory-selected); }
+			}
+		}
+	}
+
+	/* 영상 선택 */
+	.select-video { overflow: hidden; margin: 0 -23px 0 -23px; padding: 0 0 40px 0; text-align: center;
+		&:after { content: ''; display: block; margin: 44px auto 0 auto; height: 50px; width: 1px; background-color: #b3b3b3; }
+
+		> legend { display: block; position: static; visibility: visible; margin: 0 auto 22px auto; @include sprite($sd-txt-title-video); }
+
+		.iradio { display: inline-block;
+			+ label { display: inline-block; margin: 0 15px; text-indent: -9999px; cursor: pointer;
+				&.radio-video01 { @include sprite($sd-radio-video01); }
+				&.radio-video02 { @include sprite($sd-radio-video02); }
+				&.radio-video03 { @include sprite($sd-radio-video03); }
+			}
+
+			&.checked {
+				+ .radio-video01 { @include sprite($sd-radio-video01-selected); }
+				+ .radio-video02 { @include sprite($sd-radio-video02-selected); }
+				+ .radio-video03 { @include sprite($sd-radio-video03-selected); }
+			}
+		}
+	}
+
+	/* 댓글 쓰기 */
+	.write-comment {
+		> legend { display: block; position: static; visibility: visible; margin: 0 auto; @include sprite($sd-txt-comments01); }
+
+		.writer { overflow: hidden; position: relative; margin-top: 25px; padding-right: 180px; }
+		textarea { display: block; box-sizing: border-box; float: left; padding: 16px 0 0 20px; height: 100px; width: 100%; font-size: 14px; color: #4c4c4c; line-height: 20px; border: 3px solid #bdc3c5; border-right: 0px; background-color: #f0f0f0; }
+		.btn-write { display: block; position: absolute; top: 0; right: 0; height: 100px; width: 180px; background-color: #3a3f42;
+			span { display: inline-block; margin: 0 auto; text-indent: -9999px; @include sprite($sd-txt-write01); }
+		}
+		.remain-txt { display: block; position: absolute; bottom: 12px; right: 190px; font-size: 12px; color: #666; }
+	}
 }
 
 

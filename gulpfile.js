@@ -53,7 +53,7 @@ var paths = {
 		dest: 'sources/assets/styles/'
 	},
 	scripts: {
-		src: 'sources/assets/scripts/**/*.js',
+		src: 'sources/assets/scripts/*.js',
 		gulp: 'gulpfile.js',
 		vendor: '!sources/assets/scripts/vendor/*'
 	}
@@ -180,7 +180,7 @@ gulp.task('copy:assets', function () {
 	.pipe(gulp.dest('build/assets/'));
 });
 gulp.task('copy:scripts', function () {
-	return gulp.src(['sources/assets/scripts/**'])
+	return gulp.src([paths.scripts.src, paths.scripts.vendor])
 	.pipe(gulp.dest('build/assets/scripts/'));
 });
 gulp.task('copy:styles', function () {
@@ -209,7 +209,7 @@ gulp.task('watch', function () {
 	gulp.watch(['sources/html/**/*.html'], ['includes']);
 	gulp.watch(['sources/assets/styles/scss/*.scss'], ['sass', 'copy:styles']);
 	gulp.watch(['sources/assets/styles/*.css'], ['sass', 'copy:styles']);
-	gulp.watch([paths.scripts.gulp, paths.scripts.src, paths.scripts.vendor], ['check', 'copy:scripts']);
+	gulp.watch([paths.scripts.gulp, paths.scripts.src, paths.scripts.vendor], ['copy:scripts', 'check']);
 	gulp.watch(['sources/assets/images/*'], ['check', 'copy:images']);
 	gulp.watch(['sources/assets/images/sprites/*'], ['sprites:desktop', 'copy:images']);
 });
