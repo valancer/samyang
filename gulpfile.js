@@ -135,14 +135,15 @@ gulp.task('sass', function () {
 			expand: true,
 			flatten: true
 		}))
+		// .pipe(csscomb('config/csscomb.json'))
 		.pipe(gulp.dest(paths.styles.dest))
 		.pipe(livereload());
 });
 
 gulp.task('csscomb', function() {
-	return gulp.src('sources/assets/styles/*.css')
+	return gulp.src('build/assets/styles/*.css')
 		.pipe(csscomb('config/csscomb.json'))
-		.pipe(gulp.dest('sources/assets/styles/'));
+		.pipe(gulp.dest('build/assets/styles/'));
 });
 
 /*
@@ -168,8 +169,12 @@ gulp.task('jshint', function() {
 
 
 /* files - clean */
-gulp.task('clean', function () {
+gulp.task('clean:build', function () {
 	return gulp.src('build/', {read: false})
+	.pipe(clean());
+});
+gulp.task('clean:release', function () {
+	return gulp.src('release/', {read: false})
 	.pipe(clean());
 });
 
@@ -192,7 +197,7 @@ gulp.task('copy:images', function () {
 	.pipe(gulp.dest('build/assets/images/'));
 });
 gulp.task('copy:release', function () {
-	return gulp.src(['build/**'])
+	return gulp.src(['build/**/*'])
 	.pipe(gulp.dest('release/'));
 });
 
@@ -209,7 +214,7 @@ gulp.task('watch', function () {
 	gulp.watch(['sources/html/**/*.html'], ['includes']);
 	gulp.watch(['sources/assets/styles/scss/*.scss'], ['sass', 'copy:styles']);
 	gulp.watch(['sources/assets/styles/*.css'], ['sass', 'copy:styles']);
-	gulp.watch([paths.scripts.gulp, paths.scripts.src, paths.scripts.vendor], ['copy:scripts', 'check']);
+	gulp.watch([paths.scripts.gulp, paths.scripts.src, paths.scripts.vendor], ['copy:scripts']);
 	gulp.watch(['sources/assets/images/*'], ['check', 'copy:images']);
 	gulp.watch(['sources/assets/images/sprites/*'], ['sprites:desktop', 'copy:images']);
 });
@@ -231,10 +236,10 @@ gulp.task('sass-release', ['sprites:desktop', 'sass'], function() { });
 gulp.task('scripts-build', ['jshint'], function() { });
 gulp.task('html-build', ['includes'], function() { });
 
-gulp.task('build', ['clean'], function() {
+gulp.task('build', ['clean:build'], function() {
 	gulp.run(['sass-build', 'scripts-build', 'html-build', 'copy:assets', 'connect', 'watch']);
 });
-gulp.task('release', ['clean'], function() {
+gulp.task('release', ['clean:release'], function() {
 	gulp.run(['sass-release', 'scripts-build', 'html-build', 'copy:assets', 'csscomb', 'copy:release']);
 });
 
