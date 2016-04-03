@@ -1,0 +1,944 @@
+@charset "UTF-8";
+@import url(nanumgothic.css);
+@import url(slick.css);
+@import url(magnific-popup.css);
+/**
+ * variable
+ */
+body {
+  background-color: #fff; }
+
+/* Common Style */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, font, img, ins, q, s, samp, strike, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+  border: 0 none; }
+
+body {
+  position: relative;
+  /*min-height: 800px;*/
+  min-width: 1160px;
+  margin: 0 auto;
+  font-size: 100%;
+  line-height: 1em;
+  font-family: "Nanum Gothic", sans-serif;
+  -ms-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+header, h1 {
+  font-size: 100%; }
+
+html, body {
+  height: 100%; }
+
+caption, legend {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+caption {
+  display: none; }
+
+img {
+  border: none;
+  vertical-align: top;
+  /*width: 100%;*/ }
+
+select, input {
+  vertical-align: top; }
+
+hr {
+  display: none;
+  border: 0 none; }
+
+ol, ul, ul li {
+  list-style: none; }
+
+em {
+  font-style: normal; }
+
+menu li {
+  list-style: none; }
+
+address {
+  display: inline;
+  font-style: normal; }
+
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  border: 0px;
+  background-color: transparent; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, textarea, keygen, select, button {
+  font-family: "Nanum Gothic", sans-serif; }
+
+strong {
+  font-weight: normal; }
+
+dfn {
+  font-style: normal; }
+
+/* link Style */
+a:link, a:visited, a:active, a:focus {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+.hidden {
+  display: none !important; }
+
+.visible-hidden {
+  visibility: hidden !important; }
+
+.clear {
+  clear: both; }
+
+.txt-center {
+  text-align: center !important; }
+
+/* forms */
+fieldset {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+input[type=submit] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  border: 0px; }
+
+::-webkit-input-placeholder {
+  color: #ccd0d7; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ccd0d7; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ccd0d7; }
+
+:-ms-input-placeholder {
+  color: #ccd0d7; }
+
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+/**
+ * z-index
+**/
+/**
+ * states
+ */
+/**
+ * import
+ */
+/* GNB HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 800;
+  height: 78px;
+  border-bottom: 1px solid #c7c7c7;
+  background-color: #fff; }
+  .header > .inner {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 14px;
+    height: 64px;
+    width: 1000px; }
+  .header .logo {
+    display: block;
+    text-indent: -9999px;
+    background-image: url(/assets/images/sprites.png);
+    background-position: -1212px -447px;
+    width: 165px;
+    height: 43px; }
+  .header .menus {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 32px; }
+    .header .menus ul > li {
+      position: relative;
+      display: inline-block;
+      vertical-align: top; }
+      .header .menus ul > li a {
+        display: inline-block;
+        text-indent: -9999px; }
+        .header .menus ul > li a.menu01 {
+          background-image: url(/assets/images/sprites.png);
+          background-position: -1032px -677px;
+          width: 104px;
+          height: 14px; }
+          .header .menus ul > li a.menu01:hover {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -1032px -618px;
+            width: 104px;
+            height: 15px; }
+          .header .menus ul > li a.menu01.is-selected {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -1032px -618px;
+            width: 104px;
+            height: 15px; }
+        .header .menus ul > li a.menu02 {
+          background-image: url(/assets/images/sprites.png);
+          background-position: -1032px -658px;
+          width: 112px;
+          height: 13px; }
+          .header .menus ul > li a.menu02:hover {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -1032px -639px;
+            width: 112px;
+            height: 13px; }
+          .header .menus ul > li a.menu02.is-selected {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -1032px -639px;
+            width: 112px;
+            height: 13px; }
+        .header .menus ul > li a.menu03 {
+          position: relative;
+          top: -14px;
+          background-image: url(/assets/images/sprites.png);
+          background-position: -1212px -791px;
+          width: 113px;
+          height: 27px; }
+          .header .menus ul > li a.menu03:hover {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -1212px -824px;
+            width: 113px;
+            height: 27px; }
+          .header .menus ul > li a.menu03.is-selected {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -1212px -824px;
+            width: 113px;
+            height: 27px; }
+      .header .menus ul > li + li {
+        margin-left: 25px;
+        padding-left: 35px; }
+        .header .menus ul > li + li:before {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 5px;
+          left: 0;
+          background-image: url(/assets/images/sprites.png);
+          background-position: -1383px -447px;
+          width: 5px;
+          height: 5px; }
+
+/* contents */
+/* FOOTER */
+.footer {
+  height: 92px;
+  background-color: #fff; }
+  .footer > .inner {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 1000px; }
+  .footer .logo {
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 0;
+    text-indent: -9999px;
+    background-image: url(/assets/images/sprites.png);
+    background-position: -1212px -751px;
+    width: 131px;
+    height: 34px; }
+  .footer .txt-copyright {
+    display: block;
+    text-indent: -9999px;
+    background-image: url(/assets/images/sprites.png);
+    background-position: -472px -914px;
+    width: 375px;
+    height: 12px; }
+  .footer .txt-address {
+    display: block;
+    margin-top: 8px;
+    text-indent: -9999px;
+    background-image: url(/assets/images/sprites.png);
+    background-position: -472px -932px;
+    width: 336px;
+    height: 11px; }
+
+/* CONTENTS */
+/* 댓글 목록 */
+.comment-item {
+  position: relative;
+  padding: 14px 0 23px 143px;
+  /* 카드 스타일 */ }
+  .comment-item .user {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 128px; }
+    .comment-item .user .thumb {
+      position: relative;
+      margin: 14px auto 0 auto;
+      height: 68px;
+      width: 68px; }
+      .comment-item .user .thumb .via {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-indent: -9999px; }
+        .comment-item .user .thumb .via.facebook {
+          background-image: url(/assets/images/sprites.png);
+          background-position: -1360px -791px;
+          width: 23px;
+          height: 24px; }
+        .comment-item .user .thumb .via.twitter {
+          background-image: url(/assets/images/sprites.png);
+          background-position: -1331px -791px;
+          width: 23px;
+          height: 24px; }
+        .comment-item .user .thumb .via.kakaostory {
+          background-image: url(/assets/images/sprites.png);
+          background-position: -1349px -751px;
+          width: 23px;
+          height: 24px; }
+      .comment-item .user .thumb img {
+        display: block;
+        box-sizing: border-box;
+        max-height: 100%;
+        max-width: 100%;
+        border: 4px solid #0895d7;
+        border-radius: 68px; }
+    .comment-item .user figcaption {
+      display: block;
+      text-align: center; }
+    .comment-item .user .icons {
+      display: block;
+      position: absolute;
+      top: 22px;
+      left: 143px;
+      text-indent: -9999px; }
+    .comment-item .user .name {
+      display: block;
+      margin: 9px auto 0 auto;
+      font-size: 12px;
+      font-weight: bold;
+      color: #333; }
+      .comment-item .user .name:before {
+        content: attr(data-before);
+        margin-right: 3px;
+        font-weight: normal;
+        letter-spacing: -0.1em; }
+    .comment-item .user.founded img {
+      border: 4px solid #0895d7; }
+    .comment-item .user.founded .icons {
+      top: 28px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: -1212px -1062px;
+      width: 91px;
+      height: 18px; }
+    .comment-item .user.health img {
+      border: 4px solid #f15234; }
+    .comment-item .user.health .icons {
+      background-image: url(/assets/images/sprites.png);
+      background-position: -1212px -1005px;
+      width: 91px;
+      height: 26px; }
+    .comment-item .user.car img {
+      border: 4px solid #9bb226; }
+    .comment-item .user.car .icons {
+      top: 26px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: -1212px -949px;
+      width: 114px;
+      height: 20px; }
+  .comment-item .comment {
+    margin-top: 42px;
+    font-size: 14px;
+    color: #4c4c4c;
+    line-height: 20px; }
+  .type-card .comment-item {
+    padding: 35px 22px 0 21px;
+    height: 273px;
+    width: 260px;
+    background: url("/assets/images/bg_card.png") left top no-repeat; }
+    .type-card .comment-item .user {
+      overflow: hidden;
+      position: static;
+      width: 100%; }
+      .type-card .comment-item .user .thumb {
+        float: left;
+        margin: 0 0 0 14px;
+        height: 80px;
+        width: 80px; }
+        .type-card .comment-item .user .thumb .via {
+          display: none; }
+      .type-card .comment-item .user figcaption {
+        float: left;
+        padding-left: 18px; }
+      .type-card .comment-item .user .icons {
+        position: static; }
+      .type-card .comment-item .user .name {
+        margin: 5px 0 0 0;
+        font-size: 14px;
+        color: #333;
+        text-align: left; }
+        .type-card .comment-item .user .name:before {
+          content: '';
+          display: inline-block;
+          margin-right: 5px;
+          vertical-align: middle;
+          background-image: url(/assets/images/sprites.png);
+          background-position: -1331px -824px;
+          width: 34px;
+          height: 11px; }
+      .type-card .comment-item .user.founded .icons {
+        margin-top: 19px;
+        background-image: url(/assets/images/sprites.png);
+        background-position: -1212px -975px;
+        width: 98px;
+        height: 24px; }
+      .type-card .comment-item .user.health .icons {
+        margin-top: 14px;
+        background-image: url(/assets/images/sprites.png);
+        background-position: -1212px -914px;
+        width: 92px;
+        height: 29px; }
+      .type-card .comment-item .user.car .icons {
+        margin-top: 22px;
+        background-image: url(/assets/images/sprites.png);
+        background-position: -1212px -886px;
+        width: 119px;
+        height: 22px; }
+    .type-card .comment-item .comment {
+      display: block;
+      margin: 20px 0 0 0;
+      padding: 20px 9px 0 9px;
+      height: 140px;
+      font-size: 12px;
+      color: #333;
+      line-height: 22px;
+      border-top: 1px dashed #b8b8b8; }
+
+.list-comments {
+  margin-top: 20px;
+  border-bottom: 2px solid #c7c7c7;
+  /* 카드 스타일 */ }
+  .list-comments li {
+    position: relative;
+    border-top: 1px solid #e2e2e2; }
+    .list-comments li:first-child {
+      border-top: 2px solid #c7c7c7; }
+  .list-comments.type-card {
+    box-sizing: border-box;
+    margin: 50px auto 0 auto;
+    padding-left: 19px;
+    width: 1000px;
+    border: 0px; }
+    .list-comments.type-card li {
+      display: block;
+      float: left;
+      border: 0px; }
+  .list-comments .btn-slider {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    text-indent: -9999px; }
+    .list-comments .btn-slider.prev {
+      left: -35px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: -1094px -697px;
+      width: 25px;
+      height: 41px; }
+      .list-comments .btn-slider.prev:hover {
+        background-image: url(/assets/images/sprites.png);
+        background-position: -1032px -697px;
+        width: 25px;
+        height: 41px; }
+    .list-comments .btn-slider.next {
+      right: -35px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: -1125px -697px;
+      width: 25px;
+      height: 41px; }
+      .list-comments .btn-slider.next:hover {
+        background-image: url(/assets/images/sprites.png);
+        background-position: -1063px -697px;
+        width: 25px;
+        height: 41px; }
+  .list-comments .slick-dots {
+    position: absolute;
+    bottom: -41px;
+    right: 0;
+    left: 0;
+    text-align: center; }
+    .list-comments .slick-dots > li {
+      display: inline-block;
+      float: none; }
+      .list-comments .slick-dots > li button {
+        display: inline-block;
+        margin: 0 3px;
+        text-indent: -9999px;
+        background-image: url(/assets/images/sprites.png);
+        background-position: -1366px -857px;
+        width: 15px;
+        height: 16px; }
+      .list-comments .slick-dots > li.slick-active button {
+        background-image: url(/assets/images/sprites.png);
+        background-position: -1345px -857px;
+        width: 15px;
+        height: 16px; }
+
+.more-comments {
+  padding: 15px 0 0 0; }
+  .more-comments a {
+    display: block;
+    margin: 0 auto;
+    text-indent: -9999px;
+    background-image: url(/assets/images/sprites.png);
+    background-position: -1310px -914px;
+    width: 68px;
+    height: 16px; }
+
+/* 당신으로 부터, SAY 삼양 */
+.say-samyang {
+  position: relative;
+  z-index: 3;
+  padding-top: 79px;
+  background: url("/assets/images/bg_section01.jpg") center bottom no-repeat; }
+  .say-samyang > .inner {
+    margin: 0 auto;
+    width: 1160px; }
+    .say-samyang > .inner > .title {
+      display: block;
+      margin: 20px auto 0 auto;
+      text-indent: -9999px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: 0px 0px;
+      width: 710px;
+      height: 123px; }
+  .say-samyang .video-container {
+    position: relative;
+    margin-top: 30px;
+    padding-top: 20px;
+    height: 670px;
+    background: url("/assets/images/bg_video_container.png") center top no-repeat; }
+    .say-samyang .video-container .video {
+      position: relative;
+      z-index: 100;
+      margin: 0 auto;
+      height: 395px;
+      width: 700px;
+      background-color: #000; }
+    .say-samyang .video-container .description {
+      position: absolute;
+      top: 456px;
+      left: 50%;
+      margin-left: -200px;
+      height: 81px;
+      width: 400px; }
+      .say-samyang .video-container .description .story-founded {
+        margin: 0 auto;
+        text-indent: -9999px;
+        background-image: url(/assets/images/sprites.png);
+        background-position: -472px -828px;
+        width: 333px;
+        height: 80px; }
+      .say-samyang .video-container .description .story-health {
+        margin: 0 auto;
+        text-indent: -9999px;
+        background-image: url(/assets/images/sprites.png);
+        background-position: -576px -705px;
+        width: 366px;
+        height: 81px; }
+      .say-samyang .video-container .description .story-car {
+        margin: 0 auto;
+        text-indent: -9999px;
+        background-image: url(/assets/images/sprites.png);
+        background-position: 0px -1011px;
+        width: 333px;
+        height: 79px; }
+    .say-samyang .video-container .btn {
+      display: block;
+      position: absolute;
+      top: 143px;
+      left: 449px;
+      text-indent: -9999px; }
+      .say-samyang .video-container .btn.btn-story-founded {
+        background-image: url(/assets/images/sprites.png);
+        background-position: -1032px -206px;
+        width: 174px;
+        height: 200px; }
+      .say-samyang .video-container .btn.btn-story-health {
+        background-image: url(/assets/images/sprites.png);
+        background-position: -1032px -412px;
+        width: 174px;
+        height: 200px; }
+      .say-samyang .video-container .btn.btn-story-car {
+        background-image: url(/assets/images/sprites.png);
+        background-position: -1032px 0px;
+        width: 174px;
+        height: 200px; }
+
+/* 당신의 소중한 이야기에 귀기울입니다. */
+.summary-story {
+  position: relative;
+  z-index: 2;
+  background-color: #50b3e1; }
+  .ie8 .summary-story {
+    margin-top: -79px;
+    padding-top: 79px; }
+  .ie9 .summary-story {
+    margin-top: -79px;
+    padding-top: 79px; }
+  .summary-story > .inner {
+    margin: 0 auto;
+    padding: 33px 0 88px 0;
+    width: 1160px; }
+    .summary-story > .inner > .title {
+      margin: 0 auto;
+      text-indent: -9999px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: 0px -828px;
+      width: 466px;
+      height: 115px; }
+
+/* 삼양그룹에게 당신의 이야기를 들려주세요! */
+.your-story {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  /* SNS 로그인 */
+  /* 영상 선택 */
+  /* 댓글 쓰기 */ }
+  .your-story:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 603px;
+    height: 155px;
+    width: 100%;
+    background: url("/assets/images/bg_section02.png") center top repeat-x; }
+  .ie8 .your-story {
+    margin-top: -79px;
+    padding-top: 79px; }
+    .ie8 .your-story:before {
+      top: 682px; }
+  .ie9 .your-story {
+    margin-top: -79px;
+    padding-top: 79px; }
+    .ie9 .your-story:before {
+      top: 682px; }
+  .your-story > header {
+    margin: 0 auto;
+    padding: 68px 0px 85px 0px;
+    width: 1000px; }
+    .your-story > header > .title {
+      margin: 0 auto;
+      text-indent: -9999px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: 0px -705px;
+      width: 570px;
+      height: 117px; }
+    .your-story > header .txt-desc {
+      margin: 27px auto 0 auto;
+      text-indent: -9999px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: -339px -1011px;
+      width: 422px;
+      height: 54px; }
+      .your-story > header .txt-desc br {
+        display: none; }
+    .your-story > header dl {
+      display: block;
+      position: relative;
+      margin: 25px auto 0 auto;
+      background-image: url(/assets/images/sprites.png);
+      background-position: -576px -792px;
+      width: 405px;
+      height: 24px; }
+      .your-story > header dl dt, .your-story > header dl dd {
+        position: absolute;
+        top: -9999px;
+        left: -9999px; }
+    .your-story > header .list-gifts {
+      margin-top: 60px;
+      text-align: center; }
+      .your-story > header .list-gifts > li {
+        display: inline-block;
+        padding: 0 14px 0 13px; }
+        .your-story > header .list-gifts > li span {
+          display: block;
+          text-indent: -9999px; }
+          .your-story > header .list-gifts > li span.gift-founded {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -1212px -149px;
+            width: 177px;
+            height: 143px; }
+          .your-story > header .list-gifts > li span.gift-health {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -1212px 0px;
+            width: 177px;
+            height: 143px; }
+          .your-story > header .list-gifts > li span.gift-car {
+            background-image: url(/assets/images/sprites.png);
+            background-position: -1212px -298px;
+            width: 177px;
+            height: 143px; }
+  .your-story > .inner {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 0 70px 0;
+    width: 1000px; }
+  .your-story .txt-sns-login {
+    display: block;
+    margin: 50px auto 0 auto;
+    text-indent: -9999px;
+    background-image: url(/assets/images/sprites.png);
+    background-position: -716px -626px;
+    width: 185px;
+    height: 19px; }
+  .your-story .login-btns {
+    padding: 18px 0 40px 0;
+    text-align: center; }
+    .your-story .login-btns:after {
+      content: '';
+      display: block;
+      margin: 28px auto 0 auto;
+      height: 50px;
+      width: 1px;
+      background-color: #b3b3b3; }
+    .your-story .login-btns a {
+      display: inline-block;
+      margin: 0 1px;
+      text-indent: -9999px; }
+      .your-story .login-btns a.facebook {
+        background-image: url(/assets/images/sprites.png);
+        background-position: -1212px -496px;
+        width: 79px;
+        height: 79px; }
+        .your-story .login-btns a.facebook.is-selected {
+          background-image: url(/assets/images/sprites.png);
+          background-position: -1297px -581px;
+          width: 79px;
+          height: 79px; }
+      .your-story .login-btns a.twitter {
+        background-image: url(/assets/images/sprites.png);
+        background-position: -1297px -666px;
+        width: 79px;
+        height: 79px; }
+        .your-story .login-btns a.twitter.is-selected {
+          background-image: url(/assets/images/sprites.png);
+          background-position: -1212px -666px;
+          width: 79px;
+          height: 79px; }
+      .your-story .login-btns a.kakaostory {
+        background-image: url(/assets/images/sprites.png);
+        background-position: -1297px -496px;
+        width: 79px;
+        height: 79px; }
+        .your-story .login-btns a.kakaostory.is-selected {
+          background-image: url(/assets/images/sprites.png);
+          background-position: -1212px -581px;
+          width: 79px;
+          height: 79px; }
+  .your-story .select-video {
+    overflow: hidden;
+    margin: 0 -23px 0 -23px;
+    padding: 0 0 40px 0;
+    text-align: center; }
+    .your-story .select-video:after {
+      content: '';
+      display: block;
+      margin: 44px auto 0 auto;
+      height: 50px;
+      width: 1px;
+      background-color: #b3b3b3; }
+    .your-story .select-video > legend {
+      display: block;
+      position: static;
+      visibility: visible;
+      margin: 0 auto 22px auto;
+      background-image: url(/assets/images/sprites.png);
+      background-position: -716px -601px;
+      width: 239px;
+      height: 19px; }
+    .your-story .select-video .iradio {
+      display: inline-block; }
+      .your-story .select-video .iradio + label {
+        display: inline-block;
+        margin: 0 15px;
+        text-indent: -9999px;
+        cursor: pointer; }
+        .your-story .select-video .iradio + label.radio-video01 {
+          background-image: url(/assets/images/sprites.png);
+          background-position: 0px -129px;
+          width: 310px;
+          height: 282px; }
+        .your-story .select-video .iradio + label.radio-video02 {
+          background-image: url(/assets/images/sprites.png);
+          background-position: 0px -417px;
+          width: 310px;
+          height: 282px; }
+        .your-story .select-video .iradio + label.radio-video03 {
+          background-image: url(/assets/images/sprites.png);
+          background-position: -716px -288px;
+          width: 310px;
+          height: 282px; }
+      .your-story .select-video .iradio.checked + .radio-video01 {
+        background-image: url(/assets/images/sprites.png);
+        background-position: -316px -129px;
+        width: 310px;
+        height: 282px; }
+      .your-story .select-video .iradio.checked + .radio-video02 {
+        background-image: url(/assets/images/sprites.png);
+        background-position: -316px -417px;
+        width: 310px;
+        height: 282px; }
+      .your-story .select-video .iradio.checked + .radio-video03 {
+        background-image: url(/assets/images/sprites.png);
+        background-position: -716px 0px;
+        width: 310px;
+        height: 282px; }
+  .your-story .write-comment > legend {
+    display: block;
+    position: static;
+    visibility: visible;
+    margin: 0 auto;
+    background-image: url(/assets/images/sprites.png);
+    background-position: -716px -576px;
+    width: 293px;
+    height: 19px; }
+  .your-story .write-comment .writer {
+    overflow: hidden;
+    position: relative;
+    margin-top: 25px;
+    padding-right: 180px; }
+  .your-story .write-comment textarea {
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    padding: 16px 0 0 20px;
+    height: 100px;
+    width: 100%;
+    font-size: 14px;
+    color: #4c4c4c;
+    line-height: 20px;
+    border: 3px solid #bdc3c5;
+    border-right: 0px;
+    background-color: #f0f0f0; }
+  .your-story .write-comment .btn-write {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100px;
+    width: 180px;
+    background-color: #3a3f42; }
+    .your-story .write-comment .btn-write span {
+      display: inline-block;
+      margin: 0 auto;
+      text-indent: -9999px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: -1212px -1037px;
+      width: 105px;
+      height: 19px; }
+  .your-story .write-comment .remain-txt {
+    display: block;
+    position: absolute;
+    bottom: 12px;
+    right: 190px;
+    font-size: 12px;
+    color: #666; }
+
+/* 이벤트 유의사항 */
+.guide {
+  background-color: #e6e6e6; }
+  .guide > .inner {
+    margin: 0 auto;
+    padding: 27px 0 28px 14px;
+    width: 986px; }
+    .guide > .inner > .title {
+      text-indent: -9999px;
+      background-image: url(/assets/images/sprites.png);
+      background-position: -1212px -857px;
+      width: 127px;
+      height: 23px; }
+  .guide .list-guide {
+    position: relative;
+    overflow: hidden;
+    margin-top: 16px;
+    background-image: url(/assets/images/sprites.png);
+    background-position: 0px -949px;
+    width: 899px;
+    height: 56px; }
+    .guide .list-guide > li {
+      position: absolute;
+      top: -9999px;
+      left: -9999px; }
