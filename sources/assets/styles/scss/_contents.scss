@@ -233,3 +233,57 @@
 		> li { position: absolute; top: -9999px; left: -9999px; }
 	}
 }
+
+
+
+/* 응모팝업 */
+.popup-application { margin: 0 auto; padding: 38px 50px 35px 50px; width: 550px; background: #fff url('/assets/images/bg_popup01.png') center top no-repeat;
+	> .title { display: block; margin: 0 auto; text-indent: -9999px; @include sprite($sd-txt-title-popup01); }
+
+	/* 기본 정보 */
+	.basic-info { margin-top: 65px; padding: 16px 0 16px 0; color: #bdc3c5; text-align: center; border: 1px solid #e6e6e6;
+		label { display: inline-block; margin-right: 5px; text-indent: -9999px;
+			&.txt-name { @include sprite($sd-txt-name01); }
+			&.txt-phone { margin-left: 25px; @include sprite($sd-txt-phone01); }
+		}
+		
+		input[type=text] { width: 73px; font-size: 14px; color: #333; line-height: 34px; vertical-align: middle; text-align: center; border: 1px solid #bdc3c5; background-color: #f0f0f0; }
+	}
+
+	/* 동의 항목 */
+	.agreements { margin-top: 35px;
+		+ .agreements { margin-top: 25px; padding-top: 30px; border-top: 1px dashed #bcbcbc; }
+
+		.txt-agreement01 { display: block; text-indent: -9999px; @include sprite($sd-txt-title-popup02); }
+		.txt-agreement02 { display: block; text-indent: -9999px; @include sprite($sd-txt-title-popup03); }
+
+		.list-agreement { margin-top: 10px; padding: 14px 0 14px 26px; background-color: #f0f0f0;
+			> li { font-size: 12px; color: #666; line-height: 24px;
+				em { font-weight: bold;
+					&:before { content: '·'; margin-right: 2px; }
+				}
+			}
+		}
+		.message { margin-top: 10px; font-size: 12px; color: #f28975; text-align: center; }
+
+		.radios { margin-top: 12px; text-align: center; }
+
+		.iradio { display: inline-block;
+			+ label { display: inline-block; margin: 0 15px; text-indent: -9999px; cursor: pointer;
+				&.agreement-yes { @include sprite($sd-radio-agreement01); }
+				&.agreement-no { @include sprite($sd-radio-agreement02); }
+			}
+
+			&.checked {
+				+ .agreement-yes { @include sprite($sd-radio-agreement01-selected); }
+				+ .agreement-no { @include sprite($sd-radio-agreement02-selected); }
+			}
+		}
+	}
+
+	.btn-application { display: block; margin: 40px auto 0 auto; text-indent: -9999px; @include sprite($sd-btn-application01); background-color: transparent; }
+	.mfp-close { display: block; position: absolute; top: 0; left: 50%; margin-left: 330px; text-indent: -9999px; @include sprite($sd-btn-close01); }
+}
+
+
+
