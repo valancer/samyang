@@ -122,8 +122,10 @@
 
 /* 당신의 소중한 이야기에 귀기울입니다. */
 .summary-story { position: relative; z-index: z("default")+1; background-color: #50b3e1;
-	.ie8 & { margin-top: -79px; padding-top: 79px; }
-	.ie9 & { margin-top: -79px; padding-top: 79px; }
+	.msie8 &,
+	.msie9 &,
+	.msie10 &,
+	.msie11 & { margin-top: -79px; padding-top: 79px; }
 
 	> .inner { margin: 0 auto; padding: 33px 0 88px 0; width: 1160px;
 		> .title { margin: 0 auto; text-indent: -9999px; @include sprite($sd-title-section02); }
@@ -139,10 +141,10 @@
 .your-story { position: relative; z-index: z("default"); background-color: #fff;
 	&:before { content: ''; display: block; position: absolute; top: 603px; height: 155px; width: 100%; background: url('/assets/images/bg_section02.png') center top repeat-x; }
 
-	.ie8 & { margin-top: -79px; padding-top: 79px;
-		&:before { top: 682px; }
-	}
-	.ie9 & { margin-top: -79px; padding-top: 79px;
+	.msie8 &,
+	.msie9 &,
+	.msie10 &,
+	.msie11 & { margin-top: -79px; padding-top: 79px;
 		&:before { top: 682px; }
 	}
 

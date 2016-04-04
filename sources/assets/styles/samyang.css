@@ -651,10 +651,10 @@ The `sprites` mixin generates identical output to the CSS template
   position: relative;
   z-index: 2;
   background-color: #50b3e1; }
-  .ie8 .summary-story {
-    margin-top: -79px;
-    padding-top: 79px; }
-  .ie9 .summary-story {
+  .msie8 .summary-story,
+  .msie9 .summary-story,
+  .msie10 .summary-story,
+  .msie11 .summary-story {
     margin-top: -79px;
     padding-top: 79px; }
   .summary-story > .inner {
@@ -685,15 +685,16 @@ The `sprites` mixin generates identical output to the CSS template
     height: 155px;
     width: 100%;
     background: url("/assets/images/bg_section02.png") center top repeat-x; }
-  .ie8 .your-story {
+  .msie8 .your-story,
+  .msie9 .your-story,
+  .msie10 .your-story,
+  .msie11 .your-story {
     margin-top: -79px;
     padding-top: 79px; }
-    .ie8 .your-story:before {
-      top: 682px; }
-  .ie9 .your-story {
-    margin-top: -79px;
-    padding-top: 79px; }
-    .ie9 .your-story:before {
+    .msie8 .your-story:before,
+    .msie9 .your-story:before,
+    .msie10 .your-story:before,
+    .msie11 .your-story:before {
       top: 682px; }
   .your-story > header {
     margin: 0 auto;
