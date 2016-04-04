@@ -17,6 +17,7 @@ $(document).ready(function(e) {
 
 	// icheck
 	$('.select-video input[type=radio]').iCheck();
+	$('.radios input[type=radio]').iCheck();
 
 });
 
