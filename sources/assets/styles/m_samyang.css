@@ -684,7 +684,6 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     .say-samyang .video-container .video {
       position: relative;
       top: 7px;
-      left: 1px;
       z-index: 100;
       margin: 0 auto;
       height: 150px;

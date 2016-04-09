@@ -121,61 +121,18 @@ var Video = (function(e) {
 	function initEvent() {
 		$btnItems.on('click', function(e) {
 			e.preventDefault();
+			$btnItems.removeClass('is-selected');
 
 			var target = this.hash.split('#').pop();
-			isFirst = true;
+			$(this).addClass('is-selected');
 			resetLayout(target);
 		});
 	}
 
 	function resetLayout(targetIndex) {
-		beforeLayout(function() {
-			currentIndex = targetIndex;
+		currentIndex = targetIndex;
 
-			$video.html(data[currentIndex].iframe);
-			$btnItems.each(function(index) {
-				var target = this.hash.split('#').pop();
-				
-				if( currentIndex == target ) {
-					strDesc = '';
-					strDesc += '<div class="' + data[currentIndex].cssClass + '">';
-					strDesc += '	<h3>' + data[currentIndex].title + '</h3>';
-					strDesc += '	<p>' + data[currentIndex].desc + '</p>';
-					strDesc += '</div>';
-
-					$(this).css('left', '449');
-					$description.html(strDesc);
-					$description.stop().fadeIn('500', 'swing');
-				} else if( isFirst ) {
-					// left
-					isFirst = false;
-					$(this).stop().animate({
-						'left': '46'
-					}, 1000, 'swing', function () {
-					});
-				} else {
-					// right
-					$(this).stop().animate({
-						'left': '944'
-					}, 1000, 'swing', function () {
-					});
-				}
-			})
-		});
-	}
-
-	function beforeLayout(callback) {
-		$description.stop().fadeOut('500', 'swing');
-
-		$btnItems.each(function(index) {
-			$(this).stop().animate({
-				'left': '449'
-			}, 500, 'swing', function () {
-			});
-		}).promise().done(function () {
-			$video.empty();
-			callback();
-		});
+		$video.html(data[currentIndex].iframe);
 	}
 
 	return {

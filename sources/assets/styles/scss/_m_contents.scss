@@ -97,12 +97,18 @@
 	.video-container { position: relative; margin: 3px auto 0 auto; padding-bottom: 15px; min-height: 179px; width: 320px; text-align: center; background: url('/assets/images/mobile/bg_video_container.png') center top no-repeat;
 		@include retina { background-image: url('/assets/images/mobile/bg_video_container@2x.png'); background-size: 100%; }
 
-		.video { position: relative; top: 7px; left: 1px; z-index: z("tooltip"); margin: 0 auto; height: 150px; width: 265px; background-color: rgba(255,255,255,0.3); }
+		.video { position: relative; top: 7px; z-index: z("tooltip"); margin: 0 auto; height: 150px; width: 265px; background-color: rgba(255,255,255,0.3); }
 
 		.btn { display: inline-block; margin: 25px 12px 0; text-indent: -9999px;
-			&.btn-story-founded { @include retina-sprite($sm-btn-story01-group); }
-			&.btn-story-health { @include retina-sprite($sm-btn-story02-group); }
-			&.btn-story-car { @include retina-sprite($sm-btn-story03-group); }
+			&.btn-story-founded { @include retina-sprite($sm-btn-story01-group);
+				&.is-selected { }
+			}
+			&.btn-story-health { @include retina-sprite($sm-btn-story02-group);
+				&.is-selected { }
+			}
+			&.btn-story-car { @include retina-sprite($sm-btn-story03-group);
+				&.is-selected { }
+			}
 		}
 	}
 }
