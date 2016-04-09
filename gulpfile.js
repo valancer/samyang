@@ -104,7 +104,9 @@ gulp.task('sprites:desktop', function () {
 gulp.task('sprites:mobile', function () {
 	var spriteData = gulp.src(paths.sprites.mobile.src).pipe(spritesmith({
 		retinaSrcFilter: paths.sprites.mobile.filter,
+		imgPath: '/assets/images/mobile/sprites_mobile.png',
 		imgName: 'sprites_mobile.png',
+		retinaImgPath: '/assets/images/mobile/sprites_mobile@2x.png',
 		retinaImgName: 'sprites_mobile@2x.png',
 		cssName: '_sprites_mobile.scss',
 		padding: 6,
@@ -193,7 +195,7 @@ gulp.task('copy:styles', function () {
 	.pipe(gulp.dest('build/assets/styles/'));
 });
 gulp.task('copy:images', function () {
-	return gulp.src(['sources/assets/images/**', '!**/sprites', '!**/sprites/**'])
+	return gulp.src(['sources/assets/images/**', 'sources/assets/images/mobile/**', '!**/sprites', '!**/sprites/**'])
 	.pipe(gulp.dest('build/assets/images/'));
 });
 gulp.task('copy:release', function () {
@@ -217,6 +219,8 @@ gulp.task('watch', function () {
 	gulp.watch([paths.scripts.gulp, paths.scripts.src, paths.scripts.vendor], ['copy:scripts']);
 	gulp.watch(['sources/assets/images/*'], ['check', 'copy:images']);
 	gulp.watch(['sources/assets/images/sprites/*'], ['sprites:desktop', 'copy:images']);
+	gulp.watch(['sources/assets/images/mobile/*'], ['check', 'copy:images']);
+	gulp.watch(['sources/assets/images/mobile/sprites/*'], ['sprites:mobile', 'copy:images']);
 });
 
 
@@ -231,13 +235,16 @@ gulp.task('connect', function () {
 
 
 
-gulp.task('sass-build', ['sprites:desktop', 'sass'], function() { });
-gulp.task('sass-release', ['sprites:desktop', 'sass'], function() { });
+gulp.task('sass-build', ['sprites:desktop', 'sprites:mobile', 'sass'], function() { });
+gulp.task('sass-release', ['sprites:desktop', 'sprites:mobile', 'sass'], function() { });
 gulp.task('scripts-build', ['jshint'], function() { });
 gulp.task('html-build', ['includes'], function() { });
 
 gulp.task('build', ['clean:build'], function() {
 	gulp.run(['sass-build', 'scripts-build', 'html-build', 'copy:assets', 'connect', 'watch']);
+});
+gulp.task('build:mobile', ['clean:build'], function() {
+	gulp.run(['sprites:mobile', 'sass', 'scripts-build', 'html-build', 'copy:assets', 'connect', 'watch']);
 });
 gulp.task('release', ['clean:release'], function() {
 	gulp.run(['sass-release', 'scripts-build', 'html-build', 'copy:assets', 'csscomb', 'copy:release']);

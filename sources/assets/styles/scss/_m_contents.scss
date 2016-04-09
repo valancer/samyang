@@ -1,0 +1,205 @@
+/* 댓글 목록 */
+.comment-item { position: relative; padding: 12px 0 13px 45px; min-height: 77px;
+	.user { position: absolute; top: 12px; left: 0px; width: 100%; 
+		.thumb { position: relative; height: 34px; width: 34px; 
+			.via { display: block; position: absolute; bottom: 0; right: 0; text-indent: -9999px;
+				&.facebook { @include retina-sprite($sm-icon-via01-group); }
+				&.twitter { @include retina-sprite($sm-icon-via02-group); }
+				&.kakaostory { @include retina-sprite($sm-icon-via03-group); }
+			}
+			img { display: block; box-sizing: border-box; height: 100%; width: 100%; border: 2px solid #0895d7; border-radius: 34px; }
+		}
+		figcaption { display: block; position: absolute; top: 0px; left: 45px; }
+		.icons { display: inline-block; margin-right: 5px; text-indent: -9999px; vertical-align: top; }
+		.name { display: inline-block; font-size: 11px; font-weight: bold; color: #333;
+			&:before { content: attr(data-before); display: inline-block; margin-right: 3px; font-weight: normal; color: #999; letter-spacing: -0.1em; }
+		}
+
+
+		&.founded {
+			img { border: 2px solid #0895d7; }
+			.icons { @include retina-sprite($sm-icon-story01-group); }	
+		}
+		&.health {
+			img { border: 2px solid #f15234; }
+			.icons { @include retina-sprite($sm-icon-story02-group); }
+		}
+		&.car {
+			img { border: 2px solid #9bb226; }
+			.icons { @include retina-sprite($sm-icon-story03-group); }
+		}
+	}
+
+	.comment { margin-top: 25px; font-size: 11px; color: #4c4c4c; line-height: 17px; }
+
+
+	/* 카드 스타일 */
+	.type-card & { box-sizing: border-box; margin: 0; padding: 0 10px 0 8px; min-height: auto; @include retina-sprite($sm-bg-card-group);
+		.user { display: block; overflow: hidden; position: static; padding: 22px 0 13px 13px; width: auto;
+			.thumb { float: left; margin: 0; height: 47px; width: 47px;
+				.via { display: none; }
+			}
+			figcaption { position: static; float: left; margin: 5px 0 0 6px; width: auto; }
+			.icons { position: static; }
+			.name { display: block; margin: 5px 0 0 0; font-size: 15px; color: #333; text-align: left; }
+		}
+		.comment { display: block; box-sizing: border-box; margin: 0px; padding: 12px 10px 0 10px; height: 114px; width: 100%; font-size: 11px; color: #333; line-height: 17px; border-top: 1px dashed #b8b8b8; }
+	}
+}
+
+
+.list-comments { margin-top: 20px; border-bottom: 2px solid #c7c7c7;
+	li { position: relative; padding: 0 20px 0 20px; border-top: 1px solid #e2e2e2;
+		&:first-child { border-top: 2px solid #c7c7c7; }
+	}
+
+	/* 카드 스타일 */
+	&.type-card { box-sizing: border-box; margin: 20px 46px 0 46px; padding: 0; border: 0px;
+		li { display: block; float: left; border: 0px; }
+	}
+
+
+	// slick
+	.btn-slider { display: none; position: absolute; top: 50%; z-index: z('default'); margin-top: -13px; text-indent: -9999px;
+		&.prev { left: -26px; @include retina-sprite($sm-btn-prev-group); }
+		&.next { right: -26px; @include retina-sprite($sm-btn-next-group); }
+	}
+
+	.slick-dots { display: none; position: absolute; bottom: -30px; right: 0; left: 0; text-align: center;
+		> li { display: inline-block; float: none; padding: 0;
+			button { display: inline-block; box-sizing: border-box; margin: 0 3px; height: 10px; width: 10px; text-indent: -9999px; border: 2px solid #fff; border-radius: 10px; background-color: transparent; }
+
+			&.slick-active {
+				button { background-color: #fff; }
+			}
+		}
+	}
+
+}
+
+.more-comments {
+	a { display: block; position: relative; padding: 12px 0 17px 0; text-indent: -9999px;
+		&:before { content: ''; display: block; position: absolute; top: 50%; left: 50%; margin-top: -$sm-btn-more01-height/2; margin-left: -$sm-btn-more01-width/2; @include retina-sprite($sm-btn-more01-group); }
+	}
+}
+
+
+
+
+
+
+/* 당신으로 부터, SAY 삼양 */
+.say-samyang { position: relative; z-index: z("default")+2; padding-top: 110px; background: url('/assets/images/mobile/bg_section01.png') center bottom no-repeat;
+	@include retina { background-image: url('/assets/images/mobile/bg_section01@2x.png'); }
+
+	> .title { display: block; margin: 3px auto 0 auto; text-indent: -9999px; @include retina-sprite($sm-title-section01-group); }
+	
+	.video-container { position: relative; margin: 3px auto 0 auto; padding-bottom: 15px; min-height: 179px; width: 320px; text-align: center; background: url('/assets/images/mobile/bg_video_container.png') center top no-repeat;
+		@include retina { background-image: url('/assets/images/mobile/bg_video_container@2x.png'); background-size: 100%; }
+
+		.video { position: relative; top: 7px; left: 1px; z-index: z("tooltip"); margin: 0 auto; height: 150px; width: 265px; background-color: rgba(255,255,255,0.3); }
+
+		.btn { display: inline-block; margin: 25px 12px 0; text-indent: -9999px;
+			&.btn-story-founded { @include retina-sprite($sm-btn-story01-group); }
+			&.btn-story-health { @include retina-sprite($sm-btn-story02-group); }
+			&.btn-story-car { @include retina-sprite($sm-btn-story03-group); }
+		}
+	}
+}
+
+
+
+/* 당신의 소중한 이야기에 귀기울입니다. */
+.summary-story { position: relative; z-index: z("default")+1; padding-top: 16px; padding-bottom: 50px; background-color: #50b3e1;
+	> .title { margin: 0 auto; text-indent: -9999px; @include retina-sprite($sm-title-section02-group); }
+}
+
+
+
+
+/* 삼양그룹에게 당신의 이야기를 들려주세요! */
+.your-story { position: relative; z-index: z("default"); background-color: #fff;
+
+	> header { margin: 0 auto; padding: 33px 0px 20px 0px;
+		> .title { margin: 0 auto; text-indent: -9999px; @include retina-sprite($sm-title-section-your-story-group); }
+		.txt-desc { margin: 17px auto 0 auto; text-indent: -9999px; @include retina-sprite($sm-txt-your-story-group);
+			br { display: none; }
+		}
+		dl { display: block; position: relative; margin: 19px auto 0 auto; @include retina-sprite($sm-txt-duration-event-group);
+			dt, dd { position: absolute; top: -9999px; left: -9999px; }
+		}
+
+		.list-gifts { margin: 17px auto 0 auto; text-align: center; @include retina-sprite($sm-bg-presents-group);
+			> li { display: none; }
+		}
+
+	}
+	
+	> .inner { position: relative; margin: 0 auto; padding: 38px 0 0 0; background: url('/assets/images/mobile/bg_section02.png') left top repeat-x;
+		@include retina { background-image: url('/assets/images/mobile/bg_section02@2x.png'); }
+	}
+
+
+	/* SNS 로그인 */
+	.txt-sns-login { display: block; margin: 0 auto; text-indent: -9999px; @include retina-sprite($sm-txt-sns-login-group); }
+	.login-btns { padding: 18px 0 20px 0; text-align: center;
+		&:after { content: ''; display: block; margin: 18px auto 0 auto; height: 30px; width: 1px; background-color: #b3b3b3; }
+
+		a { display: inline-block; margin: 0 5px; text-indent: -9999px;
+			&.facebook { @include retina-sprite($sm-btn-facebook-group);
+				&.is-selected { @include retina-sprite($sm-btn-facebook-selected-group); }
+			}
+			&.twitter { @include retina-sprite($sm-btn-twitter-group);
+				&.is-selected { @include retina-sprite($sm-btn-twitter-selected-group); }
+			}
+			&.kakaostory { @include retina-sprite($sm-btn-kakaostory-group);
+				&.is-selected { @include retina-sprite($sm-btn-kakaostory-selected-group); }
+			}
+		}
+	}
+
+	/* 영상 선택 */
+	.select-video { overflow: hidden; margin: 0; padding: 0 0 20px 0; text-align: center;
+		&:after { content: ''; display: block; margin: 18px auto 0 auto; height: 30px; width: 1px; background-color: #b3b3b3; }
+
+		> legend { display: block; position: static; visibility: visible; margin: 0 auto 0px auto; @include retina-sprite($sm-txt-title-video-group); }
+
+		.iradio { display: block; margin-top: 20px;
+			+ label { display: block; margin: 0 auto; text-indent: -9999px; cursor: pointer;
+				&.radio-video01 { @include retina-sprite($sm-radio-video01-group); }
+				&.radio-video02 { @include retina-sprite($sm-radio-video02-group); }
+				&.radio-video03 { @include retina-sprite($sm-radio-video03-group); }
+			}
+
+			&.checked {
+				+ .radio-video01 { @include retina-sprite($sm-radio-video01-selected-group); }
+				+ .radio-video02 { @include retina-sprite($sm-radio-video02-selected-group); }
+				+ .radio-video03 { @include retina-sprite($sm-radio-video03-selected-group); }
+			}
+		}
+	}
+
+
+	/* 댓글 쓰기 */
+	.write-comment { padding: 0 18px;
+		> legend { display: block; position: static; visibility: visible; margin: 0 auto; @include retina-sprite($sm-txt-comments01-group); }
+
+		.writer { overflow: hidden; position: relative; margin-top: 20px; }
+		textarea { display: block; box-sizing: border-box; padding: 10px 12px 0 12px; height: 83px; width: 100%; font-size: 11px; color: #4c4c4c; line-height: 17px; border: 2px solid #bdc3c5; border-bottom: 0px; background-color: #f0f0f0; }
+		.btn-write { display: block; height: 44px; width: 100%; background-color: #50b3e1;
+			span { display: inline-block; margin: 0 auto; text-indent: -9999px; @include retina-sprite($sm-txt-write01-group); }
+		}
+		.remain-txt { display: block; position: absolute; bottom: 50px; right: 10px; font-size: 10px; color: #666; }
+	}
+
+}
+
+
+/* 이벤트 유의사항 */
+.guide { padding: 17px 0 17px 20px; border-top: 1px solid #d6d6d6; background-color: #e6e6e6;
+	> .title { text-indent: -9999px; @include retina-sprite($sm-title-section-guide-group); }
+
+	.list-guide { position: relative; overflow: hidden; margin-top: 16px; @include retina-sprite($sm-list-guide-group);
+		> li { position: absolute; top: -9999px; left: -9999px; }
+	}
+}

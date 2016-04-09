@@ -1,0 +1,42 @@
+/* GNB HEADER */
+.header { position: fixed; top: 0; right: 0; left: 0; z-index: z("gnb"); padding: 16px 0 15px 0; border-bottom: 1px solid #c7c7c7; background-color: #fff;
+	.logo { display: block; margin: 0 auto; text-indent: -9999px; @include retina-sprite($sm-logo01-group); }
+
+	.menus { display: block; padding-top: 23px;
+		ul { display: flex;
+			> li { display: block; flex: 1; position: relative; vertical-align: top; text-align: center;
+				a { display: inline-block; text-indent: -9999px;
+					&.menu01 { @include retina-sprite($sm-nav01-group);
+						&:hover { @include retina-sprite($sm-nav01-selected-group); }
+						&.is-selected { @include retina-sprite($sm-nav01-selected-group); }
+					}
+					&.menu02 { @include retina-sprite($sm-nav02-group);
+						&:hover { @include retina-sprite($sm-nav02-selected-group); }
+						&.is-selected { @include retina-sprite($sm-nav02-selected-group); }
+					}
+					&.menu03 { position: relative; top: -13px; @include retina-sprite($sm-nav03-group);
+						&:hover { @include retina-sprite($sm-nav03-selected-group); }
+						&.is-selected { @include retina-sprite($sm-nav03-selected-group); }
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+
+/* FOOTER */
+.footer { padding: 17px 0 17px 0; border-top: 1px solid #d6d6d6; background-color: #fff;
+	.logo { display: block; margin: 0 auto; text-indent: -9999px; @include retina-sprite($sm-logo02-group); }
+	.txt-copyright { display: block; margin: 13px auto 0 auto; text-indent: -9999px; @include retina-sprite($sm-txt-copyright-group); }
+	.txt-address { display: block; margin: 5px auto 0 auto; text-indent: -9999px; @include retina-sprite($sm-txt-address-group); }
+}
+
+
+
+
+/* CONTENTS */
+article.contents {
+}

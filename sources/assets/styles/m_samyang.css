@@ -1,0 +1,1069 @@
+@charset "UTF-8";
+@import url(nanumgothic.css);
+@import url(slick.css);
+@import url(magnific-popup.css);
+/**
+ * variable
+ */
+body {
+  background-color: #fff; }
+
+/* Common Style */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, font, img, ins, q, s, samp, strike, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+  border: 0 none; }
+
+body {
+  position: relative;
+  /*min-height: 800px;*/
+  min-width: 320px;
+  margin: 0 auto;
+  font-size: 100%;
+  line-height: 1em;
+  font-family: "Nanum Gothic", sans-serif;
+  -ms-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+header, h1 {
+  font-size: 100%; }
+
+html, body {
+  height: 100%; }
+
+caption, legend {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+  visibility: hidden; }
+
+caption {
+  display: none; }
+
+img {
+  border: none;
+  vertical-align: top;
+  /*width: 100%;*/ }
+
+select, input {
+  vertical-align: top; }
+
+hr {
+  display: none;
+  border: 0 none; }
+
+ol, ul, ul li {
+  list-style: none; }
+
+em {
+  font-style: normal; }
+
+menu li {
+  list-style: none; }
+
+address {
+  display: inline;
+  font-style: normal; }
+
+button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  border: 0px;
+  background-color: transparent; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input, textarea, keygen, select, button {
+  font-family: "Nanum Gothic", sans-serif; }
+
+strong {
+  font-weight: normal; }
+
+dfn {
+  font-style: normal; }
+
+/* link Style */
+a:link, a:visited, a:active, a:focus {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+.hidden {
+  display: none !important; }
+
+.visible-hidden {
+  visibility: hidden !important; }
+
+.clear {
+  clear: both; }
+
+.txt-center {
+  text-align: center !important; }
+
+/* forms */
+fieldset {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+input[type=submit] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  cursor: pointer;
+  border: 0px; }
+
+::-webkit-input-placeholder {
+  color: #ccd0d7; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #ccd0d7; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ccd0d7; }
+
+:-ms-input-placeholder {
+  color: #ccd0d7; }
+
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+/*
+These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+
+The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+*/
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+/*
+The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+  It should be used with a "retina group" variable.
+
+The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+
+$icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+
+.icon-home {
+  @include retina-sprite($icon-home-group);
+}
+*/
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+/*
+The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+  This yields the same output as CSS retina template but can be overridden in SCSS
+
+@include retina-sprites($retina-groups);
+*/
+/**
+ * retina
+**/
+/**
+ * z-index
+**/
+/**
+ * states
+ */
+/**
+ * import
+ */
+/* GNB HEADER */
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 800;
+  padding: 16px 0 15px 0;
+  border-bottom: 1px solid #c7c7c7;
+  background-color: #fff; }
+  .header .logo {
+    display: block;
+    margin: 0 auto;
+    text-indent: -9999px;
+    background-image: url(/assets/images/mobile/sprites_mobile.png);
+    background-position: 0px -794px;
+    width: 93px;
+    height: 25px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .header .logo {
+        background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+        background-size: 884px 854px; } }
+  .header .menus {
+    display: block;
+    padding-top: 23px; }
+    .header .menus ul {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .header .menus ul > li {
+        display: block;
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        position: relative;
+        vertical-align: top;
+        text-align: center; }
+        .header .menus ul > li a {
+          display: inline-block;
+          text-indent: -9999px; }
+          .header .menus ul > li a.menu01 {
+            background-image: url(/assets/images/mobile/sprites_mobile.png);
+            background-position: 0px -825px;
+            width: 75px;
+            height: 29px; }
+            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+              .header .menus ul > li a.menu01 {
+                background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+                background-size: 884px 854px; } }
+            .header .menus ul > li a.menu01:hover {
+              background-image: url(/assets/images/mobile/sprites_mobile.png);
+              background-position: -81px -825px;
+              width: 75px;
+              height: 29px; }
+              @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+                .header .menus ul > li a.menu01:hover {
+                  background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+                  background-size: 884px 854px; } }
+            .header .menus ul > li a.menu01.is-selected {
+              background-image: url(/assets/images/mobile/sprites_mobile.png);
+              background-position: -81px -825px;
+              width: 75px;
+              height: 29px; }
+              @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+                .header .menus ul > li a.menu01.is-selected {
+                  background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+                  background-size: 884px 854px; } }
+          .header .menus ul > li a.menu02 {
+            background-image: url(/assets/images/mobile/sprites_mobile.png);
+            background-position: -240px -825px;
+            width: 72px;
+            height: 29px; }
+            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+              .header .menus ul > li a.menu02 {
+                background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+                background-size: 884px 854px; } }
+            .header .menus ul > li a.menu02:hover {
+              background-image: url(/assets/images/mobile/sprites_mobile.png);
+              background-position: -162px -825px;
+              width: 72px;
+              height: 29px; }
+              @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+                .header .menus ul > li a.menu02:hover {
+                  background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+                  background-size: 884px 854px; } }
+            .header .menus ul > li a.menu02.is-selected {
+              background-image: url(/assets/images/mobile/sprites_mobile.png);
+              background-position: -162px -825px;
+              width: 72px;
+              height: 29px; }
+              @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+                .header .menus ul > li a.menu02.is-selected {
+                  background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+                  background-size: 884px 854px; } }
+          .header .menus ul > li a.menu03 {
+            position: relative;
+            top: -13px;
+            background-image: url(/assets/images/mobile/sprites_mobile.png);
+            background-position: -681px -712px;
+            width: 61px;
+            height: 42px; }
+            @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+              .header .menus ul > li a.menu03 {
+                background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+                background-size: 884px 854px; } }
+            .header .menus ul > li a.menu03:hover {
+              background-image: url(/assets/images/mobile/sprites_mobile.png);
+              background-position: -748px -712px;
+              width: 61px;
+              height: 42px; }
+              @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+                .header .menus ul > li a.menu03:hover {
+                  background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+                  background-size: 884px 854px; } }
+            .header .menus ul > li a.menu03.is-selected {
+              background-image: url(/assets/images/mobile/sprites_mobile.png);
+              background-position: -748px -712px;
+              width: 61px;
+              height: 42px; }
+              @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+                .header .menus ul > li a.menu03.is-selected {
+                  background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+                  background-size: 884px 854px; } }
+
+/* FOOTER */
+.footer {
+  padding: 17px 0 17px 0;
+  border-top: 1px solid #d6d6d6;
+  background-color: #fff; }
+  .footer .logo {
+    display: block;
+    margin: 0 auto;
+    text-indent: -9999px;
+    background-image: url(/assets/images/mobile/sprites_mobile.png);
+    background-position: -99px -794px;
+    width: 74px;
+    height: 20px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .footer .logo {
+        background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+        background-size: 884px 854px; } }
+  .footer .txt-copyright {
+    display: block;
+    margin: 13px auto 0 auto;
+    text-indent: -9999px;
+    background-image: url(/assets/images/mobile/sprites_mobile.png);
+    background-position: -469px -650px;
+    width: 262px;
+    height: 8px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .footer .txt-copyright {
+        background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+        background-size: 884px 854px; } }
+  .footer .txt-address {
+    display: block;
+    margin: 5px auto 0 auto;
+    text-indent: -9999px;
+    background-image: url(/assets/images/mobile/sprites_mobile.png);
+    background-position: -469px -664px;
+    width: 235px;
+    height: 8px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .footer .txt-address {
+        background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+        background-size: 884px 854px; } }
+
+/* CONTENTS */
+/* 댓글 목록 */
+.comment-item {
+  position: relative;
+  padding: 12px 0 13px 45px;
+  min-height: 77px;
+  /* 카드 스타일 */ }
+  .comment-item .user {
+    position: absolute;
+    top: 12px;
+    left: 0px;
+    width: 100%; }
+    .comment-item .user .thumb {
+      position: relative;
+      height: 34px;
+      width: 34px; }
+      .comment-item .user .thumb .via {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-indent: -9999px; }
+        .comment-item .user .thumb .via.facebook {
+          background-image: url(/assets/images/mobile/sprites_mobile.png);
+          background-position: -861px -262px;
+          width: 16px;
+          height: 16px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .comment-item .user .thumb .via.facebook {
+              background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+              background-size: 884px 854px; } }
+        .comment-item .user .thumb .via.twitter {
+          background-image: url(/assets/images/mobile/sprites_mobile.png);
+          background-position: -861px -306px;
+          width: 16px;
+          height: 16px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .comment-item .user .thumb .via.twitter {
+              background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+              background-size: 884px 854px; } }
+        .comment-item .user .thumb .via.kakaostory {
+          background-image: url(/assets/images/mobile/sprites_mobile.png);
+          background-position: -861px -284px;
+          width: 16px;
+          height: 16px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .comment-item .user .thumb .via.kakaostory {
+              background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+              background-size: 884px 854px; } }
+      .comment-item .user .thumb img {
+        display: block;
+        box-sizing: border-box;
+        height: 100%;
+        width: 100%;
+        border: 2px solid #0895d7;
+        border-radius: 34px; }
+    .comment-item .user figcaption {
+      display: block;
+      position: absolute;
+      top: 0px;
+      left: 45px; }
+    .comment-item .user .icons {
+      display: inline-block;
+      margin-right: 5px;
+      text-indent: -9999px;
+      vertical-align: top; }
+    .comment-item .user .name {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: bold;
+      color: #333; }
+      .comment-item .user .name:before {
+        content: attr(data-before);
+        display: inline-block;
+        margin-right: 3px;
+        font-weight: normal;
+        color: #999;
+        letter-spacing: -0.1em; }
+    .comment-item .user.founded img {
+      border: 2px solid #0895d7; }
+    .comment-item .user.founded .icons {
+      background-image: url(/assets/images/mobile/sprites_mobile.png);
+      background-position: -179px -794px;
+      width: 71px;
+      height: 17px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .comment-item .user.founded .icons {
+          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+          background-size: 884px 854px; } }
+    .comment-item .user.health img {
+      border: 2px solid #f15234; }
+    .comment-item .user.health .icons {
+      background-image: url(/assets/images/mobile/sprites_mobile.png);
+      background-position: -815px -712px;
+      width: 68px;
+      height: 17px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .comment-item .user.health .icons {
+          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+          background-size: 884px 854px; } }
+    .comment-item .user.car img {
+      border: 2px solid #9bb226; }
+    .comment-item .user.car .icons {
+      background-image: url(/assets/images/mobile/sprites_mobile.png);
+      background-position: -681px -760px;
+      width: 87px;
+      height: 17px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .comment-item .user.car .icons {
+          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+          background-size: 884px 854px; } }
+  .comment-item .comment {
+    margin-top: 25px;
+    font-size: 11px;
+    color: #4c4c4c;
+    line-height: 17px; }
+  .type-card .comment-item {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 10px 0 8px;
+    min-height: auto;
+    background-image: url(/assets/images/mobile/sprites_mobile.png);
+    background-position: -652px -198px;
+    width: 203px;
+    height: 205px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .type-card .comment-item {
+        background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+        background-size: 884px 854px; } }
+    .type-card .comment-item .user {
+      display: block;
+      overflow: hidden;
+      position: static;
+      padding: 22px 0 13px 13px;
+      width: auto; }
+      .type-card .comment-item .user .thumb {
+        float: left;
+        margin: 0;
+        height: 47px;
+        width: 47px; }
+        .type-card .comment-item .user .thumb .via {
+          display: none; }
+      .type-card .comment-item .user figcaption {
+        position: static;
+        float: left;
+        margin: 5px 0 0 6px;
+        width: auto; }
+      .type-card .comment-item .user .icons {
+        position: static; }
+      .type-card .comment-item .user .name {
+        display: block;
+        margin: 5px 0 0 0;
+        font-size: 15px;
+        color: #333;
+        text-align: left; }
+    .type-card .comment-item .comment {
+      display: block;
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 12px 10px 0 10px;
+      height: 114px;
+      width: 100%;
+      font-size: 11px;
+      color: #333;
+      line-height: 17px;
+      border-top: 1px dashed #b8b8b8; }
+
+.list-comments {
+  margin-top: 20px;
+  border-bottom: 2px solid #c7c7c7;
+  /* 카드 스타일 */ }
+  .list-comments li {
+    position: relative;
+    padding: 0 20px 0 20px;
+    border-top: 1px solid #e2e2e2; }
+    .list-comments li:first-child {
+      border-top: 2px solid #c7c7c7; }
+  .list-comments.type-card {
+    box-sizing: border-box;
+    margin: 20px 46px 0 46px;
+    padding: 0;
+    border: 0px; }
+    .list-comments.type-card li {
+      display: block;
+      float: left;
+      border: 0px; }
+  .list-comments .btn-slider {
+    display: none;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    margin-top: -13px;
+    text-indent: -9999px; }
+    .list-comments .btn-slider.prev {
+      left: -26px;
+      background-image: url(/assets/images/mobile/sprites_mobile.png);
+      background-position: -861px -230px;
+      width: 16px;
+      height: 26px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .list-comments .btn-slider.prev {
+          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+          background-size: 884px 854px; } }
+    .list-comments .btn-slider.next {
+      right: -26px;
+      background-image: url(/assets/images/mobile/sprites_mobile.png);
+      background-position: -861px -198px;
+      width: 16px;
+      height: 26px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .list-comments .btn-slider.next {
+          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+          background-size: 884px 854px; } }
+  .list-comments .slick-dots {
+    display: none;
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    left: 0;
+    text-align: center; }
+    .list-comments .slick-dots > li {
+      display: inline-block;
+      float: none;
+      padding: 0; }
+      .list-comments .slick-dots > li button {
+        display: inline-block;
+        box-sizing: border-box;
+        margin: 0 3px;
+        height: 10px;
+        width: 10px;
+        text-indent: -9999px;
+        border: 2px solid #fff;
+        border-radius: 10px;
+        background-color: transparent; }
+      .list-comments .slick-dots > li.slick-active button {
+        background-color: #fff; }
+
+.more-comments a {
+  display: block;
+  position: relative;
+  padding: 12px 0 17px 0;
+  text-indent: -9999px; }
+  .more-comments a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -6.5px;
+    margin-left: -29.5px;
+    background-image: url(/assets/images/mobile/sprites_mobile.png);
+    background-position: -815px -735px;
+    width: 59px;
+    height: 13px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .more-comments a:before {
+        background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+        background-size: 884px 854px; } }
+
+/* 당신으로 부터, SAY 삼양 */
+.say-samyang {
+  position: relative;
+  z-index: 3;
+  padding-top: 110px;
+  background: url("/assets/images/mobile/bg_section01.png") center bottom no-repeat; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    .say-samyang {
+      background-image: url("/assets/images/mobile/bg_section01@2x.png"); } }
+  .say-samyang > .title {
+    display: block;
+    margin: 3px auto 0 auto;
+    text-indent: -9999px;
+    background-image: url(/assets/images/mobile/sprites_mobile.png);
+    background-position: 0px -546px;
+    width: 293px;
+    height: 98px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .say-samyang > .title {
+        background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+        background-size: 884px 854px; } }
+  .say-samyang .video-container {
+    position: relative;
+    margin: 3px auto 0 auto;
+    padding-bottom: 15px;
+    min-height: 179px;
+    width: 320px;
+    text-align: center;
+    background: url("/assets/images/mobile/bg_video_container.png") center top no-repeat; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .say-samyang .video-container {
+        background-image: url("/assets/images/mobile/bg_video_container@2x.png");
+        background-size: 100%; } }
+    .say-samyang .video-container .video {
+      position: relative;
+      top: 7px;
+      left: 1px;
+      z-index: 100;
+      margin: 0 auto;
+      height: 150px;
+      width: 265px;
+      background-color: rgba(255, 255, 255, 0.3); }
+    .say-samyang .video-container .btn {
+      display: inline-block;
+      margin: 25px 12px 0;
+      text-indent: -9999px; }
+      .say-samyang .video-container .btn.btn-story-founded {
+        background-image: url(/assets/images/mobile/sprites_mobile.png);
+        background-position: -162px -712px;
+        width: 75px;
+        height: 76px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .say-samyang .video-container .btn.btn-story-founded {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 884px 854px; } }
+      .say-samyang .video-container .btn.btn-story-health {
+        background-image: url(/assets/images/mobile/sprites_mobile.png);
+        background-position: -81px -712px;
+        width: 75px;
+        height: 76px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .say-samyang .video-container .btn.btn-story-health {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 884px 854px; } }
+      .say-samyang .video-container .btn.btn-story-car {
+        background-image: url(/assets/images/mobile/sprites_mobile.png);
+        background-position: 0px -712px;
+        width: 75px;
+        height: 76px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .say-samyang .video-container .btn.btn-story-car {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 884px 854px; } }
+
+/* 당신의 소중한 이야기에 귀기울입니다. */
+.summary-story {
+  position: relative;
+  z-index: 2;
+  padding-top: 16px;
+  padding-bottom: 50px;
+  background-color: #50b3e1; }
+  .summary-story > .title {
+    margin: 0 auto;
+    text-indent: -9999px;
+    background-image: url(/assets/images/mobile/sprites_mobile.png);
+    background-position: -652px -409px;
+    width: 222px;
+    height: 55px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .summary-story > .title {
+        background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+        background-size: 884px 854px; } }
+
+/* 삼양그룹에게 당신의 이야기를 들려주세요! */
+.your-story {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  /* SNS 로그인 */
+  /* 영상 선택 */
+  /* 댓글 쓰기 */ }
+  .your-story > header {
+    margin: 0 auto;
+    padding: 33px 0px 20px 0px; }
+    .your-story > header > .title {
+      margin: 0 auto;
+      text-indent: -9999px;
+      background-image: url(/assets/images/mobile/sprites_mobile.png);
+      background-position: 0px -650px;
+      width: 270px;
+      height: 56px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .your-story > header > .title {
+          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+          background-size: 884px 854px; } }
+    .your-story > header .txt-desc {
+      margin: 17px auto 0 auto;
+      text-indent: -9999px;
+      background-image: url(/assets/images/mobile/sprites_mobile.png);
+      background-position: -591px -546px;
+      width: 253px;
+      height: 63px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .your-story > header .txt-desc {
+          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+          background-size: 884px 854px; } }
+      .your-story > header .txt-desc br {
+        display: none; }
+    .your-story > header dl {
+      display: block;
+      position: relative;
+      margin: 19px auto 0 auto;
+      background-image: url(/assets/images/mobile/sprites_mobile.png);
+      background-position: -652px -470px;
+      width: 187px;
+      height: 45px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .your-story > header dl {
+          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+          background-size: 884px 854px; } }
+      .your-story > header dl dt, .your-story > header dl dd {
+        position: absolute;
+        top: -9999px;
+        left: -9999px; }
+    .your-story > header .list-gifts {
+      margin: 17px auto 0 auto;
+      text-align: center;
+      background-image: url(/assets/images/mobile/sprites_mobile.png);
+      background-position: -652px 0px;
+      width: 232px;
+      height: 192px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .your-story > header .list-gifts {
+          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+          background-size: 884px 854px; } }
+      .your-story > header .list-gifts > li {
+        display: none; }
+  .your-story > .inner {
+    position: relative;
+    margin: 0 auto;
+    padding: 38px 0 0 0;
+    background: url("/assets/images/mobile/bg_section02.png") left top repeat-x; }
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+      .your-story > .inner {
+        background-image: url("/assets/images/mobile/bg_section02@2x.png"); } }
+  .your-story .txt-sns-login {
+    display: block;
+    margin: 0 auto;
+    text-indent: -9999px;
+    background-image: url(/assets/images/mobile/sprites_mobile.png);
+    background-position: -591px -615px;
+    width: 173px;
+    height: 17px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .your-story .txt-sns-login {
+        background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+        background-size: 884px 854px; } }
+  .your-story .login-btns {
+    padding: 18px 0 20px 0;
+    text-align: center; }
+    .your-story .login-btns:after {
+      content: '';
+      display: block;
+      margin: 18px auto 0 auto;
+      height: 30px;
+      width: 1px;
+      background-color: #b3b3b3; }
+    .your-story .login-btns a {
+      display: inline-block;
+      margin: 0 5px;
+      text-indent: -9999px; }
+      .your-story .login-btns a.facebook {
+        background-image: url(/assets/images/mobile/sprites_mobile.png);
+        background-position: -243px -712px;
+        width: 67px;
+        height: 67px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .your-story .login-btns a.facebook {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 884px 854px; } }
+        .your-story .login-btns a.facebook.is-selected {
+          background-image: url(/assets/images/mobile/sprites_mobile.png);
+          background-position: -462px -712px;
+          width: 67px;
+          height: 67px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .your-story .login-btns a.facebook.is-selected {
+              background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+              background-size: 884px 854px; } }
+      .your-story .login-btns a.twitter {
+        background-image: url(/assets/images/mobile/sprites_mobile.png);
+        background-position: -608px -712px;
+        width: 67px;
+        height: 67px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .your-story .login-btns a.twitter {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 884px 854px; } }
+        .your-story .login-btns a.twitter.is-selected {
+          background-image: url(/assets/images/mobile/sprites_mobile.png);
+          background-position: -389px -712px;
+          width: 67px;
+          height: 67px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .your-story .login-btns a.twitter.is-selected {
+              background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+              background-size: 884px 854px; } }
+      .your-story .login-btns a.kakaostory {
+        background-image: url(/assets/images/mobile/sprites_mobile.png);
+        background-position: -316px -712px;
+        width: 67px;
+        height: 67px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .your-story .login-btns a.kakaostory {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 884px 854px; } }
+        .your-story .login-btns a.kakaostory.is-selected {
+          background-image: url(/assets/images/mobile/sprites_mobile.png);
+          background-position: -535px -712px;
+          width: 67px;
+          height: 67px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .your-story .login-btns a.kakaostory.is-selected {
+              background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+              background-size: 884px 854px; } }
+  .your-story .select-video {
+    overflow: hidden;
+    margin: 0;
+    padding: 0 0 20px 0;
+    text-align: center; }
+    .your-story .select-video:after {
+      content: '';
+      display: block;
+      margin: 18px auto 0 auto;
+      height: 30px;
+      width: 1px;
+      background-color: #b3b3b3; }
+    .your-story .select-video > legend {
+      display: block;
+      position: static;
+      visibility: visible;
+      margin: 0 auto 0px auto;
+      background-image: url(/assets/images/mobile/sprites_mobile.png);
+      background-position: -652px -521px;
+      width: 223px;
+      height: 18px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .your-story .select-video > legend {
+          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+          background-size: 884px 854px; } }
+    .your-story .select-video .iradio {
+      display: block;
+      margin-top: 20px; }
+      .your-story .select-video .iradio + label {
+        display: block;
+        margin: 0 auto;
+        text-indent: -9999px;
+        cursor: pointer; }
+        .your-story .select-video .iradio + label.radio-video01 {
+          background-image: url(/assets/images/mobile/sprites_mobile.png);
+          background-position: -326px -193px;
+          width: 320px;
+          height: 171px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .your-story .select-video .iradio + label.radio-video01 {
+              background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+              background-size: 884px 854px; } }
+        .your-story .select-video .iradio + label.radio-video02 {
+          background-image: url(/assets/images/mobile/sprites_mobile.png);
+          background-position: -326px 0px;
+          width: 320px;
+          height: 187px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .your-story .select-video .iradio + label.radio-video02 {
+              background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+              background-size: 884px 854px; } }
+        .your-story .select-video .iradio + label.radio-video03 {
+          background-image: url(/assets/images/mobile/sprites_mobile.png);
+          background-position: -326px -370px;
+          width: 320px;
+          height: 170px; }
+          @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+            .your-story .select-video .iradio + label.radio-video03 {
+              background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+              background-size: 884px 854px; } }
+      .your-story .select-video .iradio.checked + .radio-video01 {
+        background-image: url(/assets/images/mobile/sprites_mobile.png);
+        background-position: 0px -193px;
+        width: 320px;
+        height: 171px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .your-story .select-video .iradio.checked + .radio-video01 {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 884px 854px; } }
+      .your-story .select-video .iradio.checked + .radio-video02 {
+        background-image: url(/assets/images/mobile/sprites_mobile.png);
+        background-position: 0px 0px;
+        width: 320px;
+        height: 187px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .your-story .select-video .iradio.checked + .radio-video02 {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 884px 854px; } }
+      .your-story .select-video .iradio.checked + .radio-video03 {
+        background-image: url(/assets/images/mobile/sprites_mobile.png);
+        background-position: 0px -370px;
+        width: 320px;
+        height: 170px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .your-story .select-video .iradio.checked + .radio-video03 {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 884px 854px; } }
+  .your-story .write-comment {
+    padding: 0 18px; }
+    .your-story .write-comment > legend {
+      display: block;
+      position: static;
+      visibility: visible;
+      margin: 0 auto;
+      background-image: url(/assets/images/mobile/sprites_mobile.png);
+      background-position: -276px -650px;
+      width: 187px;
+      height: 39px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .your-story .write-comment > legend {
+          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+          background-size: 884px 854px; } }
+    .your-story .write-comment .writer {
+      overflow: hidden;
+      position: relative;
+      margin-top: 20px; }
+    .your-story .write-comment textarea {
+      display: block;
+      box-sizing: border-box;
+      padding: 10px 12px 0 12px;
+      height: 83px;
+      width: 100%;
+      font-size: 11px;
+      color: #4c4c4c;
+      line-height: 17px;
+      border: 2px solid #bdc3c5;
+      border-bottom: 0px;
+      background-color: #f0f0f0; }
+    .your-story .write-comment .btn-write {
+      display: block;
+      height: 44px;
+      width: 100%;
+      background-color: #50b3e1; }
+      .your-story .write-comment .btn-write span {
+        display: inline-block;
+        margin: 0 auto;
+        text-indent: -9999px;
+        background-image: url(/assets/images/mobile/sprites_mobile.png);
+        background-position: -774px -760px;
+        width: 85px;
+        height: 15px; }
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+          .your-story .write-comment .btn-write span {
+            background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+            background-size: 884px 854px; } }
+    .your-story .write-comment .remain-txt {
+      display: block;
+      position: absolute;
+      bottom: 50px;
+      right: 10px;
+      font-size: 10px;
+      color: #666; }
+
+/* 이벤트 유의사항 */
+.guide {
+  padding: 17px 0 17px 20px;
+  border-top: 1px solid #d6d6d6;
+  background-color: #e6e6e6; }
+  .guide > .title {
+    text-indent: -9999px;
+    background-image: url(/assets/images/mobile/sprites_mobile.png);
+    background-position: -770px -615px;
+    width: 103px;
+    height: 15px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .guide > .title {
+        background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+        background-size: 884px 854px; } }
+  .guide .list-guide {
+    position: relative;
+    overflow: hidden;
+    margin-top: 16px;
+    background-image: url(/assets/images/mobile/sprites_mobile.png);
+    background-position: -299px -546px;
+    width: 286px;
+    height: 87px; }
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      .guide .list-guide {
+        background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+        background-size: 884px 854px; } }
+    .guide .list-guide > li {
+      position: absolute;
+      top: -9999px;
+      left: -9999px; }
