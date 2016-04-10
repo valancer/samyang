@@ -244,7 +244,7 @@ gulp.task('build', ['clean:build'], function() {
 	gulp.run(['sass-build', 'scripts-build', 'html-build', 'copy:assets', 'connect', 'watch']);
 });
 gulp.task('build:mobile', ['clean:build'], function() {
-	gulp.run(['sprites:mobile', 'sass', 'scripts-build', 'html-build', 'copy:assets', 'connect', 'watch']);
+	gulp.run(['sass-build', 'scripts-build', 'html-build', 'copy:assets', 'connect', 'watch']);
 });
 gulp.task('release', ['clean:release'], function() {
 	gulp.run(['sass-release', 'scripts-build', 'html-build', 'copy:assets', 'csscomb', 'copy:release']);

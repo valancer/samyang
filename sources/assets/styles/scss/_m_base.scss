@@ -38,8 +38,7 @@ a:hover { text-decoration: underline; }
 
 /* forms */
 fieldset { appearance: none; }
-input[type=submit] { appearance: none; cursor: pointer; border: 0px; }
-
+input[type=text], input[type=submit] { appearance: none; cursor: pointer; border: 0px; border-radius: 0px; }
 
 ::-webkit-input-placeholder {
    color: #ccd0d7;

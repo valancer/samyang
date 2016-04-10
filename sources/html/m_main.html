@@ -1,4 +1,13 @@
 @@include('./m_head.html')
+	<script>
+	$(window.document).ready(function(){
+		$.magnificPopup.open({
+			items: {
+				src: '#popup-application'
+			},
+		}, 0);
+	});
+	</script>
 
 	<!-- 상단 영역 -->
 	@@include('./m_header.html')
@@ -14,7 +23,7 @@
 				<div class="video-container">
 					<div class="video"></div>
 
-					<a href="#0" class="btn btn-story-founded">외식업에 관심이 있는 당신을 위해 창업 이야기</a>
+					<a href="#0" class="btn btn-story-founded is-selected">외식업에 관심이 있는 당신을 위해 창업 이야기</a>
 					<a href="#1" class="btn btn-story-health">당신이 언제나 건강할 수 있도록 건강 이야기</a>
 					<a href="#2" class="btn btn-story-car">편리한 생활을 만들어가는 자동차 이야기</a>
 				</div>
@@ -262,6 +271,74 @@
 
 		</article>
 	</main>
+
+
+	<!-- 응모팝업 -->
+	<aside id="popup-application" class="popup-application mfp-hide">
+		<h2 class="title">이벤트 참여를 위한 정보를 입력하고 약관에 동의해주세요.</h2>
+
+		<fieldset>
+			<legend>이벤트 참여</legend>
+
+			<fieldset class="basic-info">
+				<legend>기본 정보 입력 폼</legend>
+
+				<p>
+					<label for="" class="txt-name">이름</label>
+					<input type="text" id="" name="" style="width: 93px;">
+				</p>
+
+				<p>
+					<label for="" class="txt-phone">연락처</label>
+					<input type="text" id="" name="">
+					-
+					<input type="text" id="" name="">
+					-
+					<input type="text" id="" name="">
+				</p>
+			</fieldset>
+
+
+			<fieldset class="agreements">
+				<legend>동의</legend>
+
+				<label for="" class="txt-agreement01">[필수항목] 개인정보 수집 이용동의 (이벤트참여)</label>
+				<ul class="list-agreement">
+					<li><em>목적</em> : 이벤트 응모내역 확인 시 본인 확인, 경품배송</li>
+					<li><em>항목</em> : 이름, 휴대폰 번호</li>
+					<li><em>보유기간</em> : 이벤트 종료 후 폐기</li>
+				</ul>
+				<p class="message">※ 귀하께서는 본 동의를 거절하실 수 있습니다.<br>단, 거절하신 경우 이벤트 참여가 제한될 수 있습니다.</p>
+
+				<div class="radios">
+					<input type="radio" id="agreement01_01" name="agreement01">
+					<label for="agreement01_01" class="agreement-yes">동의함</label>
+					<input type="radio" id="agreement01_02" name="agreement01">
+					<label for="agreement01_02" class="agreement-no">동의안함</label>
+				</div>
+			</fieldset>
+
+
+			<fieldset class="agreements">
+				<legend>동의</legend>
+
+				<label for="" class="txt-agreement02">[필수항목] 개인정보 취급위탁 동의</label>
+				<ul class="list-agreement">
+					<li><em>수탁자</em> : HS 애드</li>
+					<li><em>목적</em> : 시스템관리, 이벤트와 관련된 업무(경품 제공 등)</li>
+				</ul>
+
+				<div class="radios">
+					<input type="radio" id="agreement02_01" name="agreement02">
+					<label for="agreement02_01" class="agreement-yes">동의함</label>
+					<input type="radio" id="agreement02_02" name="agreement02">
+					<label for="agreement02_02" class="agreement-no">동의안함</label>
+				</div>
+			</fieldset>
+
+			<input type="submit" class="btn-application" value="참여완료">
+		</fieldset>
+	</aside>
 
 
 	<!-- 하단 영역 -->

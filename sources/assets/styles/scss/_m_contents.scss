@@ -99,15 +99,25 @@
 
 		.video { position: relative; top: 7px; z-index: z("tooltip"); margin: 0 auto; height: 150px; width: 265px; background-color: rgba(255,255,255,0.3); }
 
-		.btn { display: inline-block; margin: 25px 12px 0; text-indent: -9999px;
+		.btn { display: inline-block; position: relative; margin: 25px 12px 0; text-indent: -9999px;
+			&.is-selected {
+				&:before { content: ''; display: block; position: absolute; top: -8px; left: 50%; margin-left: -7px; }
+			}
+
 			&.btn-story-founded { @include retina-sprite($sm-btn-story01-group);
-				&.is-selected { }
+				&.is-selected {
+					&:before { @include retina-sprite($sm-bu-story01-group); }
+				}
 			}
 			&.btn-story-health { @include retina-sprite($sm-btn-story02-group);
-				&.is-selected { }
+				&.is-selected {
+					&:before { @include retina-sprite($sm-bu-story02-group); }
+				}
 			}
 			&.btn-story-car { @include retina-sprite($sm-btn-story03-group);
-				&.is-selected { }
+				&.is-selected {
+					&:before { @include retina-sprite($sm-bu-story03-group); }
+				}
 			}
 		}
 	}
@@ -209,3 +219,65 @@
 		> li { position: absolute; top: -9999px; left: -9999px; }
 	}
 }
+
+
+
+/* 응모팝업 */
+.popup-application { margin: 45px 19px 0 19px; padding: 21px 23px 25px 23px; background: #fff url('/assets/images/mobile/bg_popup01.png') center top no-repeat; background-size: 100% auto;
+	@include retina { background-image: url('/assets/images/mobile/bg_popup01@2x.png'); }
+
+	> .title { display: block; margin: 0 -10px 0 -10px; text-indent: -9999px; @include retina-sprite($sm-txt-title-popup01-group); }
+
+
+	/* 기본 정보 */
+	.basic-info { margin: 33px 0 0 0; padding: 8px 0 8px 13px; color: #bdc3c5; text-align: left; border: 1px solid #e6e6e6;
+		p + p { margin-top: 8px; }
+
+		label { display: inline-block; text-indent: -9999px; vertical-align: middle;
+			&.txt-name { margin-right: 15px; @include retina-sprite($sm-txt-name01-group); }
+			&.txt-phone { margin-right: 8px; @include retina-sprite($sm-txt-phone01-group); }
+		}
+		
+		input[type=text] { width: 40px; font-size: 10px; color: #333; line-height: 20px; vertical-align: middle; text-align: center; border: 1px solid #bdc3c5; background-color: #f0f0f0; }
+	}
+
+
+	/* 동의 항목 */
+	.agreements { margin-top: 17px;
+		+ .agreements { padding-top: 17px; border-top: 1px dashed #bcbcbc; }
+
+		.txt-agreement01 { display: block; text-indent: -9999px; @include retina-sprite($sm-txt-title-popup02-group); }
+		.txt-agreement02 { display: block; text-indent: -9999px; @include retina-sprite($sm-txt-title-popup03-group); }
+
+		.list-agreement { margin-top: 6px; padding: 7px 0 7px 12px; background-color: #f0f0f0;
+			> li { font-size: 10px; color: #666; line-height: 17px; letter-spacing: -0.1em;
+				em { font-weight: bold;
+					&:before { content: '·'; margin-right: 2px; }
+				}
+			}
+		}
+		.message { margin-top: 6px; font-size: 10px; color: #f28975; text-align: center; line-height: 12px; }
+
+		.radios { margin-top: 12px; text-align: center; }
+
+		.iradio { display: inline-block;
+			+ label { display: inline-block; margin: 0 8px; text-indent: -9999px; cursor: pointer;
+				&.agreement-yes { @include retina-sprite($sm-radio-agreement01-group); }
+				&.agreement-no { @include retina-sprite($sm-radio-agreement02-group); }
+			}
+
+			&.checked {
+				+ .agreement-yes { @include retina-sprite($sm-radio-agreement01-selected-group); }
+				+ .agreement-no { @include retina-sprite($sm-radio-agreement02-selected-group); }
+			}
+		}
+
+	}
+
+
+	.btn-application { display: block; margin: 17px auto 0 auto; text-indent: -9999px; @include retina-sprite($sm-btn-application01-group); background-color: transparent; }
+	.mfp-close { display: block; position: absolute; top: 0px; right: 19px; text-indent: -9999px; @include retina-sprite($sm-btn-close01-group); }
+
+}
+
+
