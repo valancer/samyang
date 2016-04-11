@@ -6,7 +6,7 @@
 	.menus { display: block; position: absolute; top: 0; right: 0; padding-top: 32px;
 		ul { 
 			> li { position: relative; display: inline-block; vertical-align: top;
-				a { display: inline-block; text-indent: -9999px;
+				a { display: inline-block; text-indent: -9999px; 
 					&.menu01 { @include sprite($sd-nav01);
 						&:hover { @include sprite($sd-nav01-selected); }
 						&.is-selected { @include sprite($sd-nav01-selected); }

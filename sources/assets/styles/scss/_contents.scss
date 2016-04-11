@@ -153,7 +153,7 @@
 		.txt-desc { margin: 27px auto 0 auto; text-indent: -9999px; @include sprite($sd-txt-your-story);
 			br { display: none; }
 		}
-		dl { display: block; position: relative; margin: 25px auto 0 auto; @include sprite($sd-txt-duration-event);
+		dl { display: block; position: relative; margin: 44px auto 0 auto; @include sprite($sd-txt-duration-event);
 			dt, dd { position: absolute; top: -9999px; left: -9999px; }
 		}
 		.list-gifts { margin: 40px auto 0 auto; height: 206px; width: 842px; text-align: center; background: url('/assets/images/bg_presents.jpg') left top no-repeat;;
