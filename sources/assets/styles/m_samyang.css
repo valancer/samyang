@@ -239,13 +239,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     margin: 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: 0px -881px;
+    background-position: -95px -770px;
     width: 93px;
     height: 25px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .header .logo {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 951px 942px; } }
+        background-size: 966px 902px; } }
   .header .menus {
     display: block;
     padding-top: 23px; }
@@ -266,87 +266,87 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
           text-indent: -9999px; }
           .header .menus ul > li a.menu01 {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: 0px -912px;
+            background-position: 0px -827px;
             width: 74px;
             height: 30px; }
             @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
               .header .menus ul > li a.menu01 {
                 background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-                background-size: 951px 942px; } }
+                background-size: 966px 902px; } }
             .header .menus ul > li a.menu01:hover {
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -160px -912px;
-              width: 72px;
-              height: 29px; }
+              background-position: -891px -782px;
+              width: 74px;
+              height: 30px; }
               @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                 .header .menus ul > li a.menu01:hover {
                   background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-                  background-size: 951px 942px; } }
+                  background-size: 966px 902px; } }
             .header .menus ul > li a.menu01.is-selected {
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -160px -912px;
-              width: 72px;
-              height: 29px; }
+              background-position: -891px -782px;
+              width: 74px;
+              height: 30px; }
               @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                 .header .menus ul > li a.menu01.is-selected {
                   background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-                  background-size: 951px 942px; } }
+                  background-size: 966px 902px; } }
           .header .menus ul > li a.menu02 {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -80px -912px;
+            background-position: -160px -827px;
             width: 74px;
             height: 29px; }
             @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
               .header .menus ul > li a.menu02 {
                 background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-                background-size: 951px 942px; } }
+                background-size: 966px 902px; } }
             .header .menus ul > li a.menu02:hover {
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -238px -912px;
-              width: 72px;
+              background-position: -80px -827px;
+              width: 74px;
               height: 29px; }
               @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                 .header .menus ul > li a.menu02:hover {
                   background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-                  background-size: 951px 942px; } }
+                  background-size: 966px 902px; } }
             .header .menus ul > li a.menu02.is-selected {
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -238px -912px;
-              width: 72px;
+              background-position: -80px -827px;
+              width: 74px;
               height: 29px; }
               @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                 .header .menus ul > li a.menu02.is-selected {
                   background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-                  background-size: 951px 942px; } }
+                  background-size: 966px 902px; } }
           .header .menus ul > li a.menu03 {
             position: relative;
             top: -13px;
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -776px -773px;
+            background-position: -891px -684px;
             width: 63px;
             height: 43px; }
             @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
               .header .menus ul > li a.menu03 {
                 background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-                background-size: 951px 942px; } }
+                background-size: 966px 902px; } }
             .header .menus ul > li a.menu03:hover {
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -890px 0px;
-              width: 61px;
-              height: 42px; }
+              background-position: -891px -733px;
+              width: 63px;
+              height: 43px; }
               @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                 .header .menus ul > li a.menu03:hover {
                   background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-                  background-size: 951px 942px; } }
+                  background-size: 966px 902px; } }
             .header .menus ul > li a.menu03.is-selected {
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -890px 0px;
-              width: 61px;
-              height: 42px; }
+              background-position: -891px -733px;
+              width: 63px;
+              height: 43px; }
               @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
                 .header .menus ul > li a.menu03.is-selected {
                   background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-                  background-size: 951px 942px; } }
+                  background-size: 966px 902px; } }
 
 /* FOOTER */
 .footer {
@@ -358,37 +358,37 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     margin: 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -733px -718px;
+    background-position: -344px -770px;
     width: 74px;
     height: 20px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .footer .logo {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 951px 942px; } }
+        background-size: 966px 902px; } }
   .footer .txt-copyright {
     display: block;
     margin: 13px auto 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -507px -674px;
-    width: 262px;
-    height: 8px; }
+    background-position: -256px -648px;
+    width: 281px;
+    height: 9px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .footer .txt-copyright {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 951px 942px; } }
+        background-size: 966px 902px; } }
   .footer .txt-address {
     display: block;
     margin: 5px auto 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -624px -695px;
-    width: 235px;
+    background-position: -543px -648px;
+    width: 223px;
     height: 8px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .footer .txt-address {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 951px 942px; } }
+        background-size: 966px 902px; } }
 
 /* CONTENTS */
 /* 댓글 목록 */
@@ -414,31 +414,31 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         text-indent: -9999px; }
         .comment-item .user .thumb .via.facebook {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -912px -168px;
+          background-position: -861px -307px;
           width: 16px;
           height: 16px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .comment-item .user .thumb .via.facebook {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 951px 942px; } }
+              background-size: 966px 902px; } }
         .comment-item .user .thumb .via.twitter {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -890px -200px;
+          background-position: -861px -263px;
           width: 16px;
           height: 16px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .comment-item .user .thumb .via.twitter {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 951px 942px; } }
+              background-size: 966px 902px; } }
         .comment-item .user .thumb .via.kakaostory {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -934px -168px;
+          background-position: -861px -285px;
           width: 16px;
           height: 16px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .comment-item .user .thumb .via.kakaostory {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 951px 942px; } }
+              background-size: 966px 902px; } }
       .comment-item .user .thumb img {
         display: block;
         box-sizing: border-box;
@@ -472,35 +472,35 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       border: 2px solid #0895d7; }
     .comment-item .user.founded .icons {
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -813px -718px;
-      width: 71px;
+      background-position: -424px -770px;
+      width: 72px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .comment-item .user.founded .icons {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 951px 942px; } }
+          background-size: 966px 902px; } }
     .comment-item .user.health img {
       border: 2px solid #f15234; }
     .comment-item .user.health .icons {
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -776px -822px;
-      width: 68px;
+      background-position: -502px -770px;
+      width: 69px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .comment-item .user.health .icons {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 951px 942px; } }
+          background-size: 966px 902px; } }
     .comment-item .user.car img {
       border: 2px solid #9bb226; }
     .comment-item .user.car .icons {
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -790px -598px;
-      width: 87px;
+      background-position: -285px -743px;
+      width: 88px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .comment-item .user.car .icons {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 951px 942px; } }
+          background-size: 966px 902px; } }
   .comment-item .comment {
     margin-top: 25px;
     font-size: 11px;
@@ -513,13 +513,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     padding: 0 10px 0 8px;
     min-height: auto;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -652px -198px;
+    background-position: -652px -199px;
     width: 203px;
     height: 205px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .type-card .comment-item {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 951px 942px; } }
+        background-size: 966px 902px; } }
     .type-card .comment-item .user {
       display: block;
       overflow: hidden;
@@ -587,23 +587,23 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     .list-comments .btn-slider.prev {
       left: -26px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -935px -48px;
+      background-position: -861px -199px;
       width: 16px;
       height: 26px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .list-comments .btn-slider.prev {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 951px 942px; } }
+          background-size: 966px 902px; } }
     .list-comments .btn-slider.next {
       right: -26px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -890px -168px;
+      background-position: -861px -231px;
       width: 16px;
       height: 26px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .list-comments .btn-slider.next {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 951px 942px; } }
+          background-size: 966px 902px; } }
   .list-comments .slick-dots {
     display: none;
     position: absolute;
@@ -642,13 +642,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     margin-top: -6.5px;
     margin-left: -29.5px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -890px -149px;
+    background-position: -816px -719px;
     width: 59px;
     height: 13px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .more-comments a:before {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 951px 942px; } }
+        background-size: 966px 902px; } }
 
 /* 당신으로 부터, SAY 삼양 */
 .say-samyang {
@@ -664,13 +664,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     margin: 3px auto 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: 0px -546px;
+    background-position: -256px -546px;
     width: 293px;
-    height: 98px; }
+    height: 96px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .say-samyang > .title {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 951px 942px; } }
+        background-size: 966px 902px; } }
   .say-samyang .video-container {
     position: relative;
     margin: 3px auto 0 auto;
@@ -705,58 +705,58 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         margin-left: -7px; }
       .say-samyang .video-container .btn.btn-story-founded {
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -257px -773px;
+        background-position: -891px -164px;
         width: 75px;
         height: 76px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .say-samyang .video-container .btn.btn-story-founded {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 951px 942px; } }
+            background-size: 966px 902px; } }
         .say-samyang .video-container .btn.btn-story-founded.is-selected:before {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -926px -237px;
+          background-position: -861px -391px;
           width: 12px;
           height: 10px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .say-samyang .video-container .btn.btn-story-founded.is-selected:before {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 951px 942px; } }
+              background-size: 966px 902px; } }
       .say-samyang .video-container .btn.btn-story-health {
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -95px -773px;
+        background-position: -891px -82px;
         width: 75px;
         height: 76px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .say-samyang .video-container .btn.btn-story-health {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 951px 942px; } }
+            background-size: 966px 902px; } }
         .say-samyang .video-container .btn.btn-story-health.is-selected:before {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -908px -237px;
+          background-position: -861px -375px;
           width: 12px;
           height: 10px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .say-samyang .video-container .btn.btn-story-health.is-selected:before {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 951px 942px; } }
+              background-size: 966px 902px; } }
       .say-samyang .video-container .btn.btn-story-car {
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -176px -773px;
+        background-position: -891px 0px;
         width: 75px;
         height: 76px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .say-samyang .video-container .btn.btn-story-car {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 951px 942px; } }
+            background-size: 966px 902px; } }
         .say-samyang .video-container .btn.btn-story-car.is-selected:before {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -890px -237px;
+          background-position: -861px -359px;
           width: 12px;
           height: 10px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .say-samyang .video-container .btn.btn-story-car.is-selected:before {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 951px 942px; } }
+              background-size: 966px 902px; } }
 
 /* 당신의 소중한 이야기에 귀기울입니다. */
 .summary-story {
@@ -769,13 +769,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     margin: 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: 0px -650px;
-    width: 246px;
-    height: 117px; }
+    background-position: 0px -546px;
+    width: 250px;
+    height: 114px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .summary-story > .title {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 951px 942px; } }
+        background-size: 966px 902px; } }
 
 /* 삼양그룹에게 당신의 이야기를 들려주세요! */
 .your-story {
@@ -792,24 +792,24 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       margin: 0 auto;
       text-indent: -9999px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -652px -409px;
-      width: 200px;
+      background-position: -652px -410px;
+      width: 203px;
       height: 84px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .your-story > header > .title {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 951px 942px; } }
+          background-size: 966px 902px; } }
     .your-story > header .txt-desc {
       margin: 17px auto 0 auto;
       text-indent: -9999px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -591px -546px;
-      width: 257px;
-      height: 46px; }
+      background-position: 0px -666px;
+      width: 263px;
+      height: 47px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .your-story > header .txt-desc {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 951px 942px; } }
+          background-size: 966px 902px; } }
       .your-story > header .txt-desc br {
         display: none; }
     .your-story > header dl {
@@ -817,13 +817,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       position: relative;
       margin: 19px auto 0 auto;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -252px -695px;
-      width: 187px;
+      background-position: -95px -719px;
+      width: 184px;
       height: 45px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .your-story > header dl {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 951px 942px; } }
+          background-size: 966px 902px; } }
       .your-story > header dl dt, .your-story > header dl dd {
         position: absolute;
         top: -9999px;
@@ -833,12 +833,12 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       text-align: center;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
       background-position: -652px 0px;
-      width: 232px;
-      height: 192px; }
+      width: 233px;
+      height: 193px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .your-story > header .list-gifts {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 951px 942px; } }
+          background-size: 966px 902px; } }
       .your-story > header .list-gifts > li {
         display: none; }
   .your-story > .inner {
@@ -854,13 +854,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     margin: 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -445px -695px;
-    width: 173px;
-    height: 17px; }
+    background-position: -520px -719px;
+    width: 179px;
+    height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .your-story .txt-sns-login {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 951px 942px; } }
+        background-size: 966px 902px; } }
   .your-story .login-btns {
     padding: 18px 0 20px 0;
     text-align: center; }
@@ -877,58 +877,58 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       text-indent: -9999px; }
       .your-story .login-btns a.facebook {
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -338px -773px;
+        background-position: -891px -319px;
         width: 67px;
         height: 67px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .your-story .login-btns a.facebook {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 951px 942px; } }
+            background-size: 966px 902px; } }
         .your-story .login-btns a.facebook.is-selected {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -630px -773px;
+          background-position: -891px -611px;
           width: 67px;
           height: 67px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .your-story .login-btns a.facebook.is-selected {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 951px 942px; } }
+              background-size: 966px 902px; } }
       .your-story .login-btns a.twitter {
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -703px -773px;
+        background-position: -891px -246px;
         width: 67px;
         height: 67px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .your-story .login-btns a.twitter {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 951px 942px; } }
+            background-size: 966px 902px; } }
         .your-story .login-btns a.twitter.is-selected {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -484px -773px;
+          background-position: -891px -465px;
           width: 67px;
           height: 67px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .your-story .login-btns a.twitter.is-selected {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 951px 942px; } }
+              background-size: 966px 902px; } }
       .your-story .login-btns a.kakaostory {
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -557px -773px;
+        background-position: -891px -392px;
         width: 67px;
         height: 67px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .your-story .login-btns a.kakaostory {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 951px 942px; } }
+            background-size: 966px 902px; } }
         .your-story .login-btns a.kakaostory.is-selected {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -411px -773px;
+          background-position: -891px -538px;
           width: 67px;
           height: 67px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .your-story .login-btns a.kakaostory.is-selected {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 951px 942px; } }
+              background-size: 966px 902px; } }
   .your-story .select-video {
     overflow: hidden;
     margin: 0;
@@ -947,13 +947,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       visibility: visible;
       margin: 0 auto 0px auto;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -507px -650px;
-      width: 223px;
+      background-position: -285px -719px;
+      width: 229px;
       height: 18px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .your-story .select-video > legend {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 951px 942px; } }
+          background-size: 966px 902px; } }
     .your-story .select-video .iradio {
       display: block;
       margin-top: 20px; }
@@ -970,7 +970,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .your-story .select-video .iradio + label.radio-video01 {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 951px 942px; } }
+              background-size: 966px 902px; } }
         .your-story .select-video .iradio + label.radio-video02 {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
           background-position: -326px 0px;
@@ -979,7 +979,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .your-story .select-video .iradio + label.radio-video02 {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 951px 942px; } }
+              background-size: 966px 902px; } }
         .your-story .select-video .iradio + label.radio-video03 {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
           background-position: -326px -370px;
@@ -988,7 +988,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .your-story .select-video .iradio + label.radio-video03 {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 951px 942px; } }
+              background-size: 966px 902px; } }
       .your-story .select-video .iradio.checked + .radio-video01 {
         background-image: url(/assets/images/mobile/sprites_mobile.png);
         background-position: -326px -193px;
@@ -997,7 +997,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .your-story .select-video .iradio.checked + .radio-video01 {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 951px 942px; } }
+            background-size: 966px 902px; } }
       .your-story .select-video .iradio.checked + .radio-video02 {
         background-image: url(/assets/images/mobile/sprites_mobile.png);
         background-position: 0px 0px;
@@ -1006,7 +1006,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .your-story .select-video .iradio.checked + .radio-video02 {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 951px 942px; } }
+            background-size: 966px 902px; } }
       .your-story .select-video .iradio.checked + .radio-video03 {
         background-image: url(/assets/images/mobile/sprites_mobile.png);
         background-position: 0px -370px;
@@ -1015,7 +1015,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .your-story .select-video .iradio.checked + .radio-video03 {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 951px 942px; } }
+            background-size: 966px 902px; } }
   .your-story .write-comment {
     padding: 0 18px; }
     .your-story .write-comment > legend {
@@ -1024,13 +1024,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       visibility: visible;
       margin: 0 auto;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -652px -499px;
-      width: 187px;
-      height: 39px; }
+      background-position: -652px -500px;
+      width: 192px;
+      height: 40px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .your-story .write-comment > legend {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 951px 942px; } }
+          background-size: 966px 902px; } }
     .your-story .write-comment .writer {
       overflow: hidden;
       position: relative;
@@ -1057,13 +1057,13 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         margin: 0 auto;
         text-indent: -9999px;
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -252px -746px;
-        width: 85px;
+        background-position: -379px -743px;
+        width: 86px;
         height: 15px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .your-story .write-comment .btn-write span {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 951px 942px; } }
+            background-size: 966px 902px; } }
     .your-story .write-comment .remain-txt {
       display: block;
       position: absolute;
@@ -1080,25 +1080,25 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
   .guide > .title {
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -736px -650px;
-    width: 103px;
+    background-position: -705px -719px;
+    width: 105px;
     height: 15px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .guide > .title {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 951px 942px; } }
+        background-size: 966px 902px; } }
   .guide .list-guide {
     position: relative;
     overflow: hidden;
     margin-top: 16px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -299px -546px;
-    width: 286px;
+    background-position: -555px -546px;
+    width: 289px;
     height: 87px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .guide .list-guide {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 951px 942px; } }
+        background-size: 966px 902px; } }
     .guide .list-guide > li {
       position: absolute;
       top: -9999px;
@@ -1117,16 +1117,16 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       background-image: url("/assets/images/mobile/bg_popup01@2x.png"); } }
   .popup-application > .title {
     display: block;
-    margin: 0 -10px 0 -10px;
+    margin: 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -252px -650px;
-    width: 249px;
-    height: 39px; }
+    background-position: -269px -666px;
+    width: 253px;
+    height: 38px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .popup-application > .title {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 951px 942px; } }
+        background-size: 966px 902px; } }
   .popup-application .basic-info {
     margin: 33px 0 0 0;
     padding: 8px 0 8px 13px;
@@ -1142,23 +1142,23 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       .popup-application .basic-info label.txt-name {
         margin-right: 15px;
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -890px -222px;
+        background-position: -861px -344px;
         width: 16px;
         height: 9px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .popup-application .basic-info label.txt-name {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 951px 942px; } }
+            background-size: 966px 902px; } }
       .popup-application .basic-info label.txt-phone {
         margin-right: 8px;
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -912px -200px;
+        background-position: -861px -329px;
         width: 23px;
         height: 9px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .popup-application .basic-info label.txt-phone {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 951px 942px; } }
+            background-size: 966px 902px; } }
     .popup-application .basic-info input[type=text] {
       height: 20px;
       width: 40px;
@@ -1178,24 +1178,24 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       display: block;
       text-indent: -9999px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -591px -598px;
-      width: 193px;
+      background-position: -528px -666px;
+      width: 196px;
       height: 22px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .popup-application .agreements .txt-agreement01 {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 951px 942px; } }
+          background-size: 966px 902px; } }
     .popup-application .agreements .txt-agreement02 {
       display: block;
       text-indent: -9999px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -445px -718px;
-      width: 132px;
+      background-position: -730px -666px;
+      width: 134px;
       height: 22px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .popup-application .agreements .txt-agreement02 {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-          background-size: 951px 942px; } }
+          background-size: 966px 902px; } }
     .popup-application .agreements .list-agreement {
       margin-top: 6px;
       padding: 7px 0 7px 12px;
@@ -1228,53 +1228,53 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         cursor: pointer; }
         .popup-application .agreements .iradio + label.agreement-yes {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -890px -93px;
+          background-position: -240px -827px;
           width: 58px;
           height: 22px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .popup-application .agreements .iradio + label.agreement-yes {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 951px 942px; } }
+              background-size: 966px 902px; } }
         .popup-application .agreements .iradio + label.agreement-no {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -583px -718px;
+          background-position: -269px -770px;
           width: 69px;
           height: 22px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
             .popup-application .agreements .iradio + label.agreement-no {
               background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-              background-size: 951px 942px; } }
+              background-size: 966px 902px; } }
       .popup-application .agreements .iradio.checked + .agreement-yes {
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -890px -121px;
+        background-position: -304px -827px;
         width: 58px;
         height: 22px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .popup-application .agreements .iradio.checked + .agreement-yes {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 951px 942px; } }
+            background-size: 966px 902px; } }
       .popup-application .agreements .iradio.checked + .agreement-no {
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -658px -718px;
+        background-position: -194px -770px;
         width: 69px;
         height: 22px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
           .popup-application .agreements .iradio.checked + .agreement-no {
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-            background-size: 951px 942px; } }
+            background-size: 966px 902px; } }
   .popup-application .btn-application {
     display: block;
     margin: 17px auto 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: 0px -773px;
+    background-position: 0px -719px;
     width: 89px;
     height: 102px;
     background-color: transparent; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .popup-application .btn-application {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 951px 942px; } }
+        background-size: 966px 902px; } }
   .popup-application .mfp-close {
     display: block;
     position: absolute;
@@ -1282,10 +1282,10 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     right: 19px;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -890px -48px;
+    background-position: 0px -863px;
     width: 39px;
     height: 39px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       .popup-application .mfp-close {
         background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
-        background-size: 951px 942px; } }
+        background-size: 966px 902px; } }

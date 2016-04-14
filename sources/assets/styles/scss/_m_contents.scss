@@ -226,7 +226,7 @@
 .popup-application { margin: 45px 19px 0 19px; padding: 21px 23px 25px 23px; background: #fff url('/assets/images/mobile/bg_popup01.png') center top no-repeat; background-size: 100% auto;
 	@include retina { background-image: url('/assets/images/mobile/bg_popup01@2x.png'); }
 
-	> .title { display: block; margin: 0 -10px 0 -10px; text-indent: -9999px; @include retina-sprite($sm-txt-title-popup01-group); }
+	> .title { display: block; margin: 0 auto; text-indent: -9999px; @include retina-sprite($sm-txt-title-popup01-group); }
 
 
 	/* 기본 정보 */
