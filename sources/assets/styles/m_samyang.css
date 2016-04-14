@@ -505,7 +505,8 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     margin-top: 25px;
     font-size: 11px;
     color: #4c4c4c;
-    line-height: 17px; }
+    line-height: 17px;
+    word-break: break-all; }
   .type-card .comment-item {
     box-sizing: border-box;
     margin: 0;
@@ -1159,6 +1160,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
             background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
             background-size: 951px 941px; } }
     .popup-application .basic-info input[type=text] {
+      height: 20px;
       width: 40px;
       font-size: 10px;
       color: #333;

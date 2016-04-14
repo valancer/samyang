@@ -30,7 +30,7 @@
 		}
 	}
 
-	.comment { margin-top: 25px; font-size: 11px; color: #4c4c4c; line-height: 17px; }
+	.comment { margin-top: 25px; font-size: 11px; color: #4c4c4c; line-height: 17px; word-break: break-all; }
 
 
 	/* 카드 스타일 */
@@ -238,7 +238,7 @@
 			&.txt-phone { margin-right: 8px; @include retina-sprite($sm-txt-phone01-group); }
 		}
 		
-		input[type=text] { width: 40px; font-size: 10px; color: #333; line-height: 20px; vertical-align: middle; text-align: center; border: 1px solid #bdc3c5; background-color: #f0f0f0; }
+		input[type=text] { height: 20px; width: 40px; font-size: 10px; color: #333; line-height: 20px; vertical-align: middle; text-align: center; border: 1px solid #bdc3c5; background-color: #f0f0f0; }
 	}
 
 

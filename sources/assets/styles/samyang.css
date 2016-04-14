@@ -422,7 +422,8 @@ The `sprites` mixin generates identical output to the CSS template
     margin-top: 42px;
     font-size: 14px;
     color: #4c4c4c;
-    line-height: 20px; }
+    line-height: 20px;
+    word-break: break-all; }
   .type-card .comment-item {
     padding: 35px 22px 0 21px;
     min-height: auto;
@@ -900,7 +901,7 @@ The `sprites` mixin generates identical output to the CSS template
     display: block;
     position: absolute;
     bottom: 12px;
-    right: 190px;
+    right: 200px;
     font-size: 12px;
     color: #666; }
 
@@ -968,6 +969,7 @@ The `sprites` mixin generates identical output to the CSS template
         width: 35px;
         height: 14px; }
     .popup-application .basic-info input[type=text] {
+      height: 34px;
       width: 73px;
       font-size: 14px;
       color: #333;
