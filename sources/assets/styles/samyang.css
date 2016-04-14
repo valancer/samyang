@@ -217,7 +217,7 @@ The `sprites` mixin generates identical output to the CSS template
     display: block;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -632px -461px;
+    background-position: -1162px -364px;
     width: 165px;
     height: 43px; }
   .header .menus {
@@ -235,51 +235,51 @@ The `sprites` mixin generates identical output to the CSS template
         text-indent: -9999px; }
         .header .menus ul > li a.menu01 {
           background-image: url(/assets/images/sprites.png);
-          background-position: -1148px -1040px;
-          width: 127px;
-          height: 15px; }
+          background-position: -846px -683px;
+          width: 132px;
+          height: 14px; }
           .header .menus ul > li a.menu01:hover {
             background-image: url(/assets/images/sprites.png);
-            background-position: -1148px -1019px;
-            width: 127px;
-            height: 15px; }
+            background-position: -984px -683px;
+            width: 132px;
+            height: 14px; }
           .header .menus ul > li a.menu01.is-selected {
             background-image: url(/assets/images/sprites.png);
-            background-position: -1148px -1019px;
-            width: 127px;
-            height: 15px; }
+            background-position: -984px -683px;
+            width: 132px;
+            height: 14px; }
         .header .menus ul > li a.menu02 {
           background-image: url(/assets/images/sprites.png);
-          background-position: -1012px -683px;
-          width: 112px;
-          height: 13px; }
+          background-position: -632px -354px;
+          width: 115px;
+          height: 14px; }
           .header .menus ul > li a.menu02:hover {
             background-image: url(/assets/images/sprites.png);
-            background-position: -1012px -664px;
-            width: 112px;
-            height: 13px; }
+            background-position: -1037px -644px;
+            width: 115px;
+            height: 14px; }
           .header .menus ul > li a.menu02.is-selected {
             background-image: url(/assets/images/sprites.png);
-            background-position: -1012px -664px;
-            width: 112px;
-            height: 13px; }
+            background-position: -1037px -644px;
+            width: 115px;
+            height: 14px; }
         .header .menus ul > li a.menu03 {
           position: relative;
           top: -14px;
           background-image: url(/assets/images/sprites.png);
-          background-position: -1148px -709px;
-          width: 113px;
-          height: 27px; }
+          background-position: -1162px -708px;
+          width: 116px;
+          height: 28px; }
           .header .menus ul > li a.menu03:hover {
             background-image: url(/assets/images/sprites.png);
-            background-position: -1148px -742px;
-            width: 113px;
-            height: 27px; }
+            background-position: -1162px -742px;
+            width: 116px;
+            height: 28px; }
           .header .menus ul > li a.menu03.is-selected {
             background-image: url(/assets/images/sprites.png);
-            background-position: -1148px -742px;
-            width: 113px;
-            height: 27px; }
+            background-position: -1162px -742px;
+            width: 116px;
+            height: 28px; }
       .header .menus ul > li + li {
         margin-left: 25px;
         padding-left: 35px; }
@@ -290,7 +290,7 @@ The `sprites` mixin generates identical output to the CSS template
           top: 5px;
           left: 0;
           background-image: url(/assets/images/sprites.png);
-          background-position: -1264px -266px;
+          background-position: -1328px -668px;
           width: 5px;
           height: 5px; }
 
@@ -311,23 +311,23 @@ The `sprites` mixin generates identical output to the CSS template
     right: 0;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -1148px -669px;
+    background-position: -1162px -668px;
     width: 131px;
     height: 34px; }
   .footer .txt-copyright {
     display: block;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -678px -1079px;
-    width: 375px;
+    background-position: -711px -1015px;
+    width: 403px;
     height: 12px; }
   .footer .txt-address {
     display: block;
     margin-top: 8px;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -899px -1103px;
-    width: 336px;
+    background-position: -711px -1033px;
+    width: 318px;
     height: 11px; }
 
 /* CONTENTS */
@@ -355,17 +355,17 @@ The `sprites` mixin generates identical output to the CSS template
         text-indent: -9999px; }
         .comment-item .user .thumb .via.facebook {
           background-image: url(/assets/images/sprites.png);
-          background-position: -1233px -376px;
+          background-position: -1299px -668px;
           width: 23px;
           height: 24px; }
         .comment-item .user .thumb .via.twitter {
           background-image: url(/assets/images/sprites.png);
-          background-position: -1233px -291px;
+          background-position: -1313px -708px;
           width: 23px;
           height: 24px; }
         .comment-item .user .thumb .via.kakaostory {
           background-image: url(/assets/images/sprites.png);
-          background-position: -1233px -207px;
+          background-position: -1284px -708px;
           width: 23px;
           height: 24px; }
       .comment-item .user .thumb img {
@@ -400,23 +400,23 @@ The `sprites` mixin generates identical output to the CSS template
     .comment-item .user.founded .icons {
       top: 28px;
       background-image: url(/assets/images/sprites.png);
-      background-position: -1012px -640px;
-      width: 91px;
+      background-position: -632px -374px;
+      width: 93px;
       height: 18px; }
     .comment-item .user.health img {
       border: 4px solid #f15234; }
     .comment-item .user.health .icons {
       background-image: url(/assets/images/sprites.png);
-      background-position: -1148px -923px;
-      width: 91px;
+      background-position: -1162px -924px;
+      width: 93px;
       height: 26px; }
     .comment-item .user.car img {
       border: 4px solid #9bb226; }
     .comment-item .user.car .icons {
       top: 26px;
       background-image: url(/assets/images/sprites.png);
-      background-position: -1148px -867px;
-      width: 114px;
+      background-position: -1162px -898px;
+      width: 116px;
       height: 20px; }
   .comment-item .comment {
     margin-top: 42px;
@@ -457,26 +457,26 @@ The `sprites` mixin generates identical output to the CSS template
           margin-right: 5px;
           vertical-align: middle;
           background-image: url(/assets/images/sprites.png);
-          background-position: -1233px -481px;
+          background-position: -1302px -347px;
           width: 34px;
           height: 11px; }
       .type-card .comment-item .user.founded .icons {
         margin-top: 19px;
         background-image: url(/assets/images/sprites.png);
-        background-position: -1148px -893px;
-        width: 98px;
+        background-position: -1162px -868px;
+        width: 100px;
         height: 24px; }
       .type-card .comment-item .user.health .icons {
         margin-top: 14px;
         background-image: url(/assets/images/sprites.png);
-        background-position: -1148px -832px;
-        width: 92px;
+        background-position: -1162px -833px;
+        width: 94px;
         height: 29px; }
       .type-card .comment-item .user.car .icons {
         margin-top: 22px;
         background-image: url(/assets/images/sprites.png);
-        background-position: -1148px -804px;
-        width: 119px;
+        background-position: -1162px -805px;
+        width: 121px;
         height: 22px; }
     .type-card .comment-item .comment {
       display: block;
@@ -516,23 +516,23 @@ The `sprites` mixin generates identical output to the CSS template
     .list-comments .btn-slider.prev {
       left: -35px;
       background-image: url(/assets/images/sprites.png);
-      background-position: -1233px -329px;
+      background-position: -1302px -300px;
       width: 25px;
       height: 41px; }
       .list-comments .btn-slider.prev:hover {
         background-image: url(/assets/images/sprites.png);
-        background-position: -1233px -499px;
+        background-position: -812px -123px;
         width: 25px;
         height: 41px; }
     .list-comments .btn-slider.next {
       right: -35px;
       background-image: url(/assets/images/sprites.png);
-      background-position: -1233px -414px;
+      background-position: -1302px -253px;
       width: 25px;
       height: 41px; }
       .list-comments .btn-slider.next:hover {
         background-image: url(/assets/images/sprites.png);
-        background-position: -1233px -244px;
+        background-position: -1302px -206px;
         width: 25px;
         height: 41px; }
   .list-comments .slick-dots {
@@ -549,12 +549,12 @@ The `sprites` mixin generates identical output to the CSS template
         margin: 0 3px;
         text-indent: -9999px;
         background-image: url(/assets/images/sprites.png);
-        background-position: -1264px -244px;
+        background-position: -1289px -805px;
         width: 15px;
         height: 16px; }
       .list-comments .slick-dots > li.slick-active button {
         background-image: url(/assets/images/sprites.png);
-        background-position: -1262px -207px;
+        background-position: -1310px -805px;
         width: 15px;
         height: 16px; }
 
@@ -565,9 +565,9 @@ The `sprites` mixin generates identical output to the CSS template
     margin: 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -1012px -702px;
+    background-position: -1268px -868px;
     width: 68px;
-    height: 16px; }
+    height: 15px; }
 
 /* 당신으로 부터, SAY 삼양 */
 .say-samyang {
@@ -583,9 +583,9 @@ The `sprites` mixin generates identical output to the CSS template
       margin: 20px auto 0 auto;
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
-      background-position: 0px -126px;
-      width: 710px;
-      height: 123px; }
+      background-position: 0px -824px;
+      width: 577px;
+      height: 122px; }
   .say-samyang .video-container {
     position: relative;
     margin-top: 30px;
@@ -610,23 +610,23 @@ The `sprites` mixin generates identical output to the CSS template
         margin: 0 auto;
         text-indent: -9999px;
         background-image: url(/assets/images/sprites.png);
-        background-position: 0px -1017px;
-        width: 333px;
+        background-position: 0px -1015px;
+        width: 343px;
         height: 80px; }
       .say-samyang .video-container .description .story-health {
         margin: 0 auto;
         text-indent: -9999px;
         background-image: url(/assets/images/sprites.png);
-        background-position: -690px -831px;
-        width: 366px;
-        height: 81px; }
+        background-position: -696px -703px;
+        width: 376px;
+        height: 80px; }
       .say-samyang .video-container .description .story-car {
         margin: 0 auto;
         text-indent: -9999px;
         background-image: url(/assets/images/sprites.png);
-        background-position: -339px -1017px;
-        width: 333px;
-        height: 79px; }
+        background-position: -583px -824px;
+        width: 343px;
+        height: 80px; }
     .say-samyang .video-container .btn {
       display: block;
       position: absolute;
@@ -635,17 +635,17 @@ The `sprites` mixin generates identical output to the CSS template
       text-indent: -9999px; }
       .say-samyang .video-container .btn.btn-story-founded {
         background-image: url(/assets/images/sprites.png);
-        background-position: -832px -576px;
+        background-position: -632px -123px;
         width: 174px;
         height: 200px; }
       .say-samyang .video-container .btn.btn-story-health {
         background-image: url(/assets/images/sprites.png);
-        background-position: -632px -255px;
+        background-position: -632px -413px;
         width: 174px;
         height: 200px; }
       .say-samyang .video-container .btn.btn-story-car {
         background-image: url(/assets/images/sprites.png);
-        background-position: -632px -543px;
+        background-position: -1162px 0px;
         width: 174px;
         height: 200px; }
 
@@ -669,8 +669,8 @@ The `sprites` mixin generates identical output to the CSS template
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
       background-position: 0px 0px;
-      width: 826px;
-      height: 120px; }
+      width: 840px;
+      height: 117px; }
 
 /* 삼양그룹에게 당신의 이야기를 들려주세요! */
 .your-story {
@@ -707,15 +707,15 @@ The `sprites` mixin generates identical output to the CSS template
       margin: 0 auto;
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
-      background-position: 0px -831px;
-      width: 684px;
-      height: 118px; }
+      background-position: 0px -703px;
+      width: 690px;
+      height: 115px; }
     .your-story > header .txt-desc {
       margin: 27px auto 0 auto;
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
-      background-position: 0px -1103px;
-      width: 349px;
+      background-position: -583px -910px;
+      width: 357px;
       height: 34px; }
       .your-story > header .txt-desc br {
         display: none; }
@@ -724,8 +724,8 @@ The `sprites` mixin generates identical output to the CSS template
       position: relative;
       margin: 44px auto 0 auto;
       background-image: url(/assets/images/sprites.png);
-      background-position: -690px -918px;
-      width: 405px;
+      background-position: -696px -789px;
+      width: 406px;
       height: 24px; }
       .your-story > header dl dt, .your-story > header dl dd {
         position: absolute;
@@ -749,8 +749,8 @@ The `sprites` mixin generates identical output to the CSS template
     margin: 50px auto 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -632px -510px;
-    width: 185px;
+    background-position: -632px -329px;
+    width: 190px;
     height: 19px; }
   .your-story .login-btns {
     padding: 18px 0 40px 0;
@@ -768,32 +768,32 @@ The `sprites` mixin generates identical output to the CSS template
       text-indent: -9999px; }
       .your-story .login-btns a.facebook {
         background-image: url(/assets/images/sprites.png);
-        background-position: -1148px -159px;
+        background-position: -1162px -498px;
         width: 79px;
         height: 79px; }
         .your-story .login-btns a.facebook.is-selected {
           background-image: url(/assets/images/sprites.png);
-          background-position: -1148px -244px;
+          background-position: -1162px -413px;
           width: 79px;
           height: 79px; }
       .your-story .login-btns a.twitter {
         background-image: url(/assets/images/sprites.png);
-        background-position: -1148px -414px;
+        background-position: -1247px -413px;
         width: 79px;
         height: 79px; }
         .your-story .login-btns a.twitter.is-selected {
           background-image: url(/assets/images/sprites.png);
-          background-position: -1148px -499px;
+          background-position: -1247px -498px;
           width: 79px;
           height: 79px; }
       .your-story .login-btns a.kakaostory {
         background-image: url(/assets/images/sprites.png);
-        background-position: -1148px -329px;
+        background-position: -1162px -583px;
         width: 79px;
         height: 79px; }
         .your-story .login-btns a.kakaostory.is-selected {
           background-image: url(/assets/images/sprites.png);
-          background-position: -1148px -584px;
+          background-position: -1247px -583px;
           width: 79px;
           height: 79px; }
   .your-story .select-video {
@@ -814,9 +814,9 @@ The `sprites` mixin generates identical output to the CSS template
       visibility: visible;
       margin: 0 auto 22px auto;
       background-image: url(/assets/images/sprites.png);
-      background-position: -654px -1103px;
-      width: 239px;
-      height: 19px; }
+      background-position: -909px -952px;
+      width: 245px;
+      height: 20px; }
     .your-story .select-video .iradio {
       display: inline-block; }
       .your-story .select-video .iradio + label {
@@ -826,42 +826,42 @@ The `sprites` mixin generates identical output to the CSS template
         cursor: pointer; }
         .your-story .select-video .iradio + label.radio-video01 {
           background-image: url(/assets/images/sprites.png);
-          background-position: -832px -288px;
+          background-position: 0px -413px;
           width: 310px;
-          height: 282px; }
+          height: 284px; }
         .your-story .select-video .iradio + label.radio-video02 {
           background-image: url(/assets/images/sprites.png);
-          background-position: 0px -255px;
+          background-position: 0px -123px;
           width: 310px;
-          height: 282px; }
+          height: 284px; }
         .your-story .select-video .iradio + label.radio-video03 {
           background-image: url(/assets/images/sprites.png);
-          background-position: -316px -543px;
+          background-position: -846px 0px;
           width: 310px;
-          height: 282px; }
+          height: 284px; }
       .your-story .select-video .iradio.checked + .radio-video01 {
         background-image: url(/assets/images/sprites.png);
-        background-position: -316px -255px;
+        background-position: -316px -123px;
         width: 310px;
-        height: 282px; }
+        height: 284px; }
       .your-story .select-video .iradio.checked + .radio-video02 {
         background-image: url(/assets/images/sprites.png);
-        background-position: -832px 0px;
+        background-position: -846px -290px;
         width: 310px;
-        height: 282px; }
+        height: 284px; }
       .your-story .select-video .iradio.checked + .radio-video03 {
         background-image: url(/assets/images/sprites.png);
-        background-position: 0px -543px;
+        background-position: -316px -413px;
         width: 310px;
-        height: 282px; }
+        height: 284px; }
   .your-story .write-comment > legend {
     display: block;
     position: static;
     visibility: visible;
     margin: 0 auto;
     background-image: url(/assets/images/sprites.png);
-    background-position: -355px -1103px;
-    width: 293px;
+    background-position: -846px -619px;
+    width: 300px;
     height: 19px; }
   .your-story .write-comment .writer {
     overflow: hidden;
@@ -894,8 +894,8 @@ The `sprites` mixin generates identical output to the CSS template
       margin: 0 auto;
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
-      background-position: -1148px -1061px;
-      width: 105px;
+      background-position: -1162px -956px;
+      width: 107px;
       height: 19px; }
   .your-story .write-comment .remain-txt {
     display: block;
@@ -915,17 +915,17 @@ The `sprites` mixin generates identical output to the CSS template
     .guide > .inner > .title {
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
-      background-position: -1148px -775px;
-      width: 127px;
+      background-position: -1162px -776px;
+      width: 129px;
       height: 23px; }
   .guide .list-guide {
     position: relative;
     overflow: hidden;
     margin-top: 16px;
     background-image: url(/assets/images/sprites.png);
-    background-position: 0px -955px;
-    width: 899px;
-    height: 56px; }
+    background-position: 0px -952px;
+    width: 903px;
+    height: 57px; }
     .guide .list-guide > li {
       position: absolute;
       top: -9999px;
@@ -944,9 +944,9 @@ The `sprites` mixin generates identical output to the CSS template
     margin: 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -678px -1017px;
-    width: 349px;
-    height: 56px; }
+    background-position: -349px -1015px;
+    width: 356px;
+    height: 55px; }
   .popup-application .basic-info {
     margin-top: 65px;
     padding: 16px 0 16px 0;
@@ -959,15 +959,15 @@ The `sprites` mixin generates identical output to the CSS template
       text-indent: -9999px; }
       .popup-application .basic-info label.txt-name {
         background-image: url(/assets/images/sprites.png);
-        background-position: -1233px -546px;
-        width: 23px;
+        background-position: -1297px -776px;
+        width: 24px;
         height: 13px; }
       .popup-application .basic-info label.txt-phone {
         margin-left: 25px;
         background-image: url(/assets/images/sprites.png);
-        background-position: -1233px -461px;
+        background-position: -1284px -742px;
         width: 35px;
-        height: 14px; }
+        height: 13px; }
     .popup-application .basic-info input[type=text] {
       height: 34px;
       width: 73px;
@@ -988,15 +988,15 @@ The `sprites` mixin generates identical output to the CSS template
       display: block;
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
-      background-position: -832px -782px;
-      width: 264px;
+      background-position: -846px -580px;
+      width: 268px;
       height: 33px; }
     .popup-application .agreements .txt-agreement02 {
       display: block;
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
-      background-position: -632px -749px;
-      width: 183px;
+      background-position: -846px -644px;
+      width: 185px;
       height: 33px; }
     .popup-application .agreements .list-agreement {
       margin-top: 10px;
@@ -1028,22 +1028,22 @@ The `sprites` mixin generates identical output to the CSS template
         cursor: pointer; }
         .popup-application .agreements .iradio + label.agreement-yes {
           background-image: url(/assets/images/sprites.png);
-          background-position: -1012px -608px;
+          background-position: -1261px -924px;
           width: 69px;
           height: 26px; }
         .popup-application .agreements .iradio + label.agreement-no {
           background-image: url(/assets/images/sprites.png);
-          background-position: -1148px -955px;
+          background-position: -1250px -981px;
           width: 82px;
           height: 26px; }
       .popup-application .agreements .iradio.checked + .agreement-yes {
         background-image: url(/assets/images/sprites.png);
-        background-position: -1012px -576px;
+        background-position: -1262px -833px;
         width: 69px;
         height: 26px; }
       .popup-application .agreements .iradio.checked + .agreement-no {
         background-image: url(/assets/images/sprites.png);
-        background-position: -1148px -987px;
+        background-position: -1162px -981px;
         width: 82px;
         height: 26px; }
   .popup-application .btn-application {
@@ -1051,9 +1051,9 @@ The `sprites` mixin generates identical output to the CSS template
     margin: 40px auto 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -1148px 0px;
+    background-position: -1162px -206px;
     width: 134px;
-    height: 153px;
+    height: 152px;
     background-color: transparent; }
   .popup-application .mfp-close {
     display: block;
@@ -1063,6 +1063,6 @@ The `sprites` mixin generates identical output to the CSS template
     margin-left: 330px;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -1233px -159px;
+    background-position: -632px -619px;
     width: 42px;
     height: 42px; }
