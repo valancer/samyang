@@ -793,7 +793,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       text-indent: -9999px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
       background-position: -652px -410px;
-      width: 203px;
+      width: 197px;
       height: 84px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .your-story > header > .title {

@@ -60,7 +60,7 @@ var Menus = (function($) {
 
 			$(window).off("scroll");
 
-			$('a').each(function () {
+			$btnMenus.each(function () {
 			    $(this).removeClass('is-selected');
 			})
 			$(this).addClass('is-selected');
@@ -116,19 +116,19 @@ var Video = (function(e) {
 				title : '창업 이야기',
 				desc : '외식업에 관심이 있는 당신을 위해 삼양은 최고의 식자재와 전문적인 컨설팅을 지원합니다.',
 				cssClass : 'story-founded',
-				iframe : '<iframe id="video-frame" width="100%" height="100%" src="//www.youtube.com/embed/p6Fvu7p7g7c?version=3&loop=1&autoplay=0&rel=0&showinfo=0&controls=1&autohide=1" frameborder="0" allowfullscreen></iframe>'
+				iframe : '<iframe id="video-frame" width="100%" height="100%" src="//www.youtube.com/embed/C4zAzDM95KA?version=3&loop=1&autoplay=0&rel=0&showinfo=0&controls=1&autohide=1" frameborder="0" allowfullscreen></iframe>'
 			},
 			{
 				title : '건강 이야기',
 				desc : '당신이 언제나 건강할 수 있도록 삼양은 생명공학, 의약분야에 첨단 치료기술을 개발하고 있습니다.',
 				cssClass : 'story-health',
-				iframe : '<iframe id="video-frame" width="100%" height="100%" src="//www.youtube.com/embed/mb-_S2PyIiY?version=3&loop=1&autoplay=0&rel=0&showinfo=0&controls=1&autohide=1" frameborder="0" allowfullscreen></iframe>'
+				iframe : '<iframe id="video-frame" width="100%" height="100%" src="//www.youtube.com/embed/WYwQ7-Thj-g?version=3&loop=1&autoplay=0&rel=0&showinfo=0&controls=1&autohide=1" frameborder="0" allowfullscreen></iframe>'
 			},
 			{
 				title : '자동차 이야기',
 				desc : '당신의 편리한 생활을 만들기 위해 삼양은 엔지니어링 플라스틱 소재를 개발하고 있습니다.',
 				cssClass : 'story-car',
-				iframe : '<iframe id="video-frame" width="100%" height="100%" src="//www.youtube.com/embed/O-9hujDixgw?version=3&loop=1&autoplay=0&rel=0&showinfo=0&controls=1&autohide=1" frameborder="0" allowfullscreen></iframe>'
+				iframe : '<iframe id="video-frame" width="100%" height="100%" src="//www.youtube.com/embed/KOUtSIVoNpE?version=3&loop=1&autoplay=0&rel=0&showinfo=0&controls=1&autohide=1" frameborder="0" allowfullscreen></iframe>'
 			}
 		],
 		init = function () {

@@ -617,7 +617,7 @@ The `sprites` mixin generates identical output to the CSS template
         margin: 0 auto;
         text-indent: -9999px;
         background-image: url(/assets/images/sprites.png);
-        background-position: -696px -703px;
+        background-position: -674px -703px;
         width: 376px;
         height: 80px; }
       .say-samyang .video-container .description .story-car {
@@ -708,7 +708,7 @@ The `sprites` mixin generates identical output to the CSS template
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
       background-position: 0px -703px;
-      width: 690px;
+      width: 668px;
       height: 115px; }
     .your-story > header .txt-desc {
       margin: 27px auto 0 auto;
@@ -724,7 +724,7 @@ The `sprites` mixin generates identical output to the CSS template
       position: relative;
       margin: 44px auto 0 auto;
       background-image: url(/assets/images/sprites.png);
-      background-position: -696px -789px;
+      background-position: -674px -789px;
       width: 406px;
       height: 24px; }
       .your-story > header dl dt, .your-story > header dl dd {
