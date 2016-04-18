@@ -43,7 +43,7 @@
 			.icons { position: static; }
 			.name { display: block; margin: 5px 0 0 0; font-size: 15px; color: #333; text-align: left; }
 		}
-		.comment { display: block; box-sizing: border-box; margin: 0px; padding: 12px 10px 0 10px; height: 114px; width: 100%; font-size: 11px; color: #333; line-height: 17px; border-top: 1px dashed #b8b8b8; }
+		.comment { display: block; overflow: hidden; box-sizing: border-box; margin: 0px; padding: 12px 10px 0 10px; height: 114px; width: 100%; font-size: 11px; color: #333; line-height: 17px; border-top: 1px dashed #b8b8b8; }
 	}
 }
 

@@ -548,6 +548,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         text-align: left; }
     .type-card .comment-item .comment {
       display: block;
+      overflow: hidden;
       box-sizing: border-box;
       margin: 0px;
       padding: 12px 10px 0 10px;

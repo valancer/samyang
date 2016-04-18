@@ -480,6 +480,7 @@ The `sprites` mixin generates identical output to the CSS template
         height: 22px; }
     .type-card .comment-item .comment {
       display: block;
+      overflow: hidden;
       margin: 20px 0 0 0;
       padding: 20px 9px 0 9px;
       height: 130px;
@@ -746,7 +747,7 @@ The `sprites` mixin generates identical output to the CSS template
     width: 1000px; }
   .your-story .txt-sns-login {
     display: block;
-    margin: 50px auto 0 auto;
+    margin: 40px auto 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
     background-position: -632px -329px;
@@ -758,7 +759,7 @@ The `sprites` mixin generates identical output to the CSS template
     .your-story .login-btns:after {
       content: '';
       display: block;
-      margin: 28px auto 0 auto;
+      margin: 38px auto 0 auto;
       height: 50px;
       width: 1px;
       background-color: #b3b3b3; }
@@ -798,8 +799,8 @@ The `sprites` mixin generates identical output to the CSS template
           height: 79px; }
   .your-story .select-video {
     overflow: hidden;
-    margin: 0 -23px 0 -23px;
-    padding: 0 0 40px 0;
+    margin: 50px -23px 0 -23px;
+    padding: 0 0 0px 0;
     text-align: center; }
     .your-story .select-video:after {
       content: '';

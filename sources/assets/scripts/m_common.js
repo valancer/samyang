@@ -35,7 +35,7 @@ var Menus = (function($) {
 
 			$btnMenus.each(function () {
 			    $(this).removeClass('is-selected');
-			})
+			});
 			$(this).addClass('is-selected');
 
 			var target = this.hash,
