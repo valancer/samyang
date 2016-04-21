@@ -89,7 +89,7 @@
 
 
 /* 당신으로 부터, SAY 삼양 */
-.say-samyang { position: relative; z-index: z("default")+2; padding-top: 110px; background: url('/assets/images/mobile/bg_section01.png') center bottom no-repeat;
+.say-samyang { position: relative; z-index: z("default")+2; padding-top: 110px; background: url('/assets/images/mobile/bg_section01.png') center bottom no-repeat; background-size: 100% auto;
 	@include retina { background-image: url('/assets/images/mobile/bg_section01@2x.png'); }
 
 	> .title { display: block; margin: 3px auto 0 auto; text-indent: -9999px; @include retina-sprite($sm-title-section01-group); }
@@ -126,7 +126,7 @@
 
 
 /* 당신의 소중한 이야기에 귀기울입니다. */
-.summary-story { position: relative; z-index: z("default")+1; padding-top: 16px; padding-bottom: 50px; background-color: #50b3e1;
+.summary-story { display: none; position: relative; z-index: z("default")+1; padding-top: 16px; padding-bottom: 50px; background-color: #50b3e1;
 	> .title { margin: 0 auto; text-indent: -9999px; @include retina-sprite($sm-title-section02-group); }
 }
 
@@ -135,20 +135,20 @@
 
 /* 삼양그룹에게 당신의 이야기를 들려주세요! */
 .your-story { position: relative; z-index: z("default"); background-color: #fff;
-
-	> header { margin: 0 auto; padding: 33px 0px 20px 0px;
-		> .title { margin: 0 auto; text-indent: -9999px; @include retina-sprite($sm-title-section-your-story-group); }
-		.txt-desc { margin: 17px auto 0 auto; text-indent: -9999px; @include retina-sprite($sm-txt-your-story-group);
-			br { display: none; }
+	> header { background-color: #50b3e1;
+		> .inner { margin: 0 auto; padding: 17px 0px 20px 0px;
+			> .title { margin: 0 auto; text-indent: -9999px; @include retina-sprite($sm-title-section-your-story-group); }
+			.txt-desc { margin: 17px auto 0 auto; text-indent: -9999px; @include retina-sprite($sm-txt-your-story-group);
+				br { display: none; }
+			}
+			dl { display: block; position: relative; margin: 19px auto 0 auto; @include retina-sprite($sm-txt-duration-event-group);
+				dt, dd { position: absolute; top: -9999px; left: -9999px; }
+			}
+			.message { display: block; margin: 20px auto 0 auto; text-indent: -9999px; @include retina-sprite($sm-txt-message01-group); }
+			.list-gifts { margin: 17px auto 0 auto; text-align: center; @include retina-sprite($sm-bg-presents-group);
+				> li { display: none; }
+			}
 		}
-		dl { display: block; position: relative; margin: 19px auto 0 auto; @include retina-sprite($sm-txt-duration-event-group);
-			dt, dd { position: absolute; top: -9999px; left: -9999px; }
-		}
-		.message { display: block; margin: 20px auto 0 auto; text-indent: -9999px; @include retina-sprite($sm-txt-message01-group); }
-		.list-gifts { margin: 17px auto 0 auto; text-align: center; @include retina-sprite($sm-bg-presents-group);
-			> li { display: none; }
-		}
-
 	}
 	
 	> .inner { position: relative; margin: 0 auto; padding: 38px 0 0 0; background: url('/assets/images/mobile/bg_section02.png') left top repeat-x;

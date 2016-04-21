@@ -130,18 +130,18 @@ input[type=submit] {
   border: 0px; }
 
 ::-webkit-input-placeholder {
-  color: #ccd0d7; }
+  color: #4c4c4c; }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #ccd0d7; }
+  color: #4c4c4c; }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #ccd0d7; }
+  color: #4c4c4c; }
 
 :-ms-input-placeholder {
-  color: #ccd0d7; }
+  color: #4c4c4c; }
 
 /*
 SCSS variables are information about icon's compiled state, stored under its original file name
@@ -318,7 +318,7 @@ The `sprites` mixin generates identical output to the CSS template
     display: block;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -349px -1054px;
+    background-position: -349px -1055px;
     width: 403px;
     height: 12px; }
   .footer .txt-address {
@@ -326,7 +326,7 @@ The `sprites` mixin generates identical output to the CSS template
     margin-top: 8px;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: -950px -1015px;
+    background-position: -950px -1016px;
     width: 318px;
     height: 11px; }
 
@@ -584,7 +584,7 @@ The `sprites` mixin generates identical output to the CSS template
       margin: 20px auto 0 auto;
       text-indent: -9999px;
       background-image: url(/assets/images/sprites.png);
-      background-position: 0px -824px;
+      background-position: 0px -825px;
       width: 577px;
       height: 122px; }
   .say-samyang .video-container {
@@ -611,21 +611,21 @@ The `sprites` mixin generates identical output to the CSS template
         margin: 0 auto;
         text-indent: -9999px;
         background-image: url(/assets/images/sprites.png);
-        background-position: -583px -824px;
+        background-position: -583px -825px;
         width: 343px;
         height: 80px; }
       .say-samyang .video-container .description .story-health {
         margin: 0 auto;
         text-indent: -9999px;
         background-image: url(/assets/images/sprites.png);
-        background-position: -674px -703px;
+        background-position: -675px -703px;
         width: 376px;
         height: 80px; }
       .say-samyang .video-container .description .story-car {
         margin: 0 auto;
         text-indent: -9999px;
         background-image: url(/assets/images/sprites.png);
-        background-position: 0px -1015px;
+        background-position: 0px -1016px;
         width: 343px;
         height: 80px; }
     .say-samyang .video-container .btn {
@@ -652,6 +652,7 @@ The `sprites` mixin generates identical output to the CSS template
 
 /* 당신의 소중한 이야기에 귀기울입니다. */
 .summary-story {
+  display: none;
   position: relative;
   z-index: 2;
   background-color: #50b3e1; }
@@ -685,7 +686,7 @@ The `sprites` mixin generates identical output to the CSS template
     content: '';
     display: block;
     position: absolute;
-    top: 683px;
+    top: 635px;
     height: 155px;
     width: 100%;
     background: url("/assets/images/bg_section02.png") center top repeat-x; }
@@ -701,53 +702,55 @@ The `sprites` mixin generates identical output to the CSS template
     .msie11 .your-story:before {
       top: 682px; }
   .your-story > header {
-    margin: 0 auto;
-    padding: 68px 0px 42px 0px;
-    width: 1000px; }
-    .your-story > header > .title {
+    background-color: #50b3e1; }
+    .your-story > header > .inner {
       margin: 0 auto;
-      text-indent: -9999px;
-      background-image: url(/assets/images/sprites.png);
-      background-position: 0px -703px;
-      width: 668px;
-      height: 115px; }
-    .your-story > header .txt-desc {
-      margin: 27px auto 0 auto;
-      text-indent: -9999px;
-      background-image: url(/assets/images/sprites.png);
-      background-position: -583px -910px;
-      width: 357px;
-      height: 34px; }
-      .your-story > header .txt-desc br {
-        display: none; }
-    .your-story > header dl {
-      display: block;
-      position: relative;
-      margin: 44px auto 0 auto;
-      background-image: url(/assets/images/sprites.png);
-      background-position: -674px -789px;
-      width: 406px;
-      height: 24px; }
-      .your-story > header dl dt, .your-story > header dl dd {
-        position: absolute;
-        top: -9999px;
-        left: -9999px; }
-    .your-story > header .message {
-      display: block;
-      margin: 20px auto 0 auto;
-      text-indent: -9999px;
-      background-image: url(/assets/images/sprites.png);
-      background-position: -349px -1015px;
-      width: 595px;
-      height: 33px; }
-    .your-story > header .list-gifts {
-      margin: 40px auto 0 auto;
-      height: 236px;
-      width: 832px;
-      text-align: center;
-      background: url("/assets/images/bg_presents.jpg") left top no-repeat; }
-      .your-story > header .list-gifts > li {
-        display: none; }
+      padding: 20px 0px 42px 0px;
+      width: 1000px; }
+      .your-story > header > .inner > .title {
+        margin: 0 auto;
+        text-indent: -9999px;
+        background-image: url(/assets/images/sprites.png);
+        background-position: 0px -703px;
+        width: 669px;
+        height: 116px; }
+      .your-story > header > .inner .txt-desc {
+        margin: 27px auto 0 auto;
+        text-indent: -9999px;
+        background-image: url(/assets/images/sprites.png);
+        background-position: -583px -911px;
+        width: 357px;
+        height: 34px; }
+        .your-story > header > .inner .txt-desc br {
+          display: none; }
+      .your-story > header > .inner dl {
+        display: block;
+        position: relative;
+        margin: 44px auto 0 auto;
+        background-image: url(/assets/images/sprites.png);
+        background-position: -675px -789px;
+        width: 406px;
+        height: 24px; }
+        .your-story > header > .inner dl dt, .your-story > header > .inner dl dd {
+          position: absolute;
+          top: -9999px;
+          left: -9999px; }
+      .your-story > header > .inner .message {
+        display: block;
+        margin: 20px auto 0 auto;
+        text-indent: -9999px;
+        background-image: url(/assets/images/sprites.png);
+        background-position: -349px -1016px;
+        width: 595px;
+        height: 33px; }
+      .your-story > header > .inner .list-gifts {
+        margin: 40px auto 0 auto;
+        height: 236px;
+        width: 832px;
+        text-align: center;
+        background: url("/assets/images/bg_presents.png") left top no-repeat; }
+        .your-story > header > .inner .list-gifts > li {
+          display: none; }
   .your-story > .inner {
     position: relative;
     margin: 0 auto;
@@ -823,7 +826,7 @@ The `sprites` mixin generates identical output to the CSS template
       visibility: visible;
       margin: 0 auto 22px auto;
       background-image: url(/assets/images/sprites.png);
-      background-position: -909px -952px;
+      background-position: -909px -953px;
       width: 245px;
       height: 20px; }
     .your-story .select-video .iradio {
@@ -932,7 +935,7 @@ The `sprites` mixin generates identical output to the CSS template
     overflow: hidden;
     margin-top: 16px;
     background-image: url(/assets/images/sprites.png);
-    background-position: 0px -952px;
+    background-position: 0px -953px;
     width: 903px;
     height: 57px; }
     .guide .list-guide > li {
@@ -953,7 +956,7 @@ The `sprites` mixin generates identical output to the CSS template
     margin: 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/sprites.png);
-    background-position: 0px -1101px;
+    background-position: 0px -1102px;
     width: 356px;
     height: 55px; }
   .popup-application .basic-info {

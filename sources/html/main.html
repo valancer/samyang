@@ -1,11 +1,13 @@
 @@include('./head.html')
 	<script>
 	$(window.document).ready(function(){
+/*
 		$.magnificPopup.open({
 			items: {
 				src: '#popup-application'
 			},
 		}, 0);
+*/
 	});
 	</script>
 
@@ -125,30 +127,32 @@
 			<!-- 삼양그룹에게 당신의 이야기를 들려주세요! -->
 			<section id="your-story" class="your-story">
 				<header>
-					<h2 class="title">삼양의 모든일은 당신의 한마디로 부터 시작됩니다!</h2>
-					<p class="txt-desc">
-						관심 있는 영상을 선택하고 삼양에게 하고 싶은 말을 남겨주세요.
-						소중한 이야기들 중에 선별을 통해 선물을 드립니다.
-					</p>
+					<div class="inner">
+						<h2 class="title">삼양의 모든일은 당신의 한마디로 부터 시작됩니다!</h2>
+						<p class="txt-desc">
+							관심 있는 영상을 선택하고 삼양에게 하고 싶은 말을 남겨주세요.
+							소중한 이야기들 중에 선별을 통해 선물을 드립니다.
+						</p>
 
-					<dl>
-						<dt>이벤트 기간</dt>
-						<dd><time datetime="2016-04-15">2016년 4월 15일</time> ~ <time datetime="2016-05-31">5월 31일</time></dd>
-						<dt>당첨자 발표</dt>
-						<dd><time datetime="2016-06-20">2016년 6월 20일</time></dd>
-					</dl>
+						<dl>
+							<dt>이벤트 기간</dt>
+							<dd><time datetime="2016-04-15">2016년 4월 15일</time> ~ <time datetime="2016-05-31">5월 31일</time></dd>
+							<dt>당첨자 발표</dt>
+							<dd><time datetime="2016-06-20">2016년 6월 20일</time></dd>
+						</dl>
 
-					<p class="message">※ 삼양그룹은 라면을 만드는 삼양식품과 무관한 그룹으로 화학, 식품, 의약 등이 주력 사업인 그룹사입니다. 이벤트 참여하실 때 꼭 기억해 주세요!</p>
+						<p class="message">※ 삼양그룹은 라면을 만드는 삼양식품과 무관한 그룹으로 화학, 식품, 의약 등이 주력 사업인 그룹사입니다. 이벤트 참여하실 때 꼭 기억해 주세요!</p>
 
-					<ul class="list-gifts">
-						<li>여행상품권(1명) 100만원권</li>
-						<li>여행상품권(3명) 50만원권</li>
-						<li>신세계상풍권(30명) 3만원권</li>
-						<li>주유권(300명) 1만원</li>
-						<li>어바웃미 오일잼모이스처크림 50ml(20명)</li>
-						<li>어바웃미 굿나이트모이스처앰플 40ml(20명)</li>
-						<li>상쾌환 10개입 1Box(100명)</li>
-					</ul>
+						<ul class="list-gifts">
+							<li>여행상품권(1명) 100만원권</li>
+							<li>여행상품권(3명) 50만원권</li>
+							<li>신세계상풍권(30명) 3만원권</li>
+							<li>주유권(300명) 1만원</li>
+							<li>어바웃미 오일잼모이스처크림 50ml(20명)</li>
+							<li>어바웃미 굿나이트모이스처앰플 40ml(20명)</li>
+							<li>상쾌환 10개입 1Box(100명)</li>
+						</ul>
+					</div>
 				</header>
 
 
@@ -190,8 +194,8 @@
 						<legend>당신의 생각 또는 이야기를 남겨주세요.</legend>
 
 						<p class="writer">
-							<textarea name="" id="" cols="100" rows="10">※ 우리가 몰랐던 삼양 이야기
-    삼양그룹은 라면을 만드는 삼양식품과는 전혀 다른 회사라는 사실~ 모르셨죠??</textarea>
+							<textarea name="" id="" cols="100" rows="10" placeholder="※ 우리가 몰랐던 삼양 이야기
+    삼양그룹은 라면을 만드는 삼양식품과는 전혀 다른 회사라는 사실~ 모르셨죠??"></textarea>
 							<span class="remain-txt">0/200</span>
 							<button type="submit" class="btn-write"><span>이야기 남기기</span></button>
 						</p>

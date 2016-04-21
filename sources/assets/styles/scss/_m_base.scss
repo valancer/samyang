@@ -41,17 +41,17 @@ fieldset { appearance: none; }
 input[type=text], input[type=submit] { appearance: none; cursor: pointer; border: 0px; border-radius: 0px; }
 
 ::-webkit-input-placeholder {
-   color: #ccd0d7;
+   color: #4c4c4c;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: #ccd0d7;  
+   color: #4c4c4c;  
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #ccd0d7;  
+   color: #4c4c4c;  
 }
 
 :-ms-input-placeholder {  
-   color: #ccd0d7;  
+   color: #4c4c4c;  
 }
