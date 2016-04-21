@@ -144,7 +144,7 @@
 		dl { display: block; position: relative; margin: 19px auto 0 auto; @include retina-sprite($sm-txt-duration-event-group);
 			dt, dd { position: absolute; top: -9999px; left: -9999px; }
 		}
-
+		.message { display: block; margin: 20px auto 0 auto; text-indent: -9999px; @include retina-sprite($sm-txt-message01-group); }
 		.list-gifts { margin: 17px auto 0 auto; text-align: center; @include retina-sprite($sm-bg-presents-group);
 			> li { display: none; }
 		}

@@ -239,7 +239,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     margin: 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -95px -770px;
+    background-position: -778px -666px;
     width: 93px;
     height: 25px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -293,7 +293,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
                   background-size: 966px 902px; } }
           .header .menus ul > li a.menu02 {
             background-image: url(/assets/images/mobile/sprites_mobile.png);
-            background-position: -160px -827px;
+            background-position: -80px -827px;
             width: 74px;
             height: 29px; }
             @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -302,7 +302,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
                 background-size: 966px 902px; } }
             .header .menus ul > li a.menu02:hover {
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -80px -827px;
+              background-position: -160px -827px;
               width: 74px;
               height: 29px; }
               @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -311,7 +311,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
                   background-size: 966px 902px; } }
             .header .menus ul > li a.menu02.is-selected {
               background-image: url(/assets/images/mobile/sprites_mobile.png);
-              background-position: -80px -827px;
+              background-position: -160px -827px;
               width: 74px;
               height: 29px; }
               @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -358,7 +358,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     margin: 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -344px -770px;
+    background-position: -390px -827px;
     width: 74px;
     height: 20px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -382,7 +382,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     margin: 5px auto 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -543px -648px;
+    background-position: -652px -523px;
     width: 223px;
     height: 8px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -414,7 +414,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         text-indent: -9999px; }
         .comment-item .user .thumb .via.facebook {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -861px -307px;
+          background-position: -861px -330px;
           width: 16px;
           height: 16px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -423,7 +423,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
               background-size: 966px 902px; } }
         .comment-item .user .thumb .via.twitter {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -861px -263px;
+          background-position: -861px -286px;
           width: 16px;
           height: 16px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -432,7 +432,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
               background-size: 966px 902px; } }
         .comment-item .user .thumb .via.kakaostory {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -861px -285px;
+          background-position: -861px -308px;
           width: 16px;
           height: 16px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -472,7 +472,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       border: 2px solid #0895d7; }
     .comment-item .user.founded .icons {
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -424px -770px;
+      background-position: -329px -794px;
       width: 72px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -483,7 +483,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       border: 2px solid #f15234; }
     .comment-item .user.health .icons {
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -502px -770px;
+      background-position: -407px -794px;
       width: 69px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -494,7 +494,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       border: 2px solid #9bb226; }
     .comment-item .user.car .icons {
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -285px -743px;
+      background-position: -235px -794px;
       width: 88px;
       height: 17px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -513,7 +513,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     padding: 0 10px 0 8px;
     min-height: auto;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -652px -199px;
+    background-position: -652px -222px;
     width: 203px;
     height: 205px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -588,7 +588,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     .list-comments .btn-slider.prev {
       left: -26px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -861px -199px;
+      background-position: -861px -254px;
       width: 16px;
       height: 26px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -598,7 +598,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     .list-comments .btn-slider.next {
       right: -26px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -861px -231px;
+      background-position: -861px -222px;
       width: 16px;
       height: 26px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -643,7 +643,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     margin-top: -6.5px;
     margin-left: -29.5px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -816px -719px;
+    background-position: -533px -770px;
     width: 59px;
     height: 13px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -715,7 +715,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
             background-size: 966px 902px; } }
         .say-samyang .video-container .btn.btn-story-founded.is-selected:before {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -861px -391px;
+          background-position: -861px -414px;
           width: 12px;
           height: 10px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -733,7 +733,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
             background-size: 966px 902px; } }
         .say-samyang .video-container .btn.btn-story-health.is-selected:before {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -861px -375px;
+          background-position: -861px -398px;
           width: 12px;
           height: 10px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -751,7 +751,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
             background-size: 966px 902px; } }
         .say-samyang .video-container .btn.btn-story-car.is-selected:before {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -861px -359px;
+          background-position: -861px -382px;
           width: 12px;
           height: 10px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -793,7 +793,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       margin: 0 auto;
       text-indent: -9999px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -652px -410px;
+      background-position: -652px -433px;
       width: 197px;
       height: 84px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -829,13 +829,25 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         position: absolute;
         top: -9999px;
         left: -9999px; }
+    .your-story > header .message {
+      display: block;
+      margin: 20px auto 0 auto;
+      text-indent: -9999px;
+      background-image: url(/assets/images/mobile/sprites_mobile.png);
+      background-position: -269px -666px;
+      width: 244px;
+      height: 45px; }
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .your-story > header .message {
+          background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
+          background-size: 966px 902px; } }
     .your-story > header .list-gifts {
       margin: 17px auto 0 auto;
       text-align: center;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
       background-position: -652px 0px;
       width: 233px;
-      height: 193px; }
+      height: 216px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .your-story > header .list-gifts {
           background-image: url(/assets/images/mobile/sprites_mobile@2x.png);
@@ -855,7 +867,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     margin: 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -520px -719px;
+    background-position: -685px -719px;
     width: 179px;
     height: 18px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -878,7 +890,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       text-indent: -9999px; }
       .your-story .login-btns a.facebook {
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -891px -319px;
+        background-position: -891px -465px;
         width: 67px;
         height: 67px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -905,7 +917,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
             background-size: 966px 902px; } }
         .your-story .login-btns a.twitter.is-selected {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -891px -465px;
+          background-position: -891px -392px;
           width: 67px;
           height: 67px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -914,7 +926,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
               background-size: 966px 902px; } }
       .your-story .login-btns a.kakaostory {
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -891px -392px;
+        background-position: -891px -538px;
         width: 67px;
         height: 67px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -923,7 +935,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
             background-size: 966px 902px; } }
         .your-story .login-btns a.kakaostory.is-selected {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -891px -538px;
+          background-position: -891px -319px;
           width: 67px;
           height: 67px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -948,7 +960,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       visibility: visible;
       margin: 0 auto 0px auto;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -285px -719px;
+      background-position: -95px -770px;
       width: 229px;
       height: 18px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1025,7 +1037,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       visibility: visible;
       margin: 0 auto;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -652px -500px;
+      background-position: -285px -719px;
       width: 192px;
       height: 40px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1058,7 +1070,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         margin: 0 auto;
         text-indent: -9999px;
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -379px -743px;
+        background-position: -441px -770px;
         width: 86px;
         height: 15px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1081,7 +1093,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
   .guide > .title {
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -705px -719px;
+    background-position: -330px -770px;
     width: 105px;
     height: 15px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1121,7 +1133,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
     margin: 0 auto;
     text-indent: -9999px;
     background-image: url(/assets/images/mobile/sprites_mobile.png);
-    background-position: -269px -666px;
+    background-position: -519px -666px;
     width: 253px;
     height: 38px; }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1143,7 +1155,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       .popup-application .basic-info label.txt-name {
         margin-right: 15px;
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -861px -344px;
+        background-position: -861px -367px;
         width: 16px;
         height: 9px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1153,7 +1165,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       .popup-application .basic-info label.txt-phone {
         margin-right: 8px;
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -861px -329px;
+        background-position: -861px -352px;
         width: 23px;
         height: 9px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1179,7 +1191,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       display: block;
       text-indent: -9999px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -528px -666px;
+      background-position: -483px -719px;
       width: 196px;
       height: 22px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1190,7 +1202,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       display: block;
       text-indent: -9999px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -730px -666px;
+      background-position: -95px -794px;
       width: 134px;
       height: 22px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1229,7 +1241,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
         cursor: pointer; }
         .popup-application .agreements .iradio + label.agreement-yes {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -240px -827px;
+          background-position: -109px -863px;
           width: 58px;
           height: 22px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1238,7 +1250,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
               background-size: 966px 902px; } }
         .popup-application .agreements .iradio + label.agreement-no {
           background-image: url(/assets/images/mobile/sprites_mobile.png);
-          background-position: -269px -770px;
+          background-position: -240px -827px;
           width: 69px;
           height: 22px; }
           @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1247,7 +1259,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
               background-size: 966px 902px; } }
       .popup-application .agreements .iradio.checked + .agreement-yes {
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -304px -827px;
+        background-position: -45px -863px;
         width: 58px;
         height: 22px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1256,7 +1268,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
             background-size: 966px 902px; } }
       .popup-application .agreements .iradio.checked + .agreement-no {
         background-image: url(/assets/images/mobile/sprites_mobile.png);
-        background-position: -194px -770px;
+        background-position: -315px -827px;
         width: 69px;
         height: 22px; }
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {

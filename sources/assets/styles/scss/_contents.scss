@@ -139,7 +139,7 @@
 
 /* 삼양그룹에게 당신의 이야기를 들려주세요! */
 .your-story { position: relative; z-index: z("default"); background-color: #fff;
-	&:before { content: ''; display: block; position: absolute; top: 603px; height: 155px; width: 100%; background: url('/assets/images/bg_section02.png') center top repeat-x; }
+	&:before { content: ''; display: block; position: absolute; top: 683px; height: 155px; width: 100%; background: url('/assets/images/bg_section02.png') center top repeat-x; }
 
 	.msie8 &,
 	.msie9 &,
@@ -156,7 +156,8 @@
 		dl { display: block; position: relative; margin: 44px auto 0 auto; @include sprite($sd-txt-duration-event);
 			dt, dd { position: absolute; top: -9999px; left: -9999px; }
 		}
-		.list-gifts { margin: 40px auto 0 auto; height: 206px; width: 842px; text-align: center; background: url('/assets/images/bg_presents.jpg') left top no-repeat;;
+		.message { display: block; margin: 20px auto 0 auto; text-indent: -9999px; @include sprite($sd-txt-message01); }
+		.list-gifts { margin: 40px auto 0 auto; height: 236px; width: 832px; text-align: center; background: url('/assets/images/bg_presents.jpg') left top no-repeat;;
 			> li { display: none; }
 		}
 	}
