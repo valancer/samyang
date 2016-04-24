@@ -1074,7 +1074,8 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       line-height: 17px;
       border: 2px solid #bdc3c5;
       border-bottom: 0px;
-      background-color: #f0f0f0; }
+      background-color: #f0f0f0;
+      background-size: 257px auto; }
     .your-story .write-comment .btn-write {
       display: block;
       height: 44px;

@@ -201,7 +201,7 @@
 		> legend { display: block; position: static; visibility: visible; margin: 0 auto; @include retina-sprite($sm-txt-comments01-group); }
 
 		.writer { overflow: hidden; position: relative; margin-top: 20px; }
-		textarea { display: block; box-sizing: border-box; padding: 10px 12px 0 12px; height: 83px; width: 100%; font-size: 11px; color: #4c4c4c; line-height: 17px; border: 2px solid #bdc3c5; border-bottom: 0px; background-color: #f0f0f0; }
+		textarea { display: block; box-sizing: border-box; padding: 10px 12px 0 12px; height: 83px; width: 100%; font-size: 11px; color: #4c4c4c; line-height: 17px; border: 2px solid #bdc3c5; border-bottom: 0px; background-color: #f0f0f0; background-size: 257px auto; }
 		.btn-write { display: block; height: 44px; width: 100%; background-color: #50b3e1;
 			span { display: inline-block; margin: 0 auto; text-indent: -9999px; @include retina-sprite($sm-txt-write01-group); }
 		}
