@@ -1398,7 +1398,7 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       margin-left: 10px;
       text-indent: -9999px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -632px -719px;
+      background-position: -259px -754px;
       width: 197px;
       height: 18px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
@@ -1410,8 +1410,8 @@ The `retina-sprites` mixin generates a CSS rule and media query for retina group
       margin-left: 10px;
       text-indent: -9999px;
       background-image: url(/assets/images/mobile/sprites_mobile.png);
-      background-position: -259px -754px;
-      width: 197px;
+      background-position: -632px -719px;
+      width: 208px;
       height: 18px; }
       @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         .popup-winner .box .title-winner06 {
