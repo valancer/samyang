@@ -285,7 +285,7 @@
 .popup-winner { margin: 45px 19px 0 19px; padding: 29px 0px 20px 0px; background: #fff url('/assets/images/mobile/bg_popup02.png') center top no-repeat; background-size: 100% 128px;
 	@include retina { background-image: url('/assets/images/mobile/bg_popup02@2x.png'); }
 
-	> .title { display: block; margin: 0 auto 18px auto; text-indent: -9999px; @include retina-sprite($sm-txt-title-winner01-group); }
+	> .title { display: block; margin: 0 auto 30px auto; text-indent: -9999px; @include retina-sprite($sm-txt-title-winner01-group); }
 
 	.box { padding: 20px 14px 0 14px; border-top: 2px solid #e9e9e9;
 		&.top { border-top: 0px; }
